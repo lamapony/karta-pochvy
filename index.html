@@ -425,8 +425,28 @@
 <main id="app" tabindex="-1"></main>
 <script>
 const KEYS = [
+  { re: /никакой прибыли на геноцид|нет прибыли на геноцид|no profit (on|from) genocide|ingen profit på folkemord/i, folders: ["blockade", "word"] },
+  { re: /немедленно и без условий|immediately and unconditionally|uden betingelser|without any precondition/i, folders: ["hostages", "intent"] },
+  { re: /дом семьи 1948|family.?s 1948|familiens hus fra 1948/i, folders: ["return", "after"] },
+  { re: /незаконны и убивают|illegal and they kill|ulovlige og slår/i, folders: ["settlements", "after"] },
+  { re: /единственная школа|only school and clinic|eneste skole og klinik|нельзя трогать|must not be touched|må ikke røres/i, folders: ["unrwa", "blockade", "after"] },
+  { re: /прячется за нами|hides behind us|gemmer sig bag os/i, folders: ["shields", "means"] },
+  { re: /голод как оружие|starvation as a weapon|sult som våben/i, folders: ["famine", "blockade"] },
+  { re: /другого мира нет|no other peace|ingen anden fred/i, folders: ["states", "after"] },
+  { re: /палестинского вето|palestinian veto|palæstinensisk veto/i, folders: ["accords", "after", "proxy"] },
+  { re: /заложн|hostage|gidsel|gidsl/i, folders: ["hostages", "intent", "after"] },
+  { re: /возвращ|вернут|right (of|to) return|retten til at vende|vende hjem|ret til at vende|репатри/i, folders: ["return", "states", "unrwa"] },
+  { re: /поселен|settlement|bosætt/i, folders: ["settlements", "states", "after"] },
+  { re: /unrwa|анрва/i, folders: ["unrwa", "after", "proxy"] },
+  { re: /щит|пряч|hide[s]? behind|gemmer sig bag|human shield|menneskeligt skjold|skjold/i, folders: ["shields", "means", "guilt"] },
+  { re: /голод|famine|starv|hungersnød|\bsult/i, folders: ["famine", "blockade", "means"] },
+  { re: /два государств|two[- ]state|tostat|to stater/i, folders: ["states", "settlements", "after"] },
+  { re: /авраам|abraham|нормализ|normalis/i, folders: ["accords", "states", "proxy"] },
+  { re: /реки до моря|river to the sea|floden til havet/i, folders: ["word", "return", "states"] },
+  { re: /гибнут дет|children are dying|børn dør|уже не самооборон|no longer self-defen|ikke længere selvforsvar/i, folders: ["means", "intent", "blockade"] },
+  { re: /самооборон|self-defen|selvforsvar|defend itself|forsvare sig|право на само/i, folders: ["violence", "means", "intent"] },
   { re: /октябр|контекст|оккупац|ум[ыи]сел|резн|october|occupation|intent|massacre|oktober|besætt|forsæt|massakre|sammenhæng/i, folders: ["intent", "word", "blockade"] },
-  { re: /дет|самооборон|соразмер|жертв|газ[аеуы]|children|self-defen|gaza|proportional|børn|selvforsvar|dør|dying/i, folders: ["means", "intent", "blockade"] },
+  { re: /дет|соразмер|жертв|газ[аеуы]|children|gaza|proportional|børn|dør|dying/i, folders: ["means", "intent", "blockade"] },
   { re: /хамас|уничтож|переговор|разговарив|марионет|hamas|destroy|talking|udslette|marionet|proxy/i, folders: ["proxy", "guilt", "after"] },
   { re: /геноцид|genocide|folkedrab/i, folders: ["word", "intent"] },
   { re: /блокад|калор|грузовик|blockade|calorie|truck|blokade|kalor|lastbil/i, folders: ["blockade", "means"] },
@@ -741,8 +761,10 @@ function renderDoc(id) {
   app.innerHTML = `
     <div class="stage doc">
       <article class="doc-page enter">
-        <p class="kicker">${escapeHtml(t(d.kind))}</p>
+        <p class="kicker">${escapeHtml(t(d.kind))}${d.date ? " · " + escapeHtml(d.date) : ""}</p>
         <h1 class="headline">${escapeHtml(t(d.title))}</h1>
+        ${d.why ? `<p>${escapeHtml(t(d.why))}</p>` : ""}
+        ${d.url ? `<p><a href="${escapeHtml(d.url)}" rel="noopener">${escapeHtml(d.url)}</a></p>` : ""}
         ${table}
         ${paras(t(d.body))}
         ${fallHtml(nextStep(from, id))}
@@ -773,17 +795,33 @@ function paint() {
 function selfCheck(data) {
   const langs = ["ru", "en", "da"];
   const need = ["headline", "dek", "steel", "cite", "citeNote", "body", "crack"];
+  const folderIds = new Set(data.folders.map((f) => f.id));
   for (const f of data.folders) {
     for (const k of need) {
       for (const L of langs) {
         if (!f[k] || !f[k][L]) throw new Error(`missing ${f.id}.${k}.${L}`);
       }
     }
+    for (const id of f.docs) {
+      if (!data.docs[id]) throw new Error(`folder ${f.id} missing doc ${id}`);
+    }
+  }
+  for (const p of data.phrases) {
+    for (const L of langs) {
+      if (!p.text || !p.text[L]) throw new Error(`missing phrase ${p.id}.${L}`);
+    }
+    for (const id of p.folders) {
+      if (!folderIds.has(id)) throw new Error(`phrase ${p.id} unknown folder ${id}`);
+    }
   }
   for (const id of Object.keys(data.docs)) {
+    const d = data.docs[id];
     for (const L of langs) {
-      if (!data.docs[id].body[L]) throw new Error(`missing doc ${id}.body.${L}`);
+      if (!d.body[L]) throw new Error(`missing doc ${id}.body.${L}`);
+      if (!d.why || !d.why[L]) throw new Error(`missing doc ${id}.why.${L}`);
     }
+    if (d.date == null) throw new Error(`missing doc ${id}.date`);
+    if (d.url == null) throw new Error(`missing doc ${id}.url`);
   }
 }
 
