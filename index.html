@@ -48,18 +48,6 @@
     outline-offset: 3px;
   }
 
-  .skip {
-    position: absolute;
-    inset-inline-start: 1rem;
-    top: -4rem;
-    z-index: 2;
-    padding: 0.5rem 0.75rem;
-    background: var(--color-page);
-    color: var(--color-cite);
-    font-size: 1rem;
-  }
-  .skip:focus { top: 1rem; }
-
   .sr {
     position: absolute;
     width: 1px;
@@ -434,7 +422,6 @@
 </style>
 </head>
 <body>
-<a class="skip" href="#app">К тексту</a>
 <main id="app" tabindex="-1"></main>
 <script>
 const KEYS = [
@@ -465,7 +452,6 @@ const state = {
 };
 
 const app = document.getElementById("app");
-const skip = document.querySelector(".skip");
 
 const t = (field) => {
   if (field == null) return "";
@@ -501,6 +487,13 @@ function matchOwn(text) {
   return hit ? hit.folders : [];
 }
 
+function openFolders(ids) {
+  const known = (ids || []).filter((id) => folderById(id));
+  if (known.length) return known;
+  const rest = DATA.folders.map((f) => f.id).filter((id) => id !== "means");
+  return ["means", ...rest];
+}
+
 function go(hash) {
   location.hash = hash;
 }
@@ -512,11 +505,11 @@ function parseHash() {
   const lang = LANGS.includes(parts[0]) ? parts[0] : null;
   if (!lang) return { screen: "lang" };
   if (parts.length === 1 || parts[1] === "phrase") return { screen: "phrase", lang };
+  if (parts[1] === "guess") return { screen: "guess", lang };
   if (parts[1] === "doc" && parts[2]) return { screen: "doc", lang, docId: parts[2] };
   const folder = folderById(parts[1]);
   if (!folder) return { screen: "phrase", lang };
   if (parts[2] && DATA.docs[parts[2]]) return { screen: "doc", lang, docId: parts[2] };
-  if (folder.guess && !state.guessed) return { screen: "guess", lang, folder };
   return { screen: "folder", lang, folder };
 }
 
@@ -591,7 +584,6 @@ function setLang(lang) {
   state.lang = lang;
   document.documentElement.lang = lang === "da" ? "da" : lang;
   document.title = DATA.ui[lang].title;
-  skip.textContent = DATA.ui[lang].skip;
   if (state.phraseId && state.phraseId !== "own") {
     const p = DATA.phrases.find((x) => x.id === state.phraseId);
     if (p) state.phraseText = t(p.text);
@@ -602,12 +594,12 @@ function setLang(lang) {
 function choosePhrase(p, unknown) {
   state.phraseId = p.id;
   state.phraseText = typeof p.text === "string" ? p.text : t(p.text);
-  state.openIds = p.folders && p.folders.length ? p.folders : DATA.folders.map((f) => f.id);
+  state.openIds = openFolders(p.folders);
   state.unknown = !!unknown;
   state.guessed = false;
   state.guessOk = null;
   persist();
-  go(`#/${state.lang}/${state.openIds[0]}`);
+  go(`#/${state.lang}/guess`);
 }
 
 function renderLang() {
@@ -660,7 +652,11 @@ function renderPhrase() {
   };
 }
 
-function renderGuess(folder) {
+function landingFolder() {
+  return folderById((state.openIds && state.openIds[0]) || "means") || DATA.folders[0];
+}
+
+function renderGuess() {
   const g = DATA.guess;
   app.innerHTML = `
     <div class="stage guess enter">
@@ -676,7 +672,7 @@ function renderGuess(folder) {
       state.guessed = true;
       state.guessOk = btn.dataset.id === g.correct;
       persist();
-      go(`#/${state.lang}/doc/${folder.docs[0]}`);
+      go(`#/${state.lang}/${landingFolder().id}`);
     };
   });
 }
@@ -703,11 +699,11 @@ function renderFolder(folder) {
   markSeen("folders", folder.id);
   persist();
   const kicker = state.phraseText || t(folder.title);
-  const note = state.unknown
-    ? U("unknown")
-    : (folder.guess && state.guessed
-      ? U(state.guessOk ? "guessOk" : "guessBad")
-      : t(folder.note));
+  const notes = [];
+  if (state.unknown) notes.push(U("unknown"));
+  if (state.guessed) notes.push(U(state.guessOk ? "guessOk" : "guessBad"));
+  else if (!state.unknown) notes.push(t(folder.note));
+  const note = notes.filter(Boolean).join(" ");
   const next = nextStep(folder);
 
   app.innerHTML = `
@@ -762,7 +758,14 @@ function paint() {
   if (r.screen === "lang") return renderLang();
   if (!state.lang) return go("#");
   if (r.screen === "phrase") return renderPhrase();
-  if (r.screen === "guess") return renderGuess(r.folder);
+  if (!state.phraseId) return go(`#/${state.lang}/phrase`);
+  if (r.screen === "guess") {
+    if (state.guessed) {
+      return go(`#/${state.lang}/${landingFolder().id}`);
+    }
+    return renderGuess();
+  }
+  if (!state.guessed) return go(`#/${state.lang}/guess`);
   if (r.screen === "doc") return renderDoc(r.docId);
   return renderFolder(r.folder);
 }
