@@ -1,0 +1,688 @@
+{
+  "ui": {
+    "ru": {
+      "title": "Карта почвы",
+      "skip": "К тексту",
+      "langKicker": "Sprog · Language · Язык",
+      "phraseQ": "Какую фразу вы готовы повторить вслух",
+      "own": "своя",
+      "ownLabel": "Своя фраза",
+      "unknown": "Почва неизвестна. Система не притворяется, что разобрала фразу.",
+      "guessKicker": "Норма ещё не названа",
+      "guessWait": "Статья откроется после ответа.",
+      "guessOk": "Статья уже была в праве. Ответ — увидеть её, а не подобрать лозунг.",
+      "guessBad": "Большинство жмёт на счётчик тел. Дальше — не мнение, а статья.",
+      "again": "Есть ещё фраза, которую можно сказать вслух"
+    },
+    "en": {
+      "title": "A map of the soil",
+      "skip": "Skip to text",
+      "langKicker": "Sprog · Language · Язык",
+      "phraseQ": "Which sentence are you willing to say out loud",
+      "own": "one’s own",
+      "ownLabel": "Your own sentence",
+      "unknown": "The soil is unknown. The system does not pretend it parsed the sentence.",
+      "guessKicker": "The norm is not named yet",
+      "guessWait": "The article opens after you answer.",
+      "guessOk": "The article was already in the law. The click is to see it, not to pick a slogan.",
+      "guessBad": "Most people reach for the body count. What follows is not an opinion. It is the article.",
+      "again": "There is still a sentence you have not said out loud"
+    },
+    "da": {
+      "title": "Et kort over jorden",
+      "skip": "Spring til teksten",
+      "langKicker": "Sprog · Language · Язык",
+      "phraseQ": "Hvilken sætning er du villig til at sige højt",
+      "own": "ens egen",
+      "ownLabel": "Din egen sætning",
+      "unknown": "Jorden er ukendt. Systemet lader ikke som om det har afkodet sætningen.",
+      "guessKicker": "Normen er endnu ikke nævnt",
+      "guessWait": "Artiklen åbner, når du har svaret.",
+      "guessOk": "Artiklen lå allerede i retten. Svaret er at se den, ikke at vælge et slogan.",
+      "guessBad": "De fleste trykker på ligetælleren. Det der følger er ikke en mening. Det er artiklen.",
+      "again": "Der er stadig en sætning, du ikke har sagt højt"
+    }
+  },
+  "phrases": [
+    {
+      "id": "context",
+      "folders": ["intent", "word", "blockade"],
+      "text": {
+        "ru": "7 октября нельзя вырывать из контекста оккупации",
+        "en": "October 7 cannot be pulled out of the context of occupation",
+        "da": "7. oktober kan ikke rives ud af besættelsens sammenhæng"
+      }
+    },
+    {
+      "id": "children",
+      "folders": ["means", "intent", "blockade"],
+      "text": {
+        "ru": "В Газе гибнут дети — значит, это уже не самооборона",
+        "en": "Children are dying in Gaza — so this is no longer self-defence",
+        "da": "Børn dør i Gaza — derfor er det ikke længere selvforsvar"
+      }
+    },
+    {
+      "id": "destroy",
+      "folders": ["proxy", "guilt", "after"],
+      "text": {
+        "ru": "С ХАМАСом нельзя разговаривать, только уничтожать",
+        "en": "There is no talking to Hamas, only destroying it",
+        "da": "Man kan ikke tale med Hamas, kun udslette dem"
+      }
+    }
+  ],
+  "folders": [
+    {
+      "id": "violence",
+      "docs": ["aquinas", "walzer"],
+      "tab": { "ru": "1. Насилие", "en": "1. Violence", "da": "1. Vold" },
+      "title": { "ru": "Запрет или вид", "en": "A ban, or a kind", "da": "Forbud eller art" },
+      "headline": {
+        "ru": "Граница проходит не между насилием и ненасилием, а между справедливым и несправедливым насилием.",
+        "en": "The line is not between violence and non-violence. It is between just and unjust violence.",
+        "da": "Grænsen går ikke mellem vold og ikke-vold, men mellem retfærdig og uretfærdig vold."
+      },
+      "dek": {
+        "ru": "Почти любая сторона находит себе «справедливую причину». Теория легко становится языком того, кто уже воюет.",
+        "en": "Almost any side can find itself a “just cause”. The theory slips easily into the language of whoever is already at war.",
+        "da": "Næsten enhver part finder sig en «retfærdig grund». Teorien bliver let sproget hos den, der allerede fører krig."
+      },
+      "steel": {
+        "ru": "Теория справедливой войны делит вопрос надвое: jus ad bellum — можно ли начинать, jus in bello — как воевать.",
+        "en": "Just-war theory splits the question: jus ad bellum — whether to start; jus in bello — how to fight.",
+        "da": "Teorien om retfærdig krig deler spørgsmålet: jus ad bellum — om man må begynde; jus in bello — hvordan man kæmper."
+      },
+      "cite": {
+        "ru": "Аквинат, Summa Theologiae, II–II, q.40",
+        "en": "Aquinas, Summa Theologiae, II–II, q.40",
+        "da": "Aquinas, Summa Theologiae, II–II, q.40"
+      },
+      "citeNote": {
+        "ru": "Три условия начала: законная власть, справедливая причина, правильное намерение.",
+        "en": "Three conditions for beginning: legitimate authority, just cause, right intention.",
+        "da": "Tre betingelser for at begynde: lovlig myndighed, retfærdig grund, ret hensigt."
+      },
+      "body": {
+        "ru": "Теория справедливой войны делит вопрос надвое: jus ad bellum — можно ли начинать, jus in bello — как воевать. У Аквината для начала нужны законная власть, справедливая причина и правильное намерение. Уолцер добавляет: гражданских нельзя делать целью; побочный вред допустим, только если он ненамеренный, необходимый и соразмерный цели именно этого удара.",
+        "en": "Just-war theory splits the question in two: jus ad bellum — whether one may begin; jus in bello — how one may fight. For Aquinas a war may begin only with legitimate authority, a just cause, and a right intention. Walzer adds: civilians may not be made the target; collateral harm is allowed only if it is unintended, necessary, and proportionate to the aim of that specific strike.",
+        "da": "Teorien om retfærdig krig deler spørgsmålet i to: jus ad bellum — om man må begynde; jus in bello — hvordan man må kæmpe. Hos Aquinas kræver begyndelsen lovlig myndighed, retfærdig grund og ret hensigt. Walzer tilføjer: civile må ikke gøres til mål; sideordnede skader er kun tilladt, hvis de er utilsigtede, nødvendige og proportionale med formålet med netop dette angreb."
+      },
+      "crack": {
+        "ru": "Почти любая сторона находит себе «справедливую причину». Сам Уолцер оставляет лазейку supreme emergency: когда катастрофа близка, правила можно нарушить. Критики считают, что этим запрет размывается. Теория легко становится языком того, кто уже воюет.",
+        "en": "Almost any party can furnish itself with a “just cause”. Walzer himself leaves a gap — supreme emergency: when catastrophe is near, the rules may be broken. Critics say the prohibition then thins out. The theory becomes, too easily, the language of whoever is already fighting.",
+        "da": "Næsten enhver part kan skaffe sig en «retfærdig grund». Walzer selv efterlader en sluse, supreme emergency: når katastrofen er nær, må reglerne brydes. Kritikere mener, at forbuddet dermed udvandes. Teorien bliver let sproget hos den, der allerede kæmper."
+      },
+      "note": {
+        "ru": "Граница здесь — справедливое и несправедливое насилие, не насилие и пацифизм.",
+        "en": "The line here is just and unjust violence, not violence and pacifism.",
+        "da": "Grænsen her er retfærdig og uretfærdig vold, ikke vold og pacifisme."
+      }
+    },
+    {
+      "id": "means",
+      "guess": true,
+      "docs": ["api51", "ihl14"],
+      "tab": { "ru": "2. Соразмерность", "en": "2. Proportionality", "da": "2. Proportionalitet" },
+      "title": { "ru": "Тела или средство", "en": "Bodies or a means", "da": "Kroppe eller middel" },
+      "headline": {
+        "ru": "В праве соразмерность — не «око за око» и не итоговый счётчик трупов.",
+        "en": "In the law, proportionality is not an eye for an eye, and not a running total of corpses.",
+        "da": "I retten er proportionalitet ikke øje for øje og ikke en løbende ligetæller."
+      },
+      "dek": {
+        "ru": "Если считать только телами — любая война в городе уже «несоразмерна». Если только средствами — системный вред прячется. Оба счётчика врут по-своему.",
+        "en": "Count only bodies, and any war in a city is already “disproportionate”. Count only means, and systemic harm hides. Both counters lie in their own way.",
+        "da": "Tæller man kun kroppe, er enhver krig i en by allerede «upropotional». Tæller man kun midler, gemmer den systemiske skade sig. Begge tællere lyver på deres vis."
+      },
+      "steel": {
+        "ru": "Смотрят, что знал командир в момент решения, не сколько погибло через год.",
+        "en": "The test looks at what the commander knew at the moment of decision, not at how many had died a year later.",
+        "da": "Man ser på, hvad kommandanten vidste i beslutningsøjeblikket, ikke på hvor mange der var døde et år senere."
+      },
+      "cite": {
+        "ru": "Доп. протокол I, ст. 51(5)(b)",
+        "en": "Additional Protocol I, art. 51(5)(b)",
+        "da": "Tillægsprotokol I, art. 51(5)(b)"
+      },
+      "citeNote": {
+        "ru": "Женева, 1977. Запрещён удар, гражданский вред которого чрезмерен относительно конкретной военной выгоды этого удара.",
+        "en": "Geneva, 1977. A strike is forbidden if the civilian harm expected is excessive in relation to the concrete military advantage of that strike.",
+        "da": "Genève, 1977. Et angreb er forbudt, hvis den forventede civile skade er overdreven i forhold til den konkrete militære fordel ved netop dette angreb."
+      },
+      "body": {
+        "ru": "Доп. протокол I, ст. 51(5)(b): запрещён удар, который можно ожидать, что причинит гражданский вред, чрезмерный относительно конкретной и прямой военной выгоды этого удара. Смотрят, что знал командир в момент решения, не сколько погибло через год. Ст. 51(7): щит из гражданских запрещён. Ст. 51(8): нарушение противником этой нормы не снимает обязанностей с атакующего.",
+        "en": "Additional Protocol I, art. 51(5)(b): a strike is forbidden if it may be expected to cause civilian harm excessive in relation to the concrete and direct military advantage anticipated from that strike. The test is what the commander knew when deciding, not the death toll a year later. Art. 51(7): a human shield is forbidden. Art. 51(8): the enemy’s breach of that rule does not release the attacker from duties toward civilians.",
+        "da": "Tillægsprotokol I, art. 51(5)(b): et angreb er forbudt, hvis man kan forvente, at det vil medføre civil skade, der er overdreven i forhold til den konkrete og direkte militære fordel ved netop dette angreb. Man ser på, hvad kommandanten vidste i beslutningsøjeblikket, ikke på dødstallet et år senere. Art. 51(7): et menneskeligt skjold er forbudt. Art. 51(8): modstanderens brud på denne norm fritager ikke angriberen for pligter over for civile."
+      },
+      "crack": {
+        "ru": "Если считать только «средствами», системный вред прячется за формулой «цель была легитимной». Если только телами — любая война против укрывшегося в городе противника уже «несоразмерна», даже когда щит создан сознательно. Оба счётчика врут по-своему.",
+        "en": "If one counts only “means”, systemic harm hides behind the formula “the target was legitimate”. If one counts only bodies, any war against an enemy nested in a city is already “disproportionate”, even when the shield was built on purpose. Both counters lie in their own way.",
+        "da": "Tæller man kun «midler», gemmer den systemiske skade sig bag formlen «målet var legitimt». Tæller man kun kroppe, er enhver krig mod en fjende skjult i en by allerede «upropotional», også når skjoldet er skabt med vilje. Begge tællere lyver på deres vis."
+      },
+      "note": {
+        "ru": "Сначала угадайте норму. Статья ляжет после ответа.",
+        "en": "Guess the norm first. The article is laid down after the answer.",
+        "da": "Gæt først normen. Artiklen lægges frem efter svaret."
+      }
+    },
+    {
+      "id": "intent",
+      "docs": ["patten", "hrw-oct7"],
+      "tab": { "ru": "3. 7 октября", "en": "3. 7 October", "da": "3. 7. oktober" },
+      "title": { "ru": "Контекст или умысел", "en": "Context or intent", "da": "Kontekst eller forsæt" },
+      "headline": {
+        "ru": "Событие можно объяснять историей. Это не то же самое, что снимать с него умысел.",
+        "en": "An event can be explained by history. That is not the same as removing intent from it.",
+        "da": "En begivenhed kan forklares med historien. Det er ikke det samme som at fjerne forsættet fra den."
+      },
+      "dek": {
+        "ru": "Контекст не оправдывает резню. Резня не обнуляет блокаду.",
+        "en": "Context does not excuse a massacre. A massacre does not cancel a blockade.",
+        "da": "Kontekst retfærdiggør ikke en massakre. En massakre ophæver ikke en blokade."
+      },
+      "steel": {
+        "ru": "Оккупацию можно признать. Резня гражданских — не сопротивление.",
+        "en": "Occupation can be acknowledged. The massacre of civilians is not resistance.",
+        "da": "Besættelse kan anerkendes. En massakre på civile er ikke modstand."
+      },
+      "cite": {
+        "ru": "Паттен, март 2024",
+        "en": "Patten, March 2024",
+        "da": "Patten, marts 2024"
+      },
+      "citeNote": {
+        "ru": "reasonable grounds: сексуальное насилие как минимум в трёх местах.",
+        "en": "reasonable grounds: sexual violence in at least three places.",
+        "da": "reasonable grounds: seksuel vold på mindst tre steder."
+      },
+      "body": {
+        "ru": "Около 1 200 убитых (израильские данные позже скорректировали первоначальные ~1 400). HRW/AFP: из 1 195 около 815 гражданских. Похищено около 250–253. Спецпредставитель ООН Паттен (март 2024): «reasonable grounds» полагать сексуальное насилие, включая изнасилования, как минимум в трёх местах; часть жертв затем убили; по заложникам — «clear and convincing information». ХАМАС отрицает. Можно признать оккупацию и блокаду — и всё равно сказать: резня гражданских и захват заложников не «сопротивление». HRW квалифицирует это как преступления против человечности.",
+        "en": "About 1,200 killed (Israeli figures later revised the first ~1,400). HRW/AFP: of 1,195, about 815 were civilians. About 250–253 were taken. UN Special Representative Patten (March 2024): “reasonable grounds” to believe sexual violence, including rape, in at least three places; some victims were then killed; on hostages — “clear and convincing information”. Hamas denies this. One can acknowledge occupation and blockade and still say: the massacre of civilians and the taking of hostages is not “resistance”. HRW qualifies the attack as crimes against humanity.",
+        "da": "Omkring 1.200 dræbt (israelske tal rettede senere de første ~1.400). HRW/AFP: af 1.195 var omkring 815 civile. Omkring 250–253 blev taget. FN’s specialrepræsentant Patten (marts 2024): «reasonable grounds» for at antage seksuel vold, herunder voldtægt, på mindst tre steder; nogle ofre blev derefter dræbt; om gidsler — «clear and convincing information». Hamas benægter. Man kan anerkende besættelse og blokade og alligevel sige: en massakre på civile og gidseltagning er ikke «modstand». HRW betegner angrebet som forbrydelser mod menneskeheden."
+      },
+      "crack": {
+        "ru": "«Абсолютное событие» легко запрещает разговор о том, что было до и после. Контекст не оправдывает резню. Резня не обнуляет блокаду, политику сдерживания ХАМАСа и то, что Израиль делал с гражданскими в Газе после.",
+        "en": "An “absolute event” easily forbids talk of what came before and after. Context does not excuse a massacre. A massacre does not cancel the blockade, the policy of containing Hamas, or what Israel did to civilians in Gaza afterwards.",
+        "da": "En «absolut begivenhed» forbyder let samtalen om det, der kom før og efter. Kontekst retfærdiggør ikke en massakre. En massakre ophæver ikke blokaden, politikken med at inddæmme Hamas, eller det Israel gjorde ved civile i Gaza bagefter."
+      },
+      "note": {
+        "ru": "Назвать атаку геноцидальной и не растворять её в «контексте» — один ход мысли. Не приговор.",
+        "en": "To call the attack genocidal and refuse to dissolve it in “context” is one move. Not a verdict.",
+        "da": "At kalde angrebet folkedrabsk og nægte at opløse det i «kontekst» er ét træk. Ikke en dom."
+      }
+    },
+    {
+      "id": "word",
+      "docs": ["charter", "icj"],
+      "display": {
+        "kind": "word",
+        "word": { "ru": "Геноцид", "en": "Genocide", "da": "Folkedrab" },
+        "others": { "ru": "Genocide · Folkedrab", "en": "Folkedrab · Геноцид", "da": "Genocide · Геноцид" },
+        "falseReading": { "ru": "очень много жертв", "en": "a great many dead", "da": "rigtig mange døde" }
+      },
+      "tab": { "ru": "4. Геноцид", "en": "4. Genocide", "da": "4. Folkedrab" },
+      "title": { "ru": "Слово", "en": "The word", "da": "Ordet" },
+      "headline": {
+        "ru": "Деяния плюс специальный умысел уничтожить группу как таковую.",
+        "en": "Acts plus specific intent to destroy a group as such.",
+        "da": "Handlinger plus et særligt forsæt om at ødelægge en gruppe som sådan."
+      },
+      "dek": {
+        "ru": "Слово стало оружием в обе стороны. Если оно лежит только на одной чаше, весы снова врут.",
+        "en": "The word is a weapon in both directions. If it sits on one scale only, the scales lie again.",
+        "da": "Ordet er et våben i begge retninger. Ligger det kun i den ene vægtskål, lyver vægten igen."
+      },
+      "steel": {
+        "ru": "Геноцид в Конвенции 1948 года — не «очень много жертв».",
+        "en": "Genocide in the 1948 Convention is not “a great many dead”.",
+        "da": "Folkedrab i konventionen fra 1948 er ikke «rigtig mange døde»."
+      },
+      "cite": {
+        "ru": "Конвенция о геноциде, 1948",
+        "en": "Genocide Convention, 1948",
+        "da": "Folkedrabskonventionen, 1948"
+      },
+      "citeNote": {
+        "ru": "МС ООН в январе 2024 не установил геноцид. Правдоподобие права на защиту ≠ приговор.",
+        "en": "The ICJ in January 2024 did not find genocide. Plausibility of a right to protection is not a verdict.",
+        "da": "ICJ fastslog i januar 2024 ikke folkedrab. Et plausibelt beskyttelseskrav er ikke en dom."
+      },
+      "body": {
+        "ru": "Хартия ХАМАСа 1988: «Израиль будет существовать, пока ислам не уничтожит его»; джихад как единственное решение; антисемитский хадис в ст. 7. Документ 2017 снимает часть антиеврейской риторики («конфликт с сионистским проектом, не с евреями из-за религии»), но сохраняет непризнание Израиля и «от реки до моря». Не склеивайте 1988 и 2017 в одну цитату. МС ООН в январе 2024 не установил геноцид Израиля: часть прав, на которые ссылается ЮАР, названа правдоподобной; выданы временные меры. Это не приговор.",
+        "en": "The 1988 Hamas Charter: “Israel will exist and will continue to exist until Islam will obliterate it”; jihad as the only solution; an antisemitic hadith in art. 7. The 2017 document drops some anti-Jewish rhetoric (“a conflict with the Zionist project, not with Jews because of religion”) but keeps non-recognition of Israel and “from the river to the sea”. Do not glue 1988 and 2017 into one quotation. The ICJ in January 2024 did not find Israel committing genocide: some of the rights South Africa invoked were called plausible; provisional measures were issued. That is not a verdict.",
+        "da": "Hamas’ pagt 1988: «Israel vil eksistere, indtil islam udsletter det»; jihad som eneste løsning; en antisemitisk hadith i art. 7. Dokumentet fra 2017 fjerner noget antijødisk retorik («en konflikt med det zionistiske projekt, ikke med jøder på grund af religion»), men bevarer manglende anerkendelse af Israel og «fra floden til havet». Lim ikke 1988 og 2017 sammen til ét citat. ICJ fastslog i januar 2024 ikke, at Israel begår folkedrab: nogle af de rettigheder Sydafrika påberåbte sig, blev kaldt plausible; der blev udstedt midlertidige forholdsregler. Det er ikke en dom."
+      },
+      "crack": {
+        "ru": "Слово стало оружием в обе стороны: им закрывают разговор и про 7 октября, и про условия жизни в Газе. Если оно лежит только на одной чаше, весы снова врут.",
+        "en": "The word has become a weapon in both directions: it is used to shut down talk of 7 October, and talk of the conditions of life in Gaza. If it sits on one scale only, the scales lie again.",
+        "da": "Ordet er blevet et våben i begge retninger: det lukker samtalen både om 7. oktober og om livsvilkårene i Gaza. Ligger det kun i den ene vægtskål, lyver vægten igen."
+      },
+      "note": {
+        "ru": "Конвенция требует умысла уничтожить группу как таковую. Счётчик тел этого умысла не доказывает и не опровергает.",
+        "en": "The Convention requires intent to destroy a group as such. A body count neither proves nor disproves that intent.",
+        "da": "Konventionen kræver forsæt om at ødelægge en gruppe som sådan. En ligetæller hverken beviser eller afkræfter det forsæt."
+      }
+    },
+    {
+      "id": "proxy",
+      "docs": ["wsj", "cicero"],
+      "tab": { "ru": "5. ХАМАС", "en": "5. Hamas", "da": "5. Hamas" },
+      "title": { "ru": "Марионетка или субъект", "en": "Puppet or subject", "da": "Marionet eller subjekt" },
+      "headline": {
+        "ru": "Можно быть организацией с собственной идеологией и частью чужой сети одновременно.",
+        "en": "An organisation can have its own ideology and still be part of someone else’s network.",
+        "da": "Man kan være en organisation med egen ideologi og samtidig en del af et fremmed net."
+      },
+      "dek": {
+        "ru": "Свести всё к Ирану — снять с ХАМАСа субъектность. Свести всё к «народному сопротивлению» — убрать хартию.",
+        "en": "Reduce it all to Iran, and Hamas loses agency. Reduce it all to “popular resistance”, and the Charter disappears.",
+        "da": "Reducer det hele til Iran, og Hamas mister subjektivitet. Reducer det hele til «folkelig modstand», og pagten forsvinder."
+      },
+      "steel": {
+        "ru": "Около 500 боевиков на учениях у КСИР. Операционной связи с 7 октября Вашингтон не подтверждает.",
+        "en": "About 500 fighters trained with the IRGC. Washington did not confirm an operational link to 7 October.",
+        "da": "Omkring 500 kæmpere trænet hos IRGC. Washington bekræftede ikke en operationel forbindelse til 7. oktober."
+      },
+      "cite": {
+        "ru": "WSJ, 25 октября 2023",
+        "en": "WSJ, 25 October 2023",
+        "da": "WSJ, 25. oktober 2023"
+      },
+      "citeNote": {
+        "ru": "Формулу «23 сентября» не держим: слишком точная дата без первичного документа.",
+        "en": "The formula “23 September” is not held: too exact a date without a primary document.",
+        "da": "Formlen «23. september» holdes ikke: for præcis en dato uden et primært dokument."
+      },
+      "body": {
+        "ru": "WSJ, 25 октября 2023, со ссылкой на людей, знакомых с разведданными: около 500 боевиков ХАМАСа и Исламского джихада проходили спецподготовку в Иране у КСИР/«Кудс», в том числе в сентябре 2023-го; на учениях был командир «Кудс» Эсмаил Каани. Американские официальные лица тогда же: Иран регулярно тренирует прокси, но данных, что эти учения готовили именно 7 октября, у Вашингтона нет. Формулу «23 сентября» не держим: слишком точная дата без первичного документа.",
+        "en": "The Wall Street Journal, 25 October 2023, citing people familiar with intelligence: about 500 Hamas and Islamic Jihad fighters received special training in Iran with the IRGC/Quds Force, including in September 2023; Quds commander Esmail Qaani was present. US officials the same week: Iran regularly trains proxies, but Washington had no data that those drills prepared 7 October itself. The formula “23 September” is not laid down: too precise a date without a primary document.",
+        "da": "WSJ, 25. oktober 2023, med henvisning til folk med kendskab til efterretninger: omkring 500 Hamas- og Islamisk Jihad-kæmpere fik specialtræning i Iran hos IRGC/Quds-styrken, blandt andet i september 2023; Quds-chefen Esmail Qaani var til stede. Amerikanske embedsmænd samme uge: Iran træner jævnligt proxyer, men Washington havde ingen data for, at netop disse øvelser forberedte 7. oktober. Formlen «23. september» lægges ikke frem: for præcis en dato uden et primært dokument."
+      },
+      "crack": {
+        "ru": "Свести всё к Ирану — снять с ХАМАСа субъектность и стереть палестинскую политику. Свести всё к «народному сопротивлению» — убрать деньги, оружие, хартию и решение атаковать гражданских.",
+        "en": "Reduce it all to Iran, and Hamas is stripped of agency and Palestinian politics is erased. Reduce it all to “popular resistance”, and the money, the weapons, the Charter, and the decision to attack civilians disappear.",
+        "da": "Reducer det hele til Iran, og Hamas fratages subjektivitet, og palæstinensisk politik slettes. Reducer det hele til «folkelig modstand», og pengene, våbnene, pagten og beslutningen om at angribe civile forsvinder."
+      },
+      "note": {
+        "ru": "Цицерон: с пиратом нет клятвы, он communis hostis omnium. Перенос рамки на организацию не переносит её на новорождённого.",
+        "en": "Cicero: there is no oath with a pirate; he is communis hostis omnium. Moving that frame onto an organisation does not move it onto a newborn.",
+        "da": "Cicero: der er ingen ed med en sørøver; han er communis hostis omnium. At flytte rammen over på en organisation flytter den ikke over på et nyfødt barn."
+      }
+    },
+    {
+      "id": "blockade",
+      "docs": ["cogat"],
+      "display": {
+        "kind": "number",
+        "number": "2,279",
+        "unit": {
+          "ru": "ккал на человека в день",
+          "en": "kcal per person per day",
+          "da": "kcal pr. person pr. dag"
+        }
+      },
+      "tab": { "ru": "6. Блокада", "en": "6. Blockade", "da": "6. Blokade" },
+      "title": { "ru": "Зачем считать калории", "en": "Why count calories", "da": "Hvorfor tælle kalorier" },
+      "headline": {
+        "ru": "Блокада — не только периметр. Это ещё вопрос, зачем считать калории.",
+        "en": "A blockade is not only a perimeter. It is also the question of why one counts calories.",
+        "da": "En blokade er ikke kun en perimeter. Det er også spørgsmålet om, hvorfor man tæller kalorier."
+      },
+      "dek": {
+        "ru": "Даже если черновик «не применяли», жанр документа — расчёт минимума жизни под давлением.",
+        "en": "Even if the draft “was not applied”, the genre is a calculation of a minimum of life under pressure.",
+        "da": "Selv om udkastet «ikke blev anvendt», er genren et regnskab over et livsminimum under pres."
+      },
+      "steel": {
+        "ru": "Гражданские здесь инструмент политики. Рафах закрывает не только Израиль.",
+        "en": "Civilians here are an instrument of policy. Rafah is not closed by Israel alone.",
+        "da": "Civile er her et politisk instrument. Rafah lukkes ikke kun af Israel."
+      },
+      "cite": {
+        "ru": "Gisha / COGAT, январь 2008",
+        "en": "Gisha / COGAT, January 2008",
+        "da": "Gisha / COGAT, januar 2008"
+      },
+      "citeNote": {
+        "ru": "Средняя цифра черновика: 2 279 ккал. Минобороны Израиля: политику по нему не вели.",
+        "en": "The draft’s average figure: 2,279 kcal. Israel’s Defence Ministry: policy was not run from it.",
+        "da": "Udkastets gennemsnit: 2.279 kcal. Israels forsvarsministerium: politikken blev ikke ført efter det."
+      },
+      "body": {
+        "ru": "После суда Gisha добилась публикации презентации COGAT «Food Consumption in the Gaza Strip — Red Lines» (январь 2008). Средняя цифра: 2 279 ккал на человека в день. В версиях — 106 / 131 / 170 грузовиков. Gisha: до ужесточения 2007-го входило около 400 грузовиков в день, в период ограничений фактически около 67. Минобороны Израиля: черновик, политику по нему не вели, цель — не допустить гуманитарного обвала. После 2007-го Израиль назвал Газу «враждебной территорией». Выходы держат Израиль и Египет.",
+        "en": "After a court case, Gisha obtained publication of the COGAT presentation “Food Consumption in the Gaza Strip — Red Lines” (January 2008). The average figure: 2,279 kcal per person per day. In the versions — 106 / 131 / 170 trucks. Gisha: before the tightening of 2007 about 400 trucks entered a day; under the restrictions, about 67 in practice. Israel’s Defence Ministry: a draft; policy was not run from it; the aim was to avoid a humanitarian collapse. After 2007 Israel called Gaza “hostile territory”. The exits are held by Israel and Egypt.",
+        "da": "Efter en retssag fik Gisha offentliggjort COGAT-præsentationen «Food Consumption in the Gaza Strip — Red Lines» (januar 2008). Gennemsnittet: 2.279 kcal pr. person pr. dag. I versionerne — 106 / 131 / 170 lastbiler. Gisha: før stramningen i 2007 kom omkring 400 lastbiler ind om dagen; under begrænsningerne i praksis omkring 67. Israels forsvarsministerium: et udkast; politikken blev ikke ført efter det; målet var at undgå et humanitært sammenbrud. Efter 2007 kaldte Israel Gaza «fjendtligt territorium». Udgangene holdes af Israel og Egypten."
+      },
+      "crack": {
+        "ru": "Даже если черновик «не применяли», жанр документа — расчёт минимума жизни под давлением. Гражданские здесь инструмент политики. Рафах закрывает не только Израиль.",
+        "en": "Even if the draft “was not applied”, the genre of the document is a calculation of a minimum of life under pressure. Civilians here are an instrument of policy. Rafah is not closed by Israel alone.",
+        "da": "Selv om udkastet «ikke blev anvendt», er dokumentets genre et regnskab over et livsminimum under pres. Civile er her et politisk instrument. Rafah lukkes ikke kun af Israel."
+      },
+      "note": {
+        "ru": "Считать калории — уже политика, даже когда таблицу называют черновиком.",
+        "en": "To count calories is already politics, even when the table is called a draft.",
+        "da": "At tælle kalorier er allerede politik, også når tabellen kaldes et udkast."
+      }
+    },
+    {
+      "id": "guilt",
+      "docs": ["jaspers"],
+      "tab": { "ru": "7. Вина", "en": "7. Guilt", "da": "7. Skyld" },
+      "title": { "ru": "Народ или организация", "en": "A people or an organisation", "da": "Folk eller organisation" },
+      "headline": {
+        "ru": "Вина индивидуальна. Политическая ответственность может быть коллективной. Это разные вещи.",
+        "en": "Guilt is individual. Political responsibility can be collective. These are not the same thing.",
+        "da": "Skyld er individuel. Politisk ansvar kan være kollektivt. Det er ikke det samme."
+      },
+      "dek": {
+        "ru": "Формула «нет мирных» ломает как раз это различение. Обратная ловушка: «народ не виноват» иногда становится «организация не ответственна».",
+        "en": "The formula “there are no civilians” breaks exactly this distinction. The reverse trap: “the people are not guilty” sometimes becomes “the organisation is not responsible”.",
+        "da": "Formlen «der er ingen civile» knækker netop denne skelnen. Den omvendte fælde: «folket er ikke skyldigt» bliver undertiden til «organisationen er ikke ansvarlig»."
+      },
+      "steel": {
+        "ru": "Ясперс: бессмысленно обвинять в преступлении целый народ.",
+        "en": "Jaspers: it is meaningless to accuse an entire people of a crime.",
+        "da": "Jaspers: det er meningsløst at anklage et helt folk for en forbrydelse."
+      },
+      "cite": {
+        "ru": "Ясперс, Вопрос о виновности",
+        "en": "Jaspers, The Question of German Guilt",
+        "da": "Jaspers, Die Schuldfrage"
+      },
+      "citeNote": {
+        "ru": "Четыре регистра: уголовная, политическая, моральная, метафизическая вина.",
+        "en": "Four registers: criminal, political, moral, metaphysical guilt.",
+        "da": "Fire registre: strafferetlig, politisk, moralsk, metafysisk skyld."
+      },
+      "body": {
+        "ru": "Ясперс после 1945-го различал вину уголовную, политическую, моральную и метафизическую и отдельно писал: бессмысленно обвинять в преступлении целый народ. Формула «нет мирных палестинцев» ломает как раз это различение: вину нельзя вешать на народ; ответственность по определению коллективна.",
+        "en": "After 1945 Jaspers distinguished criminal, political, moral, and metaphysical guilt, and wrote separately that it is meaningless to accuse an entire people of a crime. The formula “there are no innocent Palestinians” breaks exactly that distinction: guilt cannot be hung on a people; responsibility is collective by definition.",
+        "da": "Efter 1945 skelnede Jaspers mellem strafferetlig, politisk, moralsk og metafysisk skyld og skrev særskilt, at det er meningsløst at anklage et helt folk for en forbrydelse. Formlen «der er ingen uskyldige palæstinensere» knækker netop den skelnen: skyld kan ikke hænges på et folk; ansvar er kollektivt af definition."
+      },
+      "crack": {
+        "ru": "Различение умирает на практике: бомбардировка города не спрашивает, голосовал ли человек за ХАМАС. Обратная ловушка: «народ не виноват» иногда превращается в «организация не ответственна».",
+        "en": "The distinction dies in practice: a bombardment of a city does not ask whether a person voted for Hamas. The reverse trap: “the people are not guilty” sometimes turns into “the organisation is not responsible”.",
+        "da": "Skelnen dør i praksis: et bombardement af en by spørger ikke, om personen stemte på Hamas. Den omvendte fælde: «folket er ikke skyldigt» bliver undertiden til «organisationen er ikke ansvarlig»."
+      },
+      "note": {
+        "ru": "Различение, не приговор.",
+        "en": "A distinction, not a verdict.",
+        "da": "En skelnen, ikke en dom."
+      }
+    },
+    {
+      "id": "after",
+      "docs": ["after-note"],
+      "tab": { "ru": "8. После", "en": "8. After", "da": "8. Bagefter" },
+      "title": { "ru": "Усталость или институты", "en": "Exhaustion or institutions", "da": "Træthed eller institutioner" },
+      "headline": {
+        "ru": "Уничтожить сеть и сменить учебники — разные задачи.",
+        "en": "To destroy a network and to change the textbooks are different tasks.",
+        "da": "At ødelægge et net og at skifte lærebøgerne er forskellige opgaver."
+      },
+      "dek": {
+        "ru": "«День после» без ответа «кто учит детей» — не стратегия, а пауза.",
+        "en": "A “day after” with no answer to “who teaches the children” is not a strategy. It is a pause.",
+        "da": "En «dag efter» uden svar på «hvem underviser børnene» er ikke en strategi. Det er en pause."
+      },
+      "steel": {
+        "ru": "Дерадикализация после тотального поражения требовала оккупации, судов, новых институтов — не ожидания, что люди «навоюются».",
+        "en": "Deradicalisation after total defeat required occupation, courts, new institutions — not the hope that people would “tire of war”.",
+        "da": "Deradikalisering efter et totalt nederlag krævede besættelse, domstole, nye institutioner — ikke et håb om, at folk ville «kriges trætte»."
+      },
+      "cite": {
+        "ru": "Помета на полях",
+        "en": "A note in the margin",
+        "da": "En marginalnote"
+      },
+      "citeNote": {
+        "ru": "У Газы нет готового внешнего администратора на двадцать лет.",
+        "en": "Gaza has no ready external administrator for twenty years.",
+        "da": "Gaza har ingen færdig ydre administrator i tyve år."
+      },
+      "body": {
+        "ru": "Дерадикализация после тотального поражения (Германия, Япония) требовала оккупации, судов, новых институтов — не ожидания, что люди «навоюются». Уничтожение сети тактично, но деньги и следующие поколения никуда не денутся, если не решить образование и «ось сопротивления».",
+        "en": "Deradicalisation after total defeat (Germany, Japan) required occupation, courts, new institutions — not the hope that people would simply “fight themselves tired”. Destroying a network is tactically coherent, but money and the next generations will not vanish unless education and the “axis of resistance” are addressed.",
+        "da": "Deradikalisering efter et totalt nederlag (Tyskland, Japan) krævede besættelse, domstole, nye institutioner — ikke et håb om, at folk ville «kriges trætte». At ødelægge et net er taktisk sammenhængende, men penge og de næste generationer forsvinder ikke, medmindre uddannelse og «modstandsaksen» tages op."
+      },
+      "crack": {
+        "ru": "У Газы нет очевидного внешнего администратора, которого регион готов терпеть двадцать лет. «День после» без ответа «кто учит детей» — не стратегия, а пауза.",
+        "en": "Gaza has no obvious external administrator the region is prepared to tolerate for twenty years. A “day after” with no answer to “who teaches the children” is not a strategy. It is a pause.",
+        "da": "Gaza har ingen indlysende ydre administrator, som regionen vil tåle i tyve år. En «dag efter» uden svar på «hvem underviser børnene» er ikke en strategi. Det er en pause."
+      },
+      "note": {
+        "ru": "Тактика уничтожения сети не отвечает на вопрос воспитания. Это не довод «нельзя уничтожать». Это довод «этого мало».",
+        "en": "The tactic of destroying a network does not answer the question of education. That is not an argument against destroying it. It is an argument that it is not enough.",
+        "da": "Taktikken med at ødelægge et net besvarer ikke spørgsmålet om opdragelse. Det er ikke et argument for, at man ikke må ødelægge. Det er et argument for, at det ikke slår til."
+      }
+    }
+  ],
+  "guess": {
+    "correct": "strike",
+    "q": {
+      "ru": "Соразмерность в войне меряется чем?",
+      "en": "In war, proportionality is measured by what?",
+      "da": "Hvad måles proportionalitet i krig med?"
+    },
+    "options": [
+      {
+        "id": "bodies",
+        "text": {
+          "ru": "Числом жертв с двух сторон",
+          "en": "The number of dead on both sides",
+          "da": "Antallet af døde på begge sider"
+        }
+      },
+      {
+        "id": "strike",
+        "text": {
+          "ru": "Ожидаемым гражданским вредом против конкретной военной выгоды этого удара",
+          "en": "Expected civilian harm against the concrete military advantage of that strike",
+          "da": "Forventet civil skade sat over for den konkrete militære fordel ved netop dette angreb"
+        }
+      },
+      {
+        "id": "first",
+        "text": {
+          "ru": "Тем, кто начал первым",
+          "en": "Who started first",
+          "da": "Hvem der begyndte først"
+        }
+      }
+    ]
+  },
+  "docs": {
+    "aquinas": {
+      "kind": { "ru": "книга", "en": "book", "da": "bog" },
+      "title": {
+        "ru": "Aquinas, Summa Theologiae, II–II, q.40",
+        "en": "Aquinas, Summa Theologiae, II–II, q.40",
+        "da": "Aquinas, Summa Theologiae, II–II, q.40"
+      },
+      "body": {
+        "ru": "Три условия войны: законная власть, справедливая причина, правильное намерение. Это условия начала, не индульгенция на любое средство.",
+        "en": "Three conditions for war: legitimate authority, just cause, right intention. These are conditions for beginning, not an indulgence for any means.",
+        "da": "Tre betingelser for krig: lovlig myndighed, retfærdig grund, ret hensigt. Det er betingelser for at begynde, ikke en aflad for ethvert middel."
+      }
+    },
+    "walzer": {
+      "kind": { "ru": "книга", "en": "book", "da": "bog" },
+      "title": {
+        "ru": "Walzer, Just and Unjust Wars",
+        "en": "Walzer, Just and Unjust Wars",
+        "da": "Walzer, Just and Unjust Wars"
+      },
+      "body": {
+        "ru": "Гражданских нельзя делать целью. Побочный вред — только если ненамеренный, необходимый и соразмерный цели удара. Отдельно — спорное исключение supreme emergency.",
+        "en": "Civilians may not be made the target. Collateral harm — only if unintended, necessary, and proportionate to the aim of the strike. Separately — the disputed exception of supreme emergency.",
+        "da": "Civile må ikke gøres til mål. Sideordnede skader — kun hvis utilsigtede, nødvendige og proportionale med angrebets formål. Særskilt — det omstridte undtagelse supreme emergency."
+      }
+    },
+    "api51": {
+      "kind": { "ru": "норма", "en": "norm", "da": "norm" },
+      "title": {
+        "ru": "Доп. протокол I, ст. 51(5)(b), 51(7), 51(8)",
+        "en": "Additional Protocol I, arts. 51(5)(b), 51(7), 51(8)",
+        "da": "Tillægsprotokol I, art. 51(5)(b), 51(7), 51(8)"
+      },
+      "body": {
+        "ru": "51(5)(b). Запрещается нападение, которое, как можно ожидать, попутно повлечёт потери среди гражданских, ранения гражданских, ущерб гражданским объектам или сочетание того и другого, чрезмерные по отношению к конкретному и прямому военному преимуществу, которое предполагается получить.\n\n51(7). Присутствие гражданских не делает пункт законным щитом.\n\n51(8). Нарушение этих запретов не освобождает стороны от их обязательств в отношении гражданских.",
+        "en": "51(5)(b). An attack is forbidden which may be expected to cause incidental loss of civilian life, injury to civilians, damage to civilian objects, or a combination thereof, which would be excessive in relation to the concrete and direct military advantage anticipated.\n\n51(7). The presence of civilians does not make a point a lawful shield.\n\n51(8). A breach of these prohibitions does not release the parties from their obligations toward civilians.",
+        "da": "51(5)(b). Et angreb er forbudt, som man kan forvente vil medføre tab blandt civile, sår blandt civile, skade på civile objekter eller en kombination heraf, der er overdreven i forhold til den konkrete og direkte militære fordel, man forventer at opnå.\n\n51(7). Tilstedeværelsen af civile gør ikke et punkt til et lovligt skjold.\n\n51(8). Brud på disse forbud fritager ikke parterne for deres forpligtelser over for civile."
+      }
+    },
+    "ihl14": {
+      "kind": { "ru": "норма", "en": "norm", "da": "norm" },
+      "title": {
+        "ru": "ICRC, Customary IHL, Rule 14",
+        "en": "ICRC, Customary IHL, Rule 14",
+        "da": "ICRC, Customary IHL, Rule 14"
+      },
+      "body": {
+        "ru": "Запрещено нападение, которое может причинить гражданский вред, чрезмерный относительно конкретного и прямого военного преимущества. Это обычная норма, не только договор 1977 года.",
+        "en": "An attack is forbidden which may cause civilian harm excessive in relation to the concrete and direct military advantage. This is a customary rule, not only a treaty of 1977.",
+        "da": "Et angreb er forbudt, som kan medføre civil skade, der er overdreven i forhold til den konkrete og direkte militære fordel. Det er en sædvaneretlig norm, ikke kun en traktat fra 1977."
+      }
+    },
+    "patten": {
+      "kind": { "ru": "доклад", "en": "report", "da": "rapport" },
+      "title": {
+        "ru": "Прамила Паттен, доклад Совету Безопасности, март 2024",
+        "en": "Pramila Patten, briefing to the Security Council, March 2024",
+        "da": "Pramila Patten, briefing til Sikkerhedsrådet, marts 2024"
+      },
+      "body": {
+        "ru": "Есть reasonable grounds полагать, что сексуальное насилие, включая изнасилования, произошло как минимум в трёх местах 7 октября. Часть жертв затем убили. В отношении заложников — clear and convincing information. ХАМАС отрицает. Комиссия ООН по расследованию фиксирует признаки в нескольких точках.",
+        "en": "There are reasonable grounds to believe that sexual violence, including rape, occurred in at least three locations on 7 October. Some of the victims were then killed. On hostages — clear and convincing information. Hamas denies this. The UN Commission of Inquiry records indications at several points.",
+        "da": "Der er reasonable grounds for at antage, at seksuel vold, herunder voldtægt, fandt sted på mindst tre steder den 7. oktober. Nogle af ofrene blev derefter dræbt. Om gidsler — clear and convincing information. Hamas benægter. FN’s undersøgelseskommission noterer tegn på flere punkter."
+      }
+    },
+    "hrw-oct7": {
+      "kind": { "ru": "отчёт", "en": "report", "da": "beretning" },
+      "title": {
+        "ru": "Human Rights Watch о 7 октября",
+        "en": "Human Rights Watch on 7 October",
+        "da": "Human Rights Watch om 7. oktober"
+      },
+      "body": {
+        "ru": "Убийства гражданских и захват заложников 7 октября HRW квалифицирует как преступления против человечности. Цифры держать как диапазон: около 1 200 убитых; из 1 195 у AFP/HRW около 815 гражданских; похищено около 250–253.",
+        "en": "HRW qualifies the killing of civilians and the taking of hostages on 7 October as crimes against humanity. Keep the figures as a range: about 1,200 killed; of 1,195 in AFP/HRW, about 815 civilians; about 250–253 taken.",
+        "da": "HRW betegner drab på civile og gidseltagning den 7. oktober som forbrydelser mod menneskeheden. Hold tallene som et interval: omkring 1.200 dræbt; af 1.195 hos AFP/HRW omkring 815 civile; omkring 250–253 taget."
+      }
+    },
+    "charter": {
+      "kind": { "ru": "документ", "en": "document", "da": "dokument" },
+      "title": {
+        "ru": "Хартия ХАМАСа, 1988 и документ 2017",
+        "en": "The Hamas Charter, 1988, and the 2017 document",
+        "da": "Hamas’ pagt, 1988, og dokumentet fra 2017"
+      },
+      "body": {
+        "ru": "1988, ст. 7: хадис об убийстве евреев; Израиль «будет существовать, пока ислам не уничтожит его»; джихад как единственное решение.\n\n2017: конфликт с «сионистским проектом», не с евреями «из-за религии»; непризнание Израиля сохраняется; цель — полное освобождение «от реки до моря».\n\nЭто два текста. Не одна цитата.",
+        "en": "1988, art. 7: a hadith on the killing of Jews; Israel “will exist until Islam obliterates it”; jihad as the only solution.\n\n2017: a conflict with the “Zionist project”, not with Jews “because of religion”; non-recognition of Israel remains; the aim is full liberation “from the river to the sea”.\n\nThese are two texts. Not one quotation.",
+        "da": "1988, art. 7: en hadith om drab på jøder; Israel «vil eksistere, indtil islam udsletter det»; jihad som eneste løsning.\n\n2017: en konflikt med det «zionistiske projekt», ikke med jøder «på grund af religion»; manglende anerkendelse af Israel består; målet er fuld befrielse «fra floden til havet».\n\nDet er to tekster. Ikke ét citat."
+      }
+    },
+    "icj": {
+      "kind": { "ru": "решение", "en": "decision", "da": "afgørelse" },
+      "title": {
+        "ru": "МС ООН, временные меры, январь 2024",
+        "en": "ICJ, provisional measures, January 2024",
+        "da": "ICJ, midlertidige forholdsregler, januar 2024"
+      },
+      "body": {
+        "ru": "Суд не установил геноцид. Он сказал: некоторые права, на которые ссылается ЮАР, правдоподобны. Выдал временные меры: предотвращать акты из ст. II Конвенции, наказывать подстрекательство, обеспечивать гуманитарный доступ. Правдоподобие права на защиту ≠ приговор.",
+        "en": "The Court did not find genocide. It said: some of the rights South Africa invoked are plausible. It issued provisional measures: prevent acts under art. II of the Convention, punish incitement, ensure humanitarian access. Plausibility of a right to protection is not a verdict.",
+        "da": "Retten fastslog ikke folkedrab. Den sagde: nogle af de rettigheder Sydafrika påberåbte sig, er plausible. Den udstedte midlertidige forholdsregler: forhindre handlinger efter art. II i konventionen, straffe ophidselse, sikre humanitær adgang. Et plausibelt beskyttelseskrav er ikke en dom."
+      }
+    },
+    "wsj": {
+      "kind": { "ru": "статья", "en": "article", "da": "artikel" },
+      "title": {
+        "ru": "WSJ, 25 октября 2023, об учениях в Иране",
+        "en": "WSJ, 25 October 2023, on drills in Iran",
+        "da": "WSJ, 25. oktober 2023, om øvelser i Iran"
+      },
+      "body": {
+        "ru": "Около 500 боевиков ХАМАСа и Исламского джихада — спецподготовка у КСИР/«Кудс», в том числе сентябрь 2023; присутствовал Эсмаил Каани. США: регулярные тренировки прокси да, операционной связи этих учений с датой 7 октября Вашингтон не подтверждает. Дата «23 сентября» слишком точна без первичного документа.",
+        "en": "About 500 Hamas and Islamic Jihad fighters — special training with the IRGC/Quds Force, including September 2023; Esmail Qaani was present. The US: regular proxy training, yes; an operational link between those drills and the date of 7 October is not confirmed by Washington. The date “23 September” is too precise without a primary document.",
+        "da": "Omkring 500 Hamas- og Islamisk Jihad-kæmpere — specialtræning hos IRGC/Quds, blandt andet september 2023; Esmail Qaani var til stede. USA: jævnlig proxy-træning ja; en operationel forbindelse mellem disse øvelser og datoen 7. oktober bekræftes ikke af Washington. Datoen «23. september» er for præcis uden et primært dokument."
+      }
+    },
+    "cicero": {
+      "kind": { "ru": "книга", "en": "book", "da": "bog" },
+      "title": {
+        "ru": "Цицерон, De Officiis III.107",
+        "en": "Cicero, De Officiis III.107",
+        "da": "Cicero, De Officiis III.107"
+      },
+      "body": {
+        "ru": "С пиратом нет клятвы: он не законный враг (hostis), а communis hostis omnium — общий враг всех. Отсюда, а не из лозунга, ведут позднейшее hostis generis humani. Перенос рамки на организацию не переносит её на новорождённого.",
+        "en": "There is no oath with a pirate: he is not a lawful enemy (hostis) but communis hostis omnium — the common enemy of all. Later hostis generis humani is led from this, not from a slogan. Moving the frame onto an organisation does not move it onto a newborn.",
+        "da": "Der er ingen ed med en sørøver: han er ikke en lovlig fjende (hostis), men communis hostis omnium — alles fælles fjende. Senere hostis generis humani føres herfra, ikke fra et slogan. At flytte rammen over på en organisation flytter den ikke over på et nyfødt barn."
+      }
+    },
+    "cogat": {
+      "kind": { "ru": "таблица", "en": "table", "da": "tabel" },
+      "title": {
+        "ru": "COGAT, Food Consumption in the Gaza Strip — Red Lines, январь 2008",
+        "en": "COGAT, Food Consumption in the Gaza Strip — Red Lines, January 2008",
+        "da": "COGAT, Food Consumption in the Gaza Strip — Red Lines, januar 2008"
+      },
+      "table": [
+        {
+          "k": { "ru": "норма COGAT", "en": "COGAT norm", "da": "COGAT-norm" },
+          "v": { "ru": "2 279 ккал / чел. / день", "en": "2,279 kcal / person / day", "da": "2.279 kcal / person / dag" }
+        },
+        {
+          "k": { "ru": "грузовики, версии документа", "en": "trucks, versions of the document", "da": "lastbiler, dokumentets versioner" },
+          "v": { "ru": "106 / 131 / 170 в день", "en": "106 / 131 / 170 a day", "da": "106 / 131 / 170 om dagen" }
+        },
+        {
+          "k": { "ru": "до ужесточения 2007, оценка Gisha", "en": "before the 2007 tightening, Gisha’s estimate", "da": "før stramningen i 2007, Gishas skøn" },
+          "v": { "ru": "≈ 400 грузовиков в день", "en": "≈ 400 trucks a day", "da": "≈ 400 lastbiler om dagen" }
+        },
+        {
+          "k": { "ru": "в период ограничений, оценка Gisha", "en": "under the restrictions, Gisha’s estimate", "da": "under begrænsningerne, Gishas skøn" },
+          "v": { "ru": "≈ 67 грузовиков в день", "en": "≈ 67 trucks a day", "da": "≈ 67 lastbiler om dagen" }
+        },
+        {
+          "k": { "ru": "позиция минобороны Израиля", "en": "Israel’s Defence Ministry", "da": "Israels forsvarsministerium" },
+          "v": { "ru": "черновик; политику по нему не вели", "en": "a draft; policy was not run from it", "da": "et udkast; politikken blev ikke ført efter det" }
+        }
+      ],
+      "body": {
+        "ru": "Gisha добилась публикации после суда. Даже если это черновик, жанр — расчёт минимума жизни под давлением.",
+        "en": "Gisha obtained publication after a court case. Even if this is a draft, the genre is a calculation of a minimum of life under pressure.",
+        "da": "Gisha fik offentliggørelsen efter en retssag. Selv om det er et udkast, er genren et regnskab over et livsminimum under pres."
+      }
+    },
+    "jaspers": {
+      "kind": { "ru": "книга", "en": "book", "da": "bog" },
+      "title": {
+        "ru": "Карл Ясперс, Вопрос о виновности",
+        "en": "Karl Jaspers, The Question of German Guilt",
+        "da": "Karl Jaspers, Die Schuldfrage"
+      },
+      "body": {
+        "ru": "Четыре регистра: уголовная, политическая, моральная, метафизическая вина. Народ как таковой нельзя сделать подсудимым уголовного суда. Политическая ответственность за порядок при этом остаётся.",
+        "en": "Four registers: criminal, political, moral, metaphysical guilt. A people as such cannot be made the defendant in a criminal court. Political responsibility for the order remains.",
+        "da": "Fire registre: strafferetlig, politisk, moralsk, metafysisk skyld. Et folk som sådant kan ikke gøres til tiltalt ved en straffedomstol. Det politiske ansvar for ordenen bliver tilbage."
+      }
+    },
+    "after-note": {
+      "kind": { "ru": "помета", "en": "note", "da": "note" },
+      "title": {
+        "ru": "Помета на полях",
+        "en": "A note in the margin",
+        "da": "En marginalnote"
+      },
+      "body": {
+        "ru": "Исторические случаи дерадикализации после тотального поражения требовали институтов. У Газы нет готового внешнего администратора на двадцать лет. Вопрос «кто учит детей» не закрывается уничтожением сети.",
+        "en": "Historical cases of deradicalisation after total defeat required institutions. Gaza has no ready external administrator for twenty years. The question “who teaches the children” is not closed by destroying a network.",
+        "da": "Historiske tilfælde af deradikalisering efter totalt nederlag krævede institutioner. Gaza har ingen færdig ydre administrator i tyve år. Spørgsmålet «hvem underviser børnene» lukkes ikke ved at ødelægge et net."
+      }
+    }
+  }
+}

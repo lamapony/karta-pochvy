@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light" />
+<meta name="theme-color" content="#FFFFFF" />
+<meta name="description" content="" />
+<title>Карта почвы</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Piazzolla:ital,opsz,wght@0,8..30,400;0,8..30,500;1,8..30,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --color-page: #FFFFFF;
+    --color-ink: #111111;
+    --color-ink-soft: #5A5A5A;
+    --color-cite: #1543C7;
+    --font-display: "Piazzolla", "Source Serif 4", "Iowan Old Style", Palatino, serif;
+    --font-body: "Source Serif 4", "Iowan Old Style", Palatino, serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+    --text-kicker: 13px;
+    --tracking-wide: 0.16em;
+    --pad-inline: clamp(1.5rem, 8vw, 7.5rem);
+    --pad-block: clamp(3rem, 10vh, 5rem);
+    --measure: 36em;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; }
+  html { background: var(--color-page); }
+  body {
+    color: var(--color-ink);
+    background: var(--color-page);
+    font-family: var(--font-body);
+    font-optical-sizing: auto;
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection { background: var(--color-cite); color: var(--color-page); }
+
+  :focus { outline: none; }
+  :focus-visible {
+    outline: 2px solid var(--color-cite);
+    outline-offset: 3px;
+  }
+
+  .skip {
+    position: absolute;
+    inset-inline-start: 1rem;
+    top: -4rem;
+    z-index: 2;
+    padding: 0.5rem 0.75rem;
+    background: var(--color-page);
+    color: var(--color-cite);
+    font-size: 1rem;
+  }
+  .skip:focus { top: 1rem; }
+
+  .sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  button, input {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+  button { cursor: pointer; text-align: inherit; }
+  input {
+    width: 100%;
+    min-height: 44px;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    border-bottom: 1px solid var(--color-ink);
+    border-radius: 0;
+    caret-color: var(--color-cite);
+  }
+  input::placeholder { color: var(--color-ink-soft); opacity: 1; }
+
+  a {
+    color: var(--color-cite);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    text-decoration-skip-ink: auto;
+  }
+  a:hover { text-decoration-thickness: 2px; }
+
+  #app { min-height: 100svh; }
+
+  .stage {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--pad-block) var(--pad-inline);
+    padding-top: max(var(--pad-block), env(safe-area-inset-top));
+    padding-bottom: max(var(--pad-block), env(safe-area-inset-bottom));
+  }
+  .stage.lang { align-items: flex-start; }
+
+  .kicker {
+    margin: 0 0 2rem;
+    color: var(--color-ink-soft);
+    font-family: var(--font-mono);
+    font-size: var(--text-kicker);
+    font-weight: 500;
+    letter-spacing: var(--tracking-wide);
+    line-height: 18px;
+    text-transform: uppercase;
+    text-wrap: pretty;
+  }
+  .stage.spread .kicker,
+  .stage.guess .kicker {
+    margin-bottom: 1.75rem;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: none;
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .stage.guess .kicker {
+    font-family: var(--font-mono);
+    font-size: var(--text-kicker);
+    font-weight: 500;
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    line-height: 18px;
+  }
+  .stage.phrase .kicker,
+  .stage.doc .kicker { text-align: center; }
+
+  .lang-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15em;
+  }
+  .lang-list button {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 9vw, 5.5rem);
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    min-height: 44px;
+    text-wrap: balance;
+  }
+  .lang-list button:hover { color: var(--color-cite); }
+
+  .headline {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 2.2vw + 1rem, 3rem);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    text-wrap: balance;
+    max-width: 22em;
+  }
+  .stage.spread .headline,
+  .stage.guess .headline,
+  .stage.phrase .headline,
+  .stage.doc .headline {
+    margin-inline: auto;
+    text-align: center;
+  }
+  .stage.guess .headline { max-width: 18em; }
+  .stage.doc .headline { text-align: start; margin-inline: 0; }
+
+  .word {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(3.5rem, 12vw, 7.5rem);
+    font-weight: 500;
+    letter-spacing: -0.035em;
+    line-height: 0.95;
+    text-align: center;
+    text-wrap: balance;
+  }
+  .others {
+    margin: 0.75rem 0 0;
+    color: var(--color-ink-soft);
+    font-family: var(--font-mono);
+    font-size: var(--text-kicker);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    line-height: 18px;
+    text-align: center;
+  }
+  .false {
+    margin: 1.5rem 0 0;
+    color: var(--color-ink-soft);
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: line-through 2px var(--color-ink);
+  }
+  .number {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(4.5rem, 14vw, 8.75rem);
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    line-height: 0.95;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+  }
+  .unit {
+    margin: 0.5rem 0 2.5rem;
+    color: var(--color-ink-soft);
+    font-family: var(--font-mono);
+    font-size: var(--text-kicker);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    line-height: 18px;
+    text-align: center;
+    text-transform: lowercase;
+  }
+  .display-head {
+    margin: 0.25rem auto 0;
+    max-width: 22em;
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 1vw + 1rem, 1.375rem);
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    line-height: 1.4;
+    text-align: center;
+    text-wrap: pretty;
+  }
+
+  .dek {
+    margin: 1.75rem auto 0;
+    max-width: 22em;
+    color: var(--color-ink-soft);
+    font-family: var(--font-display);
+    font-size: clamp(1.125rem, 0.6vw + 1rem, 1.375rem);
+    font-style: italic;
+    line-height: 1.45;
+    text-align: center;
+    text-wrap: pretty;
+  }
+  .steel {
+    margin: 3rem auto 0;
+    max-width: 28em;
+    color: var(--color-ink-soft);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.625;
+    text-align: center;
+    text-wrap: pretty;
+  }
+
+  .cite-block {
+    margin: 3rem auto 0;
+    max-width: 28em;
+    text-align: center;
+  }
+  .cite {
+    color: var(--color-cite);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.5;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    min-height: 44px;
+  }
+  .cite:hover { text-decoration-thickness: 2px; }
+  .cite-note {
+    margin: 0.5rem 0 0;
+    color: var(--color-ink-soft);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+  }
+
+  .phrases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: min(100%, 40rem);
+    margin-inline: auto;
+  }
+  .phrases button.choice,
+  .opts button {
+    font-family: var(--font-display);
+    font-size: clamp(1.35rem, 1.4vw + 1rem, 2.25rem);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+    text-align: center;
+    text-wrap: pretty;
+    min-height: 44px;
+    max-width: 22em;
+  }
+  .phrases button.choice:hover,
+  .opts button:hover { color: var(--color-cite); }
+  .own-toggle {
+    color: var(--color-ink-soft);
+    font-family: var(--font-display);
+    font-size: 1.375rem;
+    font-style: italic;
+    line-height: 1.45;
+    min-height: 44px;
+  }
+  .own-toggle:hover { color: var(--color-cite); }
+  .own { width: min(100%, 28rem); margin-inline: auto; }
+  .own[hidden] { display: none; }
+
+  .opts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    width: min(100%, 40rem);
+    margin: 2.5rem auto 0;
+  }
+  .opts button {
+    font-family: var(--font-body);
+    font-size: clamp(1.125rem, 0.4vw + 1rem, 1.25rem);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.5;
+    max-width: 28em;
+  }
+  .wait {
+    margin: 3rem 0 0;
+    color: var(--color-ink-soft);
+    font-family: var(--font-display);
+    font-size: 1.125rem;
+    font-style: italic;
+    line-height: 1.45;
+    text-align: center;
+  }
+
+  .essay {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: 0 var(--pad-inline) 7rem;
+    padding-bottom: max(7rem, env(safe-area-inset-bottom));
+  }
+  .essay p {
+    margin: 0 0 1.15em;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    text-wrap: pretty;
+    hyphens: auto;
+  }
+  .essay p:last-child { margin-bottom: 0; }
+  .essay .prose + .prose { margin-top: 2.25rem; }
+  .essay .note {
+    margin-top: 2.25rem;
+    color: var(--color-ink-soft);
+    font-style: italic;
+  }
+
+  table {
+    width: 100%;
+    margin: 0 0 1.25rem;
+    border-collapse: collapse;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  th, td {
+    padding: 0.65rem 0;
+    border-bottom: 1px solid color-mix(in srgb, var(--color-ink) 12%, transparent);
+    vertical-align: top;
+    text-align: start;
+  }
+  th {
+    width: 48%;
+    color: var(--color-ink-soft);
+    font-weight: 400;
+  }
+  td { font-variant-numeric: tabular-nums; }
+
+  @media (max-width: 40rem) {
+    tr { display: block; padding-block: 0.75rem; }
+    th, td {
+      display: block;
+      width: auto;
+      border: 0;
+      padding: 0.15rem 0;
+    }
+    tr { border-bottom: 1px solid color-mix(in srgb, var(--color-ink) 12%, transparent); }
+  }
+
+  .fall {
+    margin: 3.5rem 0 0;
+  }
+  .fall a {
+    color: var(--color-cite);
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 0.6vw + 1rem, 1.5rem);
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    line-height: 1.35;
+    text-wrap: pretty;
+  }
+
+  .doc-page {
+    max-width: 36em;
+    margin: 0 auto;
+  }
+  .doc-page .kicker { text-align: start; }
+  .doc-page .headline { max-width: none; margin-bottom: 1.5rem; }
+  .doc-page p {
+    margin: 0 0 1.15em;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    text-wrap: pretty;
+  }
+  .doc-page .fall { margin-top: 2.5rem; }
+
+</style>
+</head>
+<body>
+<a class="skip" href="#app">К тексту</a>
+<main id="app" tabindex="-1"></main>
+<script>
+const KEYS = [
+  { re: /октябр|контекст|оккупац|ум[ыи]сел|резн|october|occupation|intent|massacre|oktober|besætt|forsæt|massakre|sammenhæng/i, folders: ["intent", "word", "blockade"] },
+  { re: /дет|самооборон|соразмер|жертв|газ[аеуы]|children|self-defen|gaza|proportional|børn|selvforsvar|dør|dying/i, folders: ["means", "intent", "blockade"] },
+  { re: /хамас|уничтож|переговор|разговарив|марионет|hamas|destroy|talking|udslette|marionet|proxy/i, folders: ["proxy", "guilt", "after"] },
+  { re: /геноцид|genocide|folkedrab/i, folders: ["word", "intent"] },
+  { re: /блокад|калор|грузовик|blockade|calorie|truck|blokade|kalor|lastbil/i, folders: ["blockade", "means"] },
+  { re: /вин[аыу]|народ|мирн|guilt|people|civilian|skyld|folk|uskyld/i, folders: ["guilt", "violence"] },
+  { re: /учебник|после|воспитан|институт|textbook|after|educat|lærebog|institution|undervis/i, folders: ["after", "proxy"] },
+  { re: /насил|violen|vold|just war|retfærdig krig/i, folders: ["violence", "means"] }
+];
+
+const LANGS = ["da", "en", "ru"];
+const LANG_LABEL = { da: "Dansk", en: "English", ru: "Русский" };
+
+let DATA = null;
+const state = {
+  lang: null,
+  phraseId: null,
+  phraseText: null,
+  openIds: [],
+  unknown: false,
+  guessed: false,
+  guessOk: null,
+  docId: null,
+  seen: { folders: [], docs: [] }
+};
+
+const app = document.getElementById("app");
+const skip = document.querySelector(".skip");
+
+const t = (field) => {
+  if (field == null) return "";
+  if (typeof field === "string") return field;
+  return field[state.lang] || field.ru || "";
+};
+
+function U(key) {
+  return DATA.ui[state.lang][key];
+}
+
+function escapeHtml(s) {
+  return String(s)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function paras(text) {
+  return String(text)
+    .split(/\n\n+/)
+    .map((p) => `<p>${escapeHtml(p)}</p>`)
+    .join("");
+}
+
+function folderById(id) {
+  return DATA.folders.find((f) => f.id === id);
+}
+
+function matchOwn(text) {
+  const hit = KEYS.find((k) => k.re.test(text));
+  return hit ? hit.folders : [];
+}
+
+function go(hash) {
+  location.hash = hash;
+}
+
+function parseHash() {
+  const raw = location.hash.replace(/^#\/?/, "");
+  const parts = raw.split("/").filter(Boolean);
+  if (!parts.length) return { screen: "lang" };
+  const lang = LANGS.includes(parts[0]) ? parts[0] : null;
+  if (!lang) return { screen: "lang" };
+  if (parts.length === 1 || parts[1] === "phrase") return { screen: "phrase", lang };
+  if (parts[1] === "doc" && parts[2]) return { screen: "doc", lang, docId: parts[2] };
+  const folder = folderById(parts[1]);
+  if (!folder) return { screen: "phrase", lang };
+  if (parts[2] && DATA.docs[parts[2]]) return { screen: "doc", lang, docId: parts[2] };
+  if (folder.guess && !state.guessed) return { screen: "guess", lang, folder };
+  return { screen: "folder", lang, folder };
+}
+
+function persist() {
+  sessionStorage.setItem("pochva", JSON.stringify({
+    lang: state.lang,
+    phraseId: state.phraseId,
+    phraseText: state.phraseText,
+    openIds: state.openIds,
+    unknown: state.unknown,
+    guessed: state.guessed,
+    guessOk: state.guessOk,
+    seen: state.seen
+  }));
+}
+
+function restore() {
+  try {
+    const saved = JSON.parse(sessionStorage.getItem("pochva") || "null");
+    if (saved) Object.assign(state, saved);
+    if (!state.seen || !Array.isArray(state.seen.folders)) {
+      state.seen = { folders: [], docs: [] };
+    }
+  } catch (_) {}
+}
+
+function markSeen(type, id) {
+  if (!id || !state.seen[type]) return;
+  if (!state.seen[type].includes(id)) state.seen[type].push(id);
+}
+
+function ring() {
+  const ids = [];
+  for (const id of state.openIds || []) if (!ids.includes(id)) ids.push(id);
+  for (const f of DATA.folders) if (!ids.includes(f.id)) ids.push(f.id);
+  return ids;
+}
+
+function nextStep(folder, docId) {
+  if (folder) {
+    const unread = folder.docs.filter((id) => id !== docId && !state.seen.docs.includes(id));
+    if (unread[0]) {
+      const d = DATA.docs[unread[0]];
+      const label = unread[0] === folder.docs[0] ? t(folder.cite) : t(d.title);
+      return { href: `#/${state.lang}/doc/${unread[0]}`, label };
+    }
+  }
+  const ids = ring();
+  const start = folder ? ids.indexOf(folder.id) : -1;
+  const rest = start >= 0 ? ids.slice(start + 1).concat(ids.slice(0, start)) : ids;
+  for (const id of rest) {
+    if (!state.seen.folders.includes(id)) {
+      const f = folderById(id);
+      return { href: `#/${state.lang}/${id}`, label: t(f.headline) };
+    }
+  }
+  for (const f of DATA.folders) {
+    for (const id of f.docs) {
+      if (!state.seen.docs.includes(id)) {
+        return { href: `#/${state.lang}/doc/${id}`, label: t(DATA.docs[id].title) };
+      }
+    }
+  }
+  return { href: `#/${state.lang}/phrase`, label: U("again") };
+}
+
+function fallHtml(step) {
+  return `<p class="fall"><a href="${step.href}">${escapeHtml(step.label)}</a></p>`;
+}
+
+function setLang(lang) {
+  state.lang = lang;
+  document.documentElement.lang = lang === "da" ? "da" : lang;
+  document.title = DATA.ui[lang].title;
+  skip.textContent = DATA.ui[lang].skip;
+  if (state.phraseId && state.phraseId !== "own") {
+    const p = DATA.phrases.find((x) => x.id === state.phraseId);
+    if (p) state.phraseText = t(p.text);
+  }
+  persist();
+}
+
+function choosePhrase(p, unknown) {
+  state.phraseId = p.id;
+  state.phraseText = typeof p.text === "string" ? p.text : t(p.text);
+  state.openIds = p.folders && p.folders.length ? p.folders : DATA.folders.map((f) => f.id);
+  state.unknown = !!unknown;
+  state.guessed = false;
+  state.guessOk = null;
+  persist();
+  go(`#/${state.lang}/${state.openIds[0]}`);
+}
+
+function renderLang() {
+  app.innerHTML = `
+    <div class="stage lang enter">
+      <p class="kicker">${escapeHtml(DATA.ui.ru.langKicker)}</p>
+      <div class="lang-list">
+        ${LANGS.map((l) => `<button type="button" data-lang="${l}">${LANG_LABEL[l]}</button>`).join("")}
+      </div>
+    </div>`;
+  app.querySelectorAll("[data-lang]").forEach((btn) => {
+    btn.onclick = () => {
+      setLang(btn.dataset.lang);
+      go(`#/${btn.dataset.lang}/phrase`);
+    };
+  });
+}
+
+function renderPhrase() {
+  const phrases = DATA.phrases.map((p) => (
+    `<button type="button" class="choice" data-id="${p.id}">${escapeHtml(t(p.text))}</button>`
+  )).join("");
+  app.innerHTML = `
+    <div class="stage phrase enter">
+      <p class="kicker">${escapeHtml(U("phraseQ"))}</p>
+      <div class="phrases">
+        ${phrases}
+        <button type="button" class="own-toggle" id="own-toggle">${escapeHtml(U("own"))}</button>
+        <form class="own" id="own" hidden>
+          <label class="sr" for="own-q">${escapeHtml(U("ownLabel"))}</label>
+          <input id="own-q" name="q" maxlength="180" autocomplete="off" placeholder="${escapeHtml(U("own"))}" />
+          <button class="sr" type="submit">${escapeHtml(U("own"))}</button>
+        </form>
+      </div>
+    </div>`;
+  app.querySelectorAll(".choice").forEach((btn) => {
+    btn.onclick = () => choosePhrase(DATA.phrases.find((p) => p.id === btn.dataset.id));
+  });
+  const form = document.getElementById("own");
+  document.getElementById("own-toggle").onclick = () => {
+    form.hidden = !form.hidden;
+    if (!form.hidden) document.getElementById("own-q").focus();
+  };
+  form.onsubmit = (e) => {
+    e.preventDefault();
+    const text = new FormData(form).get("q").toString().trim();
+    if (!text) return;
+    const folders = matchOwn(text);
+    choosePhrase({ id: "own", text, folders }, !folders.length);
+  };
+}
+
+function renderGuess(folder) {
+  const g = DATA.guess;
+  app.innerHTML = `
+    <div class="stage guess enter">
+      <p class="kicker">${escapeHtml(U("guessKicker"))}</p>
+      <h1 class="headline">${escapeHtml(t(g.q))}</h1>
+      <div class="opts">
+        ${g.options.map((o) => `<button type="button" data-id="${o.id}">${escapeHtml(t(o.text))}</button>`).join("")}
+      </div>
+      <p class="wait">${escapeHtml(U("guessWait"))}</p>
+    </div>`;
+  app.querySelectorAll(".opts button").forEach((btn) => {
+    btn.onclick = () => {
+      state.guessed = true;
+      state.guessOk = btn.dataset.id === g.correct;
+      persist();
+      go(`#/${state.lang}/doc/${folder.docs[0]}`);
+    };
+  });
+}
+
+function spreadHead(folder) {
+  const display = folder.display;
+  if (display && display.kind === "word") {
+    return `
+      <h1 class="word">${escapeHtml(t(display.word))}</h1>
+      <p class="others">${escapeHtml(t(display.others))}</p>
+      <p class="false">${escapeHtml(t(display.falseReading))}</p>
+      <p class="display-head">${escapeHtml(t(folder.headline))}</p>`;
+  }
+  if (display && display.kind === "number") {
+    return `
+      <h1 class="number">${escapeHtml(display.number)}</h1>
+      <p class="unit">${escapeHtml(t(display.unit))}</p>
+      <p class="display-head">${escapeHtml(t(folder.headline))}</p>`;
+  }
+  return `<h1 class="headline">${escapeHtml(t(folder.headline))}</h1>`;
+}
+
+function renderFolder(folder) {
+  markSeen("folders", folder.id);
+  persist();
+  const kicker = state.phraseText || t(folder.title);
+  const note = state.unknown
+    ? U("unknown")
+    : (folder.guess && state.guessed
+      ? U(state.guessOk ? "guessOk" : "guessBad")
+      : t(folder.note));
+  const next = nextStep(folder);
+
+  app.innerHTML = `
+    <div class="stage spread enter">
+      <p class="kicker">${escapeHtml(kicker)}</p>
+      ${spreadHead(folder)}
+      <p class="dek">${escapeHtml(t(folder.dek))}</p>
+      ${folder.display ? "" : `<p class="steel">${escapeHtml(t(folder.steel))}</p>`}
+      <div class="cite-block">
+        <a class="cite" href="#/${state.lang}/doc/${folder.docs[0]}">${escapeHtml(t(folder.cite))}</a>
+        ${folder.display ? "" : `<p class="cite-note">${escapeHtml(t(folder.citeNote))}</p>`}
+      </div>
+    </div>
+    <div class="essay">
+      <div class="prose">${paras(t(folder.body))}</div>
+      <div class="prose">${paras(t(folder.crack))}</div>
+      ${note ? `<p class="note">${escapeHtml(note)}</p>` : ""}
+      ${fallHtml(next)}
+    </div>`;
+}
+
+function renderDoc(id) {
+  const d = DATA.docs[id];
+  if (!d) {
+    go(`#/${state.lang}/phrase`);
+    return;
+  }
+  markSeen("docs", id);
+  persist();
+  let table = "";
+  if (d.table) {
+    table = `<table>${d.table.map((row) => `<tr><th scope="row">${escapeHtml(t(row.k))}</th><td>${escapeHtml(t(row.v))}</td></tr>`).join("")}</table>`;
+  }
+  const from = DATA.folders.find((f) => f.docs.includes(id));
+  app.innerHTML = `
+    <div class="stage doc">
+      <article class="doc-page enter">
+        <p class="kicker">${escapeHtml(t(d.kind))}</p>
+        <h1 class="headline">${escapeHtml(t(d.title))}</h1>
+        ${table}
+        ${paras(t(d.body))}
+        ${fallHtml(nextStep(from, id))}
+      </article>
+    </div>`;
+}
+
+function paint() {
+  if (!DATA) return;
+  const r = parseHash();
+  if (r.lang) setLang(r.lang);
+  state.docId = r.docId || null;
+  if (r.screen === "lang") return renderLang();
+  if (!state.lang) return go("#");
+  if (r.screen === "phrase") return renderPhrase();
+  if (r.screen === "guess") return renderGuess(r.folder);
+  if (r.screen === "doc") return renderDoc(r.docId);
+  return renderFolder(r.folder);
+}
+
+function selfCheck(data) {
+  const langs = ["ru", "en", "da"];
+  const need = ["headline", "dek", "steel", "cite", "citeNote", "body", "crack"];
+  for (const f of data.folders) {
+    for (const k of need) {
+      for (const L of langs) {
+        if (!f[k] || !f[k][L]) throw new Error(`missing ${f.id}.${k}.${L}`);
+      }
+    }
+  }
+  for (const id of Object.keys(data.docs)) {
+    for (const L of langs) {
+      if (!data.docs[id].body[L]) throw new Error(`missing doc ${id}.body.${L}`);
+    }
+  }
+}
+
+window.addEventListener("hashchange", paint);
+
+fetch("desk.json")
+  .then((r) => r.json())
+  .then((data) => {
+    selfCheck(data);
+    DATA = data;
+    restore();
+    paint();
+  });
+</script>
+</body>
+</html>
