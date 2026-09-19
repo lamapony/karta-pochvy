@@ -395,6 +395,19 @@
   .fall {
     margin: 3.5rem 0 0;
   }
+  .fall + .fall { margin-top: 2.5rem; }
+  .fall-kicker {
+    margin: 0 0 1.25rem;
+    color: var(--color-ink-soft);
+    font-family: var(--font-mono);
+    font-size: var(--text-kicker);
+    font-weight: 500;
+    letter-spacing: var(--tracking-wide);
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+  .fall p { margin: 0 0 1.15em; }
+  .fall p:last-child { margin-bottom: 0; }
   .fall a {
     color: var(--color-cite);
     font-family: var(--font-display);
@@ -568,36 +581,43 @@ function ring() {
   return ids;
 }
 
-function nextStep(folder, docId) {
-  if (folder) {
-    const unread = folder.docs.filter((id) => id !== docId && !state.seen.docs.includes(id));
-    if (unread[0]) {
-      const d = DATA.docs[unread[0]];
-      const label = unread[0] === folder.docs[0] ? t(folder.cite) : t(d.title);
-      return { href: `#/${state.lang}/doc/${unread[0]}`, label };
-    }
-  }
-  const ids = ring();
-  const start = folder ? ids.indexOf(folder.id) : -1;
-  const rest = start >= 0 ? ids.slice(start + 1).concat(ids.slice(0, start)) : ids;
-  for (const id of rest) {
-    if (!state.seen.folders.includes(id)) {
-      const f = folderById(id);
-      return { href: `#/${state.lang}/${id}`, label: t(f.headline) };
-    }
-  }
-  for (const f of DATA.folders) {
-    for (const id of f.docs) {
-      if (!state.seen.docs.includes(id)) {
-        return { href: `#/${state.lang}/doc/${id}`, label: t(DATA.docs[id].title) };
-      }
-    }
-  }
-  return { href: `#/${state.lang}/phrase`, label: U("again") };
+function docStep(folder, docId) {
+  if (!folder) return null;
+  const unread = folder.docs.filter((id) => id !== docId && !state.seen.docs.includes(id));
+  if (!unread[0]) return null;
+  const d = DATA.docs[unread[0]];
+  const label = unread[0] === folder.docs[0] ? t(folder.cite) : t(d.title);
+  return { href: `#/${state.lang}/doc/${unread[0]}`, label };
 }
 
-function fallHtml(step) {
-  return `<p class="fall"><a href="${step.href}">${escapeHtml(step.label)}</a></p>`;
+function otherArgs(folder) {
+  const open = (state.openIds || []).filter((id) => folderById(id));
+  const ids = open.length ? open : ring();
+  const short = ids.length > 4;
+  const steps = ids
+    .filter((id) => !folder || id !== folder.id)
+    .map((id) => {
+      const f = folderById(id);
+      return { href: `#/${state.lang}/${id}`, label: t(short ? f.title : f.headline) };
+    });
+  const openDone = !open.length || open.every((id) => state.seen.folders.includes(id));
+  if (openDone) {
+    const extra = ring().find((id) => !open.includes(id) && !state.seen.folders.includes(id));
+    if (extra && !steps.some((s) => s.href === `#/${state.lang}/${extra}`)) {
+      const f = folderById(extra);
+      steps.push({ href: `#/${state.lang}/${extra}`, label: t(f.headline) });
+    } else if (!steps.length) {
+      steps.push({ href: `#/${state.lang}/phrase`, label: U("again") });
+    }
+  }
+  return steps;
+}
+
+function fallHtml(steps, kicker) {
+  const list = (Array.isArray(steps) ? steps : [steps]).filter(Boolean);
+  if (!list.length) return "";
+  const head = kicker ? `<p class="fall-kicker">${escapeHtml(kicker)}</p>` : "";
+  return `<div class="fall">${head}${list.map((step) => `<p><a href="${step.href}">${escapeHtml(step.label)}</a></p>`).join("")}</div>`;
 }
 
 function setLang(lang) {
@@ -676,8 +696,19 @@ function landingFolder() {
   return folderById((state.openIds && state.openIds[0]) || "means") || DATA.folders[0];
 }
 
+function currentGuess() {
+  const folder = landingFolder();
+  if (folder && folder.guess && folder.guess.q) return folder.guess;
+  const means = folderById("means");
+  return (means && means.guess) || null;
+}
+
 function renderGuess() {
-  const g = DATA.guess;
+  const g = currentGuess();
+  if (!g) {
+    go(`#/${state.lang}/${landingFolder().id}`);
+    return;
+  }
   app.innerHTML = `
     <div class="stage guess enter">
       <p class="kicker">${escapeHtml(U("guessKicker"))}</p>
@@ -721,10 +752,13 @@ function renderFolder(folder) {
   const kicker = state.phraseText || t(folder.title);
   const notes = [];
   if (state.unknown) notes.push(U("unknown"));
-  if (state.guessed) notes.push(U(state.guessOk ? "guessOk" : "guessBad"));
-  else if (!state.unknown) notes.push(t(folder.note));
+  if (state.guessed && folder.id === landingFolder().id) {
+    const g = currentGuess();
+    notes.push(t(state.guessOk ? g.ok : g.bad) || U(state.guessOk ? "guessOk" : "guessBad"));
+  } else if (!state.unknown) {
+    notes.push(t(folder.note));
+  }
   const note = notes.filter(Boolean).join(" ");
-  const next = nextStep(folder);
 
   app.innerHTML = `
     <div class="stage spread enter">
@@ -741,7 +775,7 @@ function renderFolder(folder) {
       <div class="prose">${paras(t(folder.body))}</div>
       <div class="prose">${paras(t(folder.crack))}</div>
       ${note ? `<p class="note">${escapeHtml(note)}</p>` : ""}
-      ${fallHtml(next)}
+      ${fallHtml(otherArgs(folder), U("more"))}
     </div>`;
 }
 
@@ -767,7 +801,8 @@ function renderDoc(id) {
         ${d.url ? `<p><a href="${escapeHtml(d.url)}" rel="noopener">${escapeHtml(d.url)}</a></p>` : ""}
         ${table}
         ${paras(t(d.body))}
-        ${fallHtml(nextStep(from, id))}
+        ${fallHtml(docStep(from, id))}
+        ${fallHtml(otherArgs(from), U("more"))}
       </article>
     </div>`;
 }
@@ -805,6 +840,23 @@ function selfCheck(data) {
     for (const id of f.docs) {
       if (!data.docs[id]) throw new Error(`folder ${f.id} missing doc ${id}`);
     }
+    const g = f.guess;
+    if (!g || !g.correct || !g.q || !g.ok || !g.bad || !g.options) {
+      throw new Error(`folder ${f.id} missing guess`);
+    }
+    if (!g.options.some((o) => o.id === g.correct)) {
+      throw new Error(`folder ${f.id} guess.correct missing`);
+    }
+    for (const L of langs) {
+      if (!g.q[L] || !g.ok[L] || !g.bad[L]) throw new Error(`folder ${f.id} guess lang ${L}`);
+      for (const o of g.options) {
+        if (!o.text || !o.text[L]) throw new Error(`folder ${f.id} option ${o.id}.${L}`);
+      }
+    }
+  }
+  const guessQs = data.folders.map((f) => f.guess.q.ru);
+  if (new Set(guessQs).size !== guessQs.length) {
+    throw new Error("guess questions must differ by argument");
   }
   for (const p of data.phrases) {
     for (const L of langs) {
@@ -823,6 +875,12 @@ function selfCheck(data) {
     if (d.date == null) throw new Error(`missing doc ${id}.date`);
     if (d.url == null) throw new Error(`missing doc ${id}.url`);
   }
+  for (const L of langs) {
+    if (!data.ui[L] || !data.ui[L].more) throw new Error(`missing ui.${L}.more`);
+  }
+  for (const p of data.phrases) {
+    if (p.folders.length < 2) throw new Error(`phrase ${p.id} opens only one argument`);
+  }
 }
 
 window.addEventListener("hashchange", paint);
@@ -832,6 +890,15 @@ fetch("desk.json")
   .then((data) => {
     selfCheck(data);
     DATA = data;
+    const saved = { lang: state.lang, openIds: state.openIds, seen: state.seen };
+    state.lang = "ru";
+    state.openIds = ["intent", "word", "blockade"];
+    state.seen = { folders: ["intent"], docs: [] };
+    const sibs = otherArgs(folderById("intent")).map((s) => s.href);
+    Object.assign(state, saved);
+    if (!sibs.some((h) => h.endsWith("/word")) || !sibs.some((h) => h.endsWith("/blockade"))) {
+      throw new Error("otherArgs must list the other matched arguments");
+    }
     restore();
     paint();
   });

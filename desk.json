@@ -12,7 +12,8 @@
       "guessWait": "Статья откроется после ответа.",
       "guessOk": "Статья уже была в праве. Ответ — увидеть её, а не подобрать лозунг.",
       "guessBad": "Большинство жмёт на счётчик тел. Дальше — не мнение, а статья.",
-      "again": "После документов — следующая фраза, которую вы скажете вслух"
+      "again": "После документов — следующая фраза, которую вы скажете вслух",
+      "more": "Другие аргументы"
     },
     "en": {
       "title": "A map of the soil",
@@ -26,7 +27,8 @@
       "guessWait": "The article opens after you answer.",
       "guessOk": "The article was already in the law. The click is to see it, not to pick a slogan.",
       "guessBad": "Most people reach for the body count. What follows is not an opinion. It is the article.",
-      "again": "After the documents: the next sentence you will say out loud"
+      "again": "After the documents: the next sentence you will say out loud",
+      "more": "Other arguments"
     },
     "da": {
       "title": "Et kort over jorden",
@@ -40,7 +42,8 @@
       "guessWait": "Artiklen åbner, når du har svaret.",
       "guessOk": "Artiklen lå allerede i retten. Svaret er at se den, ikke at vælge et slogan.",
       "guessBad": "De fleste trykker på ligetælleren. Det der følger er ikke en mening. Det er artiklen.",
-      "again": "Efter dokumenterne: den næste sætning, du vil sige højt"
+      "again": "Efter dokumenterne: den næste sætning, du vil sige højt",
+      "more": "Andre argumenter"
     }
   },
   "phrases": [
@@ -327,6 +330,50 @@
   "folders": [
     {
       "id": "violence",
+      "guess": {
+        "correct": "art51",
+        "q": {
+          "ru": "Право на самооборону в Уставе — это что?",
+          "en": "The right of self-defence in the Charter is what?",
+          "da": "Retten til selvforsvar i Pagten er hvad?"
+        },
+        "options": [
+          {
+            "id": "blank",
+            "text": {
+              "ru": "Чистый лист на любые средства после нападения",
+              "en": "A blank sheet for any means after an attack",
+              "da": "Et blankt ark til ethvert middel efter et angreb"
+            }
+          },
+          {
+            "id": "art51",
+            "text": {
+              "ru": "Самооборона после вооружённого нападения, не отмена гуманитарного права",
+              "en": "Self-defence after an armed attack, not a repeal of humanitarian law",
+              "da": "Selvforsvar efter et væbnet angreb, ikke en ophævelse af den humanitære ret"
+            }
+          },
+          {
+            "id": "ban",
+            "text": {
+              "ru": "Запрет всякого насилия",
+              "en": "A ban on all violence",
+              "da": "Et forbud mod al vold"
+            }
+          }
+        ],
+        "ok": {
+          "ru": "Статья 51 даёт право после нападения. Она не говорит, каким снарядом отвечать.",
+          "en": "Article 51 gives a right after an attack. It does not say with which shell one may answer.",
+          "da": "Artikel 51 giver en ret efter et angreb. Den siger ikke med hvilken granat man må svare."
+        },
+        "bad": {
+          "ru": "Самооборона — не индульгенция. Дальше — условия начала, не лозунг.",
+          "en": "Self-defence is not an indulgence. What follows is the conditions for beginning, not a slogan.",
+          "da": "Selvforsvar er ikke en aflad. Det der følger er betingelserne for at begynde, ikke et slogan."
+        }
+      },
       "docs": [
         "aquinas",
         "walzer",
@@ -388,7 +435,50 @@
     },
     {
       "id": "means",
-      "guess": true,
+      "guess": {
+        "correct": "strike",
+        "q": {
+          "ru": "Соразмерность в войне меряется чем?",
+          "en": "In war, proportionality is measured by what?",
+          "da": "Hvad måles proportionalitet i krig med?"
+        },
+        "options": [
+          {
+            "id": "bodies",
+            "text": {
+              "ru": "Числом жертв с двух сторон",
+              "en": "The number of dead on both sides",
+              "da": "Antallet af døde på begge sider"
+            }
+          },
+          {
+            "id": "strike",
+            "text": {
+              "ru": "Ожидаемым гражданским вредом против конкретной военной выгоды этого удара",
+              "en": "Expected civilian harm against the concrete military advantage of that strike",
+              "da": "Forventet civil skade sat over for den konkrete militære fordel ved netop dette angreb"
+            }
+          },
+          {
+            "id": "first",
+            "text": {
+              "ru": "Тем, кто начал первым",
+              "en": "Who started first",
+              "da": "Hvem der begyndte først"
+            }
+          }
+        ],
+        "ok": {
+          "ru": "Статья уже была в праве. Ответ — увидеть её, а не подобрать лозунг.",
+          "en": "The article was already in the law. The click is to see it, not to pick a slogan.",
+          "da": "Artiklen lå allerede i retten. Svaret er at se den, ikke at vælge et slogan."
+        },
+        "bad": {
+          "ru": "Большинство жмёт на счётчик тел. Дальше — не мнение, а статья.",
+          "en": "Most people reach for the body count. What follows is not an opinion. It is the article.",
+          "da": "De fleste trykker på ligetælleren. Det der følger er ikke en mening. Det er artiklen."
+        }
+      },
       "docs": [
         "api51",
         "ihl14",
@@ -449,6 +539,50 @@
     },
     {
       "id": "intent",
+      "guess": {
+        "correct": "explain",
+        "q": {
+          "ru": "Контекст оккупации делает с 7 октября что?",
+          "en": "The context of occupation does what to 7 October?",
+          "da": "Besættelsens sammenhæng gør hvad ved 7. oktober?"
+        },
+        "options": [
+          {
+            "id": "excuse",
+            "text": {
+              "ru": "Снимает умысел и делает резню сопротивлением",
+              "en": "Removes intent and makes the massacre resistance",
+              "da": "Fjerner forsættet og gør massakren til modstand"
+            }
+          },
+          {
+            "id": "explain",
+            "text": {
+              "ru": "Может объяснять событие. Это не то же самое, что снимать умысел",
+              "en": "It can explain the event. That is not the same as removing intent",
+              "da": "Den kan forklare begivenheden. Det er ikke det samme som at fjerne forsættet"
+            }
+          },
+          {
+            "id": "cancel",
+            "text": {
+              "ru": "Обнуляет блокаду",
+              "en": "It cancels the blockade",
+              "da": "Den ophæver blokaden"
+            }
+          }
+        ],
+        "ok": {
+          "ru": "Объяснить историей и снять умысел — разные ходы.",
+          "en": "To explain by history and to remove intent are different moves.",
+          "da": "At forklare med historien og at fjerne forsættet er forskellige træk."
+        },
+        "bad": {
+          "ru": "Контекст не оправдывает резню. Резня не обнуляет блокаду. Дальше — различение, не лозунг.",
+          "en": "Context does not excuse a massacre. A massacre does not cancel a blockade. What follows is a distinction, not a slogan.",
+          "da": "Kontekst retfærdiggør ikke en massakre. En massakre ophæver ikke en blokade. Det der følger er en skelnen, ikke et slogan."
+        }
+      },
       "docs": [
         "patten",
         "hrw-oct7",
@@ -507,6 +641,50 @@
     },
     {
       "id": "word",
+      "guess": {
+        "correct": "intent",
+        "q": {
+          "ru": "Геноцид в Конвенции 1948 года — это что?",
+          "en": "In the 1948 Convention, genocide is what?",
+          "da": "I konventionen fra 1948 er folkedrab hvad?"
+        },
+        "options": [
+          {
+            "id": "bodies",
+            "text": {
+              "ru": "Очень много жертв",
+              "en": "A great many dead",
+              "da": "Rigtig mange døde"
+            }
+          },
+          {
+            "id": "intent",
+            "text": {
+              "ru": "Деяния плюс специальный умысел уничтожить группу как таковую",
+              "en": "Acts plus specific intent to destroy a group as such",
+              "da": "Handlinger plus et særligt forsæt om at ødelægge en gruppe som sådan"
+            }
+          },
+          {
+            "id": "speech",
+            "text": {
+              "ru": "Любое слово «уничтожить» в речи политиков",
+              "en": "Any use of “destroy” in a politician’s speech",
+              "da": "Ethvert «ødelægge» i en politikers tale"
+            }
+          }
+        ],
+        "ok": {
+          "ru": "Счётчик тел этого умысла не доказывает и не опровергает.",
+          "en": "A body count neither proves nor disproves that intent.",
+          "da": "En ligetæller hverken beviser eller afkræfter det forsæt."
+        },
+        "bad": {
+          "ru": "«Очень много жертв» — ложное чтение. Дальше — статья II, не лозунг.",
+          "en": "“A great many dead” is the false reading. What follows is Article II, not a slogan.",
+          "da": "«Rigtig mange døde» er den falske læsning. Det der følger er artikel II, ikke et slogan."
+        }
+      },
       "docs": [
         "charter",
         "icj",
@@ -587,6 +765,50 @@
     },
     {
       "id": "proxy",
+      "guess": {
+        "correct": "both",
+        "q": {
+          "ru": "ХАМАС в корпусе — это прежде всего что?",
+          "en": "In this corpus, Hamas is first of all what?",
+          "da": "I dette korpus er Hamas først og fremmest hvad?"
+        },
+        "options": [
+          {
+            "id": "iran",
+            "text": {
+              "ru": "Только рука Ирана",
+              "en": "Only Iran’s hand",
+              "da": "Kun Irans hånd"
+            }
+          },
+          {
+            "id": "both",
+            "text": {
+              "ru": "Организация со своей идеологией, которая может быть и частью чужой сети",
+              "en": "An organisation with its own ideology, which may also be part of someone else’s network",
+              "da": "En organisation med egen ideologi, som også kan være del af et fremmed net"
+            }
+          },
+          {
+            "id": "people",
+            "text": {
+              "ru": "Только народное сопротивление без хартии",
+              "en": "Only popular resistance, with no Charter",
+              "da": "Kun folkelig modstand, uden pagt"
+            }
+          }
+        ],
+        "ok": {
+          "ru": "Прокси и субъект не исключают друг друга.",
+          "en": "Proxy and subject do not cancel each other.",
+          "da": "Proxy og subjekt ophæver ikke hinanden."
+        },
+        "bad": {
+          "ru": "Свести всё к Ирану — снять субъектность. Свести к «сопротивлению» — убрать хартию.",
+          "en": "Reduce it all to Iran, and agency is stripped. Reduce it to “resistance”, and the Charter disappears.",
+          "da": "Reducer det hele til Iran, og subjektiviteten forsvinder. Reducer det til «modstand», og pagten forsvinder."
+        }
+      },
       "docs": [
         "wsj",
         "nbc-iran",
@@ -647,6 +869,50 @@
     },
     {
       "id": "blockade",
+      "guess": {
+        "correct": "genre",
+        "q": {
+          "ru": "Таблица 2 279 ккал говорит о чём?",
+          "en": "The 2,279 kcal table is about what?",
+          "da": "Tabellen med 2.279 kcal handler om hvad?"
+        },
+        "options": [
+          {
+            "id": "legal",
+            "text": {
+              "ru": "Что блокада законна, раз калории посчитаны",
+              "en": "That the blockade is lawful because the calories were counted",
+              "da": "At blokaden er lovlig, fordi kalorierne blev talt"
+            }
+          },
+          {
+            "id": "genre",
+            "text": {
+              "ru": "О жанре расчёта минимума жизни под давлением — даже если черновик «не применяли»",
+              "en": "The genre of calculating a minimum of life under pressure — even if the draft “was not applied”",
+              "da": "Genren at beregne et livsminimum under pres — også hvis udkastet «ikke blev anvendt»"
+            }
+          },
+          {
+            "id": "rafah",
+            "text": {
+              "ru": "Только о том, что Рафах закрыл Египет",
+              "en": "Only that Egypt closed Rafah",
+              "da": "Kun at Egypten lukkede Rafah"
+            }
+          }
+        ],
+        "ok": {
+          "ru": "Считать калории — уже политика, даже когда таблицу называют черновиком.",
+          "en": "To count calories is already politics, even when the table is called a draft.",
+          "da": "At tælle kalorier er allerede politik, også når tabellen kaldes et udkast."
+        },
+        "bad": {
+          "ru": "Цифра минимума не есть индульгенция на периметр. Дальше — жанр таблицы, не лозунг.",
+          "en": "A minimum figure is not an indulgence for a perimeter. What follows is the genre of the table, not a slogan.",
+          "da": "Et minimumstal er ikke en aflad for en perimeter. Det der følger er tabellens genre, ikke et slogan."
+        }
+      },
       "docs": [
         "cogat",
         "palmer",
@@ -716,6 +982,50 @@
     },
     {
       "id": "guilt",
+      "guess": {
+        "correct": "split",
+        "q": {
+          "ru": "Вина народа и ответственность организации — это что?",
+          "en": "The guilt of a people and the responsibility of an organisation are what?",
+          "da": "Et folks skyld og en organisations ansvar er hvad?"
+        },
+        "options": [
+          {
+            "id": "same",
+            "text": {
+              "ru": "Одно и то же: нет мирных",
+              "en": "The same thing: there are no civilians",
+              "da": "Det samme: der er ingen civile"
+            }
+          },
+          {
+            "id": "split",
+            "text": {
+              "ru": "Разные вещи: вина индивидуальна, политическая ответственность может быть коллективной",
+              "en": "Different things: guilt is individual; political responsibility can be collective",
+              "da": "Forskellige ting: skyld er individuel; politisk ansvar kan være kollektivt"
+            }
+          },
+          {
+            "id": "none",
+            "text": {
+              "ru": "Организация тоже не ответственна, если народ не виноват",
+              "en": "The organisation is not responsible either, if the people are not guilty",
+              "da": "Organisationen er heller ikke ansvarlig, hvis folket ikke er skyldigt"
+            }
+          }
+        ],
+        "ok": {
+          "ru": "Различение, не приговор. Ст. 33 запрещает коллективные наказания.",
+          "en": "A distinction, not a verdict. Art. 33 forbids collective penalties.",
+          "da": "En skelnen, ikke en dom. Art. 33 forbyder kollektive straffe."
+        },
+        "bad": {
+          "ru": "Формула «нет мирных» ломает различение. Обратная ловушка — снять ответственность с организации.",
+          "en": "The formula “there are no civilians” breaks the distinction. The reverse trap is to lift responsibility from the organisation.",
+          "da": "Formlen «der er ingen civile» knækker skelnen. Den omvendte fælde er at løfte ansvaret fra organisationen."
+        }
+      },
       "docs": [
         "jaspers",
         "gc33"
@@ -773,6 +1083,50 @@
     },
     {
       "id": "after",
+      "guess": {
+        "correct": "schools",
+        "q": {
+          "ru": "Уничтожить сеть — это что по отношению к «дню после»?",
+          "en": "Destroying a network is what, in relation to the “day after”?",
+          "da": "At ødelægge et net er hvad i forhold til «dagen efter»?"
+        },
+        "options": [
+          {
+            "id": "enough",
+            "text": {
+              "ru": "Уже полный ответ: кто учит детей, не важно",
+              "en": "Already the full answer: who teaches the children does not matter",
+              "da": "Allerede det fulde svar: hvem der underviser børnene, er ligegyldigt"
+            }
+          },
+          {
+            "id": "schools",
+            "text": {
+              "ru": "Другая задача, чем сменить учебники",
+              "en": "A different task from changing the textbooks",
+              "da": "En anden opgave end at skifte lærebøgerne"
+            }
+          },
+          {
+            "id": "forbid",
+            "text": {
+              "ru": "Довод, что сеть нельзя трогать",
+              "en": "An argument that the network must not be touched",
+              "da": "Et argument for, at nettet ikke må røres"
+            }
+          }
+        ],
+        "ok": {
+          "ru": "Тактика уничтожения сети не отвечает на вопрос воспитания. Это довод «этого мало».",
+          "en": "The tactic of destroying a network does not answer the question of education. It is an argument that it is not enough.",
+          "da": "Taktikken med at ødelægge et net besvarer ikke spørgsmålet om opdragelse. Det er et argument for, at det ikke slår til."
+        },
+        "bad": {
+          "ru": "«День после» без ответа «кто учит детей» — не стратегия, а пауза.",
+          "en": "A “day after” with no answer to “who teaches the children” is not a strategy. It is a pause.",
+          "da": "En «dag efter» uden svar på «hvem underviser børnene» er ikke en strategi. Det er en pause."
+        }
+      },
       "docs": [
         "after-note",
         "oslo",
@@ -833,6 +1187,50 @@
     },
     {
       "id": "hostages",
+      "guess": {
+        "correct": "ban",
+        "q": {
+          "ru": "Захват заложников в праве — это что?",
+          "en": "In the law, the taking of hostages is what?",
+          "da": "I retten er gidseltagning hvad?"
+        },
+        "options": [
+          {
+            "id": "chip",
+            "text": {
+              "ru": "Ставка в переговорах о огне",
+              "en": "A chip in a ceasefire",
+              "da": "En brik i en våbenhvile"
+            }
+          },
+          {
+            "id": "ban",
+            "text": {
+              "ru": "Запрет целиком, не фишка в пакете",
+              "en": "A ban as a whole, not a chip in a package",
+              "da": "Et forbud som helhed, ikke en brik i en pakke"
+            }
+          },
+          {
+            "id": "context",
+            "text": {
+              "ru": "Допустимо, если есть контекст оккупации",
+              "en": "Permitted if there is a context of occupation",
+              "da": "Tilladt, hvis der er en besættelsessammenhæng"
+            }
+          }
+        ],
+        "ok": {
+          "ru": "Статья 34 короткая целиком: взятие заложников запрещается.",
+          "en": "Article 34 is short in full: the taking of hostages is prohibited.",
+          "da": "Artikel 34 er kort i sin helhed: det er forbudt at tage gidsler."
+        },
+        "bad": {
+          "ru": "«Сначала заложники» не создаёт права держать людей. Дальше — запрет, не пакет.",
+          "en": "“Hostages first” does not create a right to hold people. What follows is the ban, not a package.",
+          "da": "«Først gidslerne» skaber ikke en ret til at holde mennesker. Det der følger er forbuddet, ikke en pakke."
+        }
+      },
       "docs": [
         "gc34",
         "patten",
@@ -891,6 +1289,50 @@
     },
     {
       "id": "return",
+      "guess": {
+        "correct": "wish",
+        "q": {
+          "ru": "Резолюция 194, пункт 11, говорит о чём?",
+          "en": "UNGA resolution 194, paragraph 11, speaks of what?",
+          "da": "Resolution 194, punkt 11, taler om hvad?"
+        },
+        "options": [
+          {
+            "id": "passport",
+            "text": {
+              "ru": "Выдаёт паспорт каждому потомку 1948 года",
+              "en": "It issues a passport to every descendant of 1948",
+              "da": "Den udsteder pas til enhver efterkommer fra 1948"
+            }
+          },
+          {
+            "id": "wish",
+            "text": {
+              "ru": "О желании вернуться и жить в мире; слова «право» в пункте нет",
+              "en": "A wish to return and live at peace; the word “right” is not in the paragraph",
+              "da": "Et ønske om at vende hjem og leve i fred; ordet «ret» står ikke i punktet"
+            }
+          },
+          {
+            "id": "never",
+            "text": {
+              "ru": "О вечном запрете возвращаться",
+              "en": "A permanent ban on return",
+              "da": "Et evigt forbud mod at vende tilbage"
+            }
+          }
+        ],
+        "ok": {
+          "ru": "Желание, согласие, статут — три регистра. Лозунг держит обычно один.",
+          "en": "Wish, agreement, statute — three registers. A slogan usually holds one.",
+          "da": "Ønske, enighed, statut — tre registre. Et slogan holder som regel ét."
+        },
+        "bad": {
+          "ru": "«Право» в лозунге жёстче текста 194-й. Дальше — пункт, не паспорт.",
+          "en": "The “right” in the slogan is harder than the text of 194. What follows is the paragraph, not a passport.",
+          "da": "«Retten» i sloganet er hårdere end teksten i 194. Det der følger er punktet, ikke et pas."
+        }
+      },
       "docs": [
         "unga194",
         "api-beirut",
@@ -949,6 +1391,50 @@
     },
     {
       "id": "settlements",
+      "guess": {
+        "correct": "transfer",
+        "q": {
+          "ru": "Статья 49(6) запрещает что?",
+          "en": "Article 49(6) forbids what?",
+          "da": "Artikel 49(6) forbyder hvad?"
+        },
+        "options": [
+          {
+            "id": "levy",
+            "text": {
+              "ru": "Ничего здесь: комиссии Леви статья не про это место",
+              "en": "Nothing here: the Levy Commission says the article is not about this place",
+              "da": "Intet her: Levy-kommissionen siger, at artiklen ikke gælder dette sted"
+            }
+          },
+          {
+            "id": "transfer",
+            "text": {
+              "ru": "Перевод своего гражданского населения на занятую территорию",
+              "en": "Transferring one’s own civilian population into occupied territory",
+              "da": "Overførsel af egen civilbefolkning til besat område"
+            }
+          },
+          {
+            "id": "green",
+            "text": {
+              "ru": "Любые еврейские дома внутри линии 1949 года",
+              "en": "Any Jewish homes inside the 1949 line",
+              "da": "Ethvert jødisk hjem inden for 1949-linjen"
+            }
+          }
+        ],
+        "ok": {
+          "ru": "Совет и Гаага читают запрет шире насилия. Леви стоит на другой стороне предложения.",
+          "en": "The Council and The Hague read the ban as wider than force. Levy stands on the other side of the sentence.",
+          "da": "Rådet og Haag læser forbuddet som bredere end tvang. Levy står på den anden side af sætningen."
+        },
+        "bad": {
+          "ru": "Норма и факт спорят. Лозунг обычно хоронит одну сторону спора.",
+          "en": "Norm and fact are in dispute. A slogan usually buries one side of the dispute.",
+          "da": "Norm og kendsgerning strides. Et slogan begravede som regel den ene side af striden."
+        }
+      },
       "docs": [
         "gc49",
         "unsc2334",
@@ -1008,6 +1494,50 @@
     },
     {
       "id": "unrwa",
+      "guess": {
+        "correct": "nine",
+        "q": {
+          "ru": "Девять сотрудников UNRWA, по которым есть улики, означают что?",
+          "en": "Nine UNRWA staff with evidence against them mean what?",
+          "da": "Ni UNRWA-ansatte med beviser imod sig betyder hvad?"
+        },
+        "options": [
+          {
+            "id": "hamas",
+            "text": {
+              "ru": "UNRWA и есть ХАМАС",
+              "en": "UNRWA is Hamas",
+              "da": "UNRWA er Hamas"
+            }
+          },
+          {
+            "id": "nine",
+            "text": {
+              "ru": "Девять договоров — не весь штат и не отмена мандата 1949 года",
+              "en": "Nine contracts are not the whole staff, and not a repeal of the 1949 mandate",
+              "da": "Ni kontrakter er ikke hele staben og ikke en ophævelse af mandatet fra 1949"
+            }
+          },
+          {
+            "id": "holy",
+            "text": {
+              "ru": "Агентство неприкосновенно, дыр нейтральности нет",
+              "en": "The Agency is untouchable; there are no neutrality gaps",
+              "da": "Agenturet er urørligt; der er ingen neutralitetshuller"
+            }
+          }
+        ],
+        "ok": {
+          "ru": "Мандат, рамка, девять дел — три регистра. Лозунг держит обычно один.",
+          "en": "Mandate, frame, nine files — three registers. A slogan usually holds one.",
+          "da": "Mandat, ramme, ni sager — tre registre. Et slogan holder som regel ét."
+        },
+        "bad": {
+          "ru": "Формула «UNRWA = ХАМАС» не переносит девять договоров на тринадцать тысяч.",
+          "en": "The formula “UNRWA = Hamas” does not move nine contracts onto thirteen thousand.",
+          "da": "Formlen «UNRWA = Hamas» flytter ikke ni kontrakter over på tretten tusind."
+        }
+      },
       "docs": [
         "unga302",
         "colonna",
@@ -1066,6 +1596,50 @@
     },
     {
       "id": "shields",
+      "guess": {
+        "correct": "both",
+        "q": {
+          "ru": "Если противник использует человеческий щит, атакующий что?",
+          "en": "If the enemy uses a human shield, the attacker what?",
+          "da": "Hvis modstanderen bruger et menneskeligt skjold, gør angriberen hvad?"
+        },
+        "options": [
+          {
+            "id": "them",
+            "text": {
+              "ru": "Мёртвые автоматически на том, кто прятался",
+              "en": "The dead are automatically on whoever hid",
+              "da": "De døde er automatisk på den, der gemte sig"
+            }
+          },
+          {
+            "id": "both",
+            "text": {
+              "ru": "Щит запрещён, но нарушение не снимает заботы о гражданских",
+              "en": "A shield is forbidden, but the breach does not lift the care for civilians",
+              "da": "Et skjold er forbudt, men bruddet løfter ikke omsorgen for civile"
+            }
+          },
+          {
+            "id": "none",
+            "text": {
+              "ru": "Щита в праве не существует",
+              "en": "There is no such thing as a shield in the law",
+              "da": "Der findes intet skjold i retten"
+            }
+          }
+        ],
+        "ok": {
+          "ru": "Два запрета одновременно. Один не отменяет другой.",
+          "en": "Two bans at once. One does not repeal the other.",
+          "da": "To forbud på én gang. Det ene ophæver ikke det andet."
+        },
+        "bad": {
+          "ru": "Формула «мёртвые на нём» ломает статью 51(8). Дальше — оба запрета, не лицензия.",
+          "en": "The formula “the dead are on them” breaks article 51(8). What follows is both bans, not a licence.",
+          "da": "Formlen «de døde er på dem» knækker artikel 51(8). Det der følger er begge forbud, ikke en licens."
+        }
+      },
       "docs": [
         "ihl97",
         "api51",
@@ -1124,6 +1698,50 @@
     },
     {
       "id": "famine",
+      "guess": {
+        "correct": "split",
+        "q": {
+          "ru": "Статья 54 и фаза IPC — это одно и то же?",
+          "en": "Are article 54 and an IPC phase the same act?",
+          "da": "Er artikel 54 og en IPC-fase den samme akt?"
+        },
+        "options": [
+          {
+            "id": "same",
+            "text": {
+              "ru": "Да: фаза голода уже есть метод войны",
+              "en": "Yes: a famine phase is already a method of warfare",
+              "da": "Ja: en hungersnødsfase er allerede en krigsmetode"
+            }
+          },
+          {
+            "id": "split",
+            "text": {
+              "ru": "Нет: статья запрещает метод; IPC называет фазу",
+              "en": "No: the article forbids a method; the IPC names a phase",
+              "da": "Nej: artiklen forbyder en metode; IPC nævner en fase"
+            }
+          },
+          {
+            "id": "none",
+            "text": {
+              "ru": "Ни метода, ни фазы в праве нет",
+              "en": "The law has neither a method nor a phase",
+              "da": "Retten har hverken en metode eller en fase"
+            }
+          }
+        ],
+        "ok": {
+          "ru": "Метод, фаза, лозунг. Сначала назвать, какой из трёх сказан вслух.",
+          "en": "Method, phase, slogan. Name first which of the three was said out loud.",
+          "da": "Metode, fase, slogan. Nævn først, hvilken af de tre der blev sagt højt."
+        },
+        "bad": {
+          "ru": "Фаза IPC не есть умысел командира по ст. 54. Три слова не склеивать.",
+          "en": "An IPC phase is not a commander’s intent under art. 54. Do not glue the three words.",
+          "da": "En IPC-fase er ikke en kommandants forsæt efter art. 54. Lim ikke de tre ord sammen."
+        }
+      },
       "docs": [
         "api54",
         "ipc-2024-03",
@@ -1183,6 +1801,50 @@
     },
     {
       "id": "states",
+      "guess": {
+        "correct": "both",
+        "q": {
+          "ru": "Резолюция 242 держит что?",
+          "en": "Resolution 242 holds what?",
+          "da": "Resolution 242 holder hvad?"
+        },
+        "options": [
+          {
+            "id": "one",
+            "text": {
+              "ru": "Только вывод или только признание — как удобнее",
+              "en": "Only withdrawal, or only recognition — whichever is convenient",
+              "da": "Kun tilbagetrækning eller kun anerkendelse — hvad der er bekvemt"
+            }
+          },
+          {
+            "id": "both",
+            "text": {
+              "ru": "Вывод и признание сразу",
+              "en": "Withdrawal and recognition at once",
+              "da": "Tilbagetrækning og anerkendelse på én gang"
+            }
+          },
+          {
+            "id": "river",
+            "text": {
+              "ru": "Право на «реку до моря»",
+              "en": "A right to “the river to the sea”",
+              "da": "En ret til «floden til havet»"
+            }
+          }
+        ],
+        "ok": {
+          "ru": "Формула, подпись, отказ. 242 держит два принципа в одном тексте.",
+          "en": "Formula, signature, refusal. 242 holds two principles in one text.",
+          "da": "Formel, underskrift, afslag. 242 holder to principper i én tekst."
+        },
+        "bad": {
+          "ru": "«Единственный выход» прячет, что вывод и признание стоят рядом. Дальше — оба, не лозунг.",
+          "en": "“The only way out” hides that withdrawal and recognition stand together. What follows is both, not a slogan.",
+          "da": "«Den eneste udvej» skjuler, at tilbagetrækning og anerkendelse står sammen. Det der følger er begge, ikke et slogan."
+        }
+      },
       "docs": [
         "unsc242",
         "oslo",
@@ -1243,6 +1905,50 @@
     },
     {
       "id": "accords",
+      "guess": {
+        "correct": "split",
+        "q": {
+          "ru": "Авраамовы соглашения говорят о Палестине что?",
+          "en": "What do the Abraham Accords say about Palestine?",
+          "da": "Hvad siger Abraham-aftalerne om Palæstina?"
+        },
+        "options": [
+          {
+            "id": "never",
+            "text": {
+              "ru": "Дело никогда не было в Палестине: её нет ни в одном тексте",
+              "en": "It was never about Palestine: the word is in none of the texts",
+              "da": "Det handlede aldrig om Palæstina: ordet står i ingen af teksterne"
+            }
+          },
+          {
+            "id": "split",
+            "text": {
+              "ru": "Декларация не говорит «Палестина»; договор ОАЭ обещает продолжать искать решение",
+              "en": "The Declaration does not say “Palestine”; the UAE treaty promises to keep seeking a solution",
+              "da": "Erklæringen siger ikke «Palæstina»; UAE-traktaten lover at blive ved med at søge en løsning"
+            }
+          },
+          {
+            "id": "end",
+            "text": {
+              "ru": "Нормализация автоматически заканчивает оккупацию",
+              "en": "Normalisation automatically ends the occupation",
+              "da": "Normalisering afslutter automatisk besættelsen"
+            }
+          }
+        ],
+        "ok": {
+          "ru": "Декларация, договор, Бейрут. Лозунг читает обычно один.",
+          "en": "Declaration, treaty, Beirut. A slogan usually reads one.",
+          "da": "Erklæring, traktat, Beirut. Et slogan læser som regel én."
+        },
+        "bad": {
+          "ru": "«Никогда не было о Палестине» ломается преамбулой. Три текста. Не одна цитата.",
+          "en": "“It was never about Palestine” is broken by the preamble. Three texts. Not one quotation.",
+          "da": "«Det handlede aldrig om Palæstina» knækkes af præamblen. Tre tekster. Ikke ét citat."
+        }
+      },
       "docs": [
         "abraham-decl",
         "uae-israel",
@@ -1300,40 +2006,6 @@
       }
     }
   ],
-  "guess": {
-    "correct": "strike",
-    "q": {
-      "ru": "Соразмерность в войне меряется чем?",
-      "en": "In war, proportionality is measured by what?",
-      "da": "Hvad måles proportionalitet i krig med?"
-    },
-    "options": [
-      {
-        "id": "bodies",
-        "text": {
-          "ru": "Числом жертв с двух сторон",
-          "en": "The number of dead on both sides",
-          "da": "Antallet af døde på begge sider"
-        }
-      },
-      {
-        "id": "strike",
-        "text": {
-          "ru": "Ожидаемым гражданским вредом против конкретной военной выгоды этого удара",
-          "en": "Expected civilian harm against the concrete military advantage of that strike",
-          "da": "Forventet civil skade sat over for den konkrete militære fordel ved netop dette angreb"
-        }
-      },
-      {
-        "id": "first",
-        "text": {
-          "ru": "Тем, кто начал первым",
-          "en": "Who started first",
-          "da": "Hvem der begyndte først"
-        }
-      }
-    ]
-  },
   "docs": {
     "aquinas": {
       "kind": {
