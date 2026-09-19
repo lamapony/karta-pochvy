@@ -1,0 +1,37 @@
+name: deploy
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node tools/check.mjs
+      - run: node tools/feed.mjs
+      - run: |
+          mkdir -p public/fonts
+          cp index.html app.js app.css desk.json favicon.svg 404.html robots.txt sitemap.xml feed.xml public/
+          if [ -d fonts ]; then cp fonts/* public/fonts/ || true; fi
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.out.outputs.page_url }}
+    steps:
+      - id: out
+        uses: actions/deploy-pages@v4

@@ -13,7 +13,25 @@
       "guessOk": "Статья уже была в праве. Ответ — увидеть её, а не подобрать лозунг.",
       "guessBad": "Большинство жмёт на счётчик тел. Дальше — не мнение, а статья.",
       "again": "После документов — следующая фраза, которую вы скажете вслух",
-      "more": "Другие аргументы"
+      "more": "Другие аргументы",
+      "steelK": "Сталь",
+      "crackK": "Трещина",
+      "docK": "Документ",
+      "morePhrases": "другие фразы",
+      "soilQ": "Какое различение ваша фраза склеивает",
+      "protocol": "Протокол чтения",
+      "method": "Метод",
+      "methodTri": "Метод · Method · Metode",
+      "methodLine": "Метод · Выпуск I · Газа",
+      "gateQ": "Эту страницу читают после фразы",
+      "issueWord": "Выпуск",
+      "protocolPhrase": "Фраза",
+      "protocolNamed": "Норма, которую назвали",
+      "protocolNorm": "Норма в статье",
+      "protocolDist": "Различение",
+      "protocolDocs": "Документы",
+      "protocolLang": "Язык",
+      "noscript": "Карта почвы — статическая полоса чтения. Включите JavaScript."
     },
     "en": {
       "title": "A map of the soil",
@@ -28,7 +46,25 @@
       "guessOk": "The article was already in the law. The click is to see it, not to pick a slogan.",
       "guessBad": "Most people reach for the body count. What follows is not an opinion. It is the article.",
       "again": "After the documents: the next sentence you will say out loud",
-      "more": "Other arguments"
+      "more": "Other arguments",
+      "steelK": "Steel",
+      "crackK": "Crack",
+      "docK": "Document",
+      "morePhrases": "other sentences",
+      "soilQ": "Which distinction does your sentence glue together",
+      "protocol": "Reading protocol",
+      "method": "Method",
+      "methodTri": "Метод · Method · Metode",
+      "methodLine": "Method · Issue I · Gaza",
+      "gateQ": "This page is read after a sentence",
+      "issueWord": "Issue",
+      "protocolPhrase": "Sentence",
+      "protocolNamed": "The norm you named",
+      "protocolNorm": "The norm in the article",
+      "protocolDist": "Distinction",
+      "protocolDocs": "Documents",
+      "protocolLang": "Language",
+      "noscript": "A map of the soil is a static reading strip. Enable JavaScript."
     },
     "da": {
       "title": "Et kort over jorden",
@@ -43,7 +79,25 @@
       "guessOk": "Artiklen lå allerede i retten. Svaret er at se den, ikke at vælge et slogan.",
       "guessBad": "De fleste trykker på ligetælleren. Det der følger er ikke en mening. Det er artiklen.",
       "again": "Efter dokumenterne: den næste sætning, du vil sige højt",
-      "more": "Andre argumenter"
+      "more": "Andre argumenter",
+      "steelK": "Stål",
+      "crackK": "Sprække",
+      "docK": "Dokument",
+      "morePhrases": "andre sætninger",
+      "soilQ": "Hvilken skelnen limer din sætning sammen",
+      "protocol": "Læseprotokol",
+      "method": "Metode",
+      "methodTri": "Метод · Method · Metode",
+      "methodLine": "Metode · Udgave I · Gaza",
+      "gateQ": "Denne side læses efter en sætning",
+      "issueWord": "Udgave",
+      "protocolPhrase": "Sætning",
+      "protocolNamed": "Normen, du nævnte",
+      "protocolNorm": "Normen i artiklen",
+      "protocolDist": "Skelnen",
+      "protocolDocs": "Dokumenter",
+      "protocolLang": "Sprog",
+      "noscript": "Et kort over jorden er en statisk læsestribe. Slå JavaScript til."
     }
   },
   "phrases": [
@@ -1437,6 +1491,7 @@
       },
       "docs": [
         "gc49",
+        "icj-wall",
         "unsc2334",
         "icj-2024-ao",
         "levy-2012"
@@ -2029,7 +2084,8 @@
         "ru": "Первичный текст jus ad bellum: три условия начала войны, не индульгенция на средство.",
         "en": "The primary jus ad bellum text: three conditions for beginning a war, not an indulgence for any means.",
         "da": "Den primære jus ad bellum-tekst: tre betingelser for at begynde en krig, ikke en aflad for ethvert middel."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.newadvent.org/summa/3040.htm"
     },
     "walzer": {
       "kind": {
@@ -2053,7 +2109,8 @@
         "ru": "Современная рамка jus in bello и спорное исключение supreme emergency.",
         "en": "The modern jus in bello frame, including the disputed supreme-emergency exception.",
         "da": "Den moderne jus in bello-ramme, herunder den omstridte undtagelse supreme emergency."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://archive.org/details/justunjustwarsmo00walz"
     },
     "api51": {
       "kind": {
@@ -2077,7 +2134,10 @@
         "ru": "Договорный текст соразмерности удара и запрета человеческого щита.",
         "en": "The treaty text on per-strike proportionality and the ban on human shields.",
         "da": "Traktatteksten om proportionalitet pr. angreb og forbuddet mod menneskelige skjolde."
-      }
+      },
+      "quote": "an attack which may be expected to cause incidental loss of civilian life, injury to civilians, damage to civilian objects, or a combination thereof, which would be excessive in relation to the concrete and direct military advantage anticipated",
+      "quoteLang": "en",
+      "archive": "https://web.archive.org/web/https://ihl-databases.icrc.org/en/ihl-treaties/api-1977/article-51"
     },
     "ihl14": {
       "kind": {
@@ -2101,7 +2161,10 @@
         "ru": "Показывает, что запрет чрезмерного гражданского вреда — обычная норма, не только договор 1977 года.",
         "en": "Shows that the ban on excessive civilian harm is customary, not only a 1977 treaty.",
         "da": "Viser, at forbuddet mod overdreven civil skade er sædvaneret, ikke kun en traktat fra 1977."
-      }
+      },
+      "quote": "Launching an attack which may be expected to cause incidental loss of civilian life, injury to civilians, damage to civilian objects, or a combination thereof, which would be excessive in relation to the concrete and direct military advantage anticipated, is prohibited.",
+      "quoteLang": "en",
+      "archive": "https://web.archive.org/web/https://ihl-databases.icrc.org/en/customary-ihl/v1/rule14"
     },
     "patten": {
       "kind": {
@@ -2125,7 +2188,8 @@
         "ru": "Именной доклад спецпредставителя ООН о сексуальном насилии 7 октября и о заложниках.",
         "en": "A named UN Special Representative report on sexual violence on 7 October and on hostages.",
         "da": "En navngiven rapport fra FN’s specialrepræsentant om seksuel vold den 7. oktober og om gidsler."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.un.org/sexualviolenceinconflict/wp-content/uploads/2024/03/report/mission-report-official-visit-of-the-office-of-the-srsg-svc-to-israel-and-the-occupied-west-bank-29-january-14-february-2024/20240304-Israel-oWB-CRSV-report.pdf"
     },
     "hrw-oct7": {
       "kind": {
@@ -2149,7 +2213,8 @@
         "ru": "Спланированные гражданские цели; столкновение с письмом ХАМАСа «план был военный».",
         "en": "Planned civilian aims; it collides with Hamas’s letter that “the plan was military”.",
         "da": "Planlagte civile mål; det støder sammen med Hamas’ brev om, at «planen var militær»."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.hrw.org/report/2024/07/17/i-cant-erase-all-the-blood-from-my-mind/palestinian-armed-groups-october-7"
     },
     "charter": {
       "kind": {
@@ -2173,7 +2238,8 @@
         "ru": "Первичный программный текст 1988 года; 2017 читать отдельно, не склеивать в одну цитату.",
         "en": "The primary 1988 programme text; read 2017 separately, do not glue them into one quotation.",
         "da": "Den primære programtekst fra 1988; læs 2017 for sig, lim dem ikke sammen til ét citat."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://avalon.law.yale.edu/20th_century/hamas.asp"
     },
     "icj": {
       "kind": {
@@ -2197,7 +2263,8 @@
         "ru": "Правдоподобны права на защиту, не вывод о геноциде; прекращение огня не приказано.",
         "en": "The rights to protection were plausible, not a genocide finding; no ceasefire was ordered.",
         "da": "Rettighederne til beskyttelse var plausible, ikke et folkedrabsfund; ingen våbenhvile blev beordret."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.icj-cij.org/case/192"
     },
     "wsj": {
       "kind": {
@@ -2221,7 +2288,9 @@
         "ru": "Именной отчёт об учениях; рядом — NBC: Тегеран застигнут врасплох, не заказ 7 октября.",
         "en": "A named account of the drills; pair with NBC: Tehran was surprised, not that it ordered 7 October.",
         "da": "En navngiven beretning om øvelserne; par med NBC: Teheran blev overrasket, ikke at man beordrede 7. oktober."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.wsj.com/world/middle-east/hamas-fighters-trained-in-iran-before-oct-7-attacks-e2a8dbb9",
+      "paywall": true
     },
     "nbc-iran": {
       "kind": {
@@ -2245,7 +2314,8 @@
         "ru": "Пара к WSJ об учениях: Тегеран застигнут врасплох, не заказ 7 октября.",
         "en": "The pair to the WSJ drills: Tehran was surprised, not that it ordered 7 October.",
         "da": "Parret til WSJ-øvelserne: Teheran blev overrasket, ikke at man beordrede 7. oktober."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.nbcnews.com/news/investigations/us-intelligence-indicates-iranian-leaders-surprised-hamas-attack-rcna119946"
     },
     "cicero": {
       "kind": {
@@ -2269,7 +2339,8 @@
         "ru": "Источник формулы communis hostis omnium — рамка про пирата, не про новорождённого.",
         "en": "The source of communis hostis omnium — a frame about a pirate, not about a newborn.",
         "da": "Kilden til communis hostis omnium — en ramme om en sørøver, ikke om et nyfødt barn."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.thelatinlibrary.com/cicero/off3.shtml"
     },
     "cogat": {
       "kind": {
@@ -2355,7 +2426,8 @@
         "ru": "Первичный жанр расчёта калорий под давлением, даже если минобороны называет его черновиком.",
         "en": "The primary genre of a calorie calculation under pressure, even if the Defence Ministry calls it a draft.",
         "da": "Den primære genre af et kalorieregnskab under pres, også når forsvarsministeriet kalder det et udkast."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://gisha.org/en/red-lines/"
     },
     "jaspers": {
       "kind": {
@@ -2379,7 +2451,8 @@
         "ru": "Четыре регистра вины; народ как таковой нельзя сделать подсудимым уголовного суда.",
         "en": "Four registers of guilt; a people as such cannot be made the defendant in a criminal court.",
         "da": "Fire registre for skyld; et folk som sådant kan ikke gøres til tiltalt ved en straffedomstol."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://archive.org/details/questionofgerman0000jasp"
     },
     "after-note": {
       "kind": {
@@ -2403,7 +2476,8 @@
         "ru": "Помета, не источник: вопрос «кто учит детей» не закрывается уничтожением сети.",
         "en": "A margin note, not a source: “who teaches the children” is not closed by destroying a network.",
         "da": "En marginalnote, ikke en kilde: «hvem underviser børnene» lukkes ikke ved at ødelægge et net."
-      }
+      },
+      "archive": ""
     },
     "un-51": {
       "kind": {
@@ -2427,7 +2501,10 @@
         "ru": "«Ничто в настоящем Уставе не затрагивает неотъемлемого права на индивидуальную или коллективную самооборону, если произойдёт вооружённое нападение на Члена Организации, до тех пор пока Совет Безопасности не примет мер, необходимых для поддержания международного мира и безопасности.» Меры надо немедленно сообщить Совету. Статья не отменяет международное гуманитарное право: право начать отвечать не есть право бить как угодно.",
         "en": "“Nothing in the present Charter shall impair the inherent right of individual or collective self-defence if an armed attack occurs against a Member of the United Nations, until the Security Council has taken measures necessary to maintain international peace and security.” The measures must be reported to the Council at once. The article does not set international humanitarian law aside: a right to answer is not a right to strike by any means.",
         "da": "«Intet i denne Pagt skal indskrænke den naturlige ret til individuelt eller kollektivt selvforsvar, hvis et væbnet angreb finder sted imod et medlem af De Forenede Nationer, indtil Sikkerhedsrådet har truffet de fornødne forholdsregler til opretholdelse af international fred og sikkerhed.» Foranstaltningerne skal straks meddeles Rådet. Artiklen sætter ikke den humanitære folkeret til side: en ret til at svare er ikke en ret til at slå med ethvert middel."
-      }
+      },
+      "quote": "Nothing in the present Charter shall impair the inherent right of individual or collective self-defence if an armed attack occurs against a Member of the United Nations, until the Security Council has taken measures necessary to maintain international peace and security.",
+      "quoteLang": "en",
+      "archive": "https://web.archive.org/web/https://www.un.org/en/about-us/un-charter/chapter-7"
     },
     "api57": {
       "kind": {
@@ -2451,7 +2528,10 @@
         "ru": "Ст. 57(1): при военных действиях постоянно щадить гражданских и гражданские объекты. Кто планирует удар, обязан сделать всё practically feasible, чтобы убедиться, что цель военная; выбрать средства и методы, избегая или сводя к минимуму попутный вред; не решать на удар, вред которого чрезмерен относительно конкретной и прямой военной выгоды. Удар отменяют, если это становится видно. Заблаговременное предупреждение — если обстоятельства позволяют. Это не счётчик тел за год. Это обязанности в момент решения и в момент, когда картина меняется.",
         "en": "Art. 57(1): in military operations, constant care shall be taken to spare civilians and civilian objects. Those who plan an attack must do everything feasible to verify that the objective is military; choose means and methods that avoid or minimise incidental harm; and refrain from deciding on an attack whose harm would be excessive in relation to the concrete and direct military advantage anticipated. An attack shall be cancelled if that becomes apparent. Effective advance warning shall be given unless circumstances do not permit. This is not a year-long body count. These are duties at the moment of decision and at the moment the picture changes.",
         "da": "Art. 57(1): ved militære operationer skal der stadig tages hensyn til at skåne civile og civile objekter. Den der planlægger et angreb, skal gøre alt, hvad der er muligt, for at efterprøve, at målet er militært; vælge midler og metoder, der undgår eller minimerer sideordnet skade; og afstå fra at beslutte et angreb, hvis skade ville være overdreven i forhold til den konkrete og direkte militære fordel, man forventer. Et angreb skal aflyses, hvis det bliver åbenbart. Der skal gives effektivt forhåndsvarsel, medmindre omstændighederne ikke tillader det. Det er ikke en ligetæller over et år. Det er pligter i beslutningsøjeblikket og i det øjeblik billedet skifter."
-      }
+      },
+      "quote": "In the conduct of military operations, constant care shall be taken to spare the civilian population, civilians and civilian objects.",
+      "quoteLang": "en",
+      "archive": "https://web.archive.org/web/https://ihl-databases.icrc.org/en/ihl-treaties/api-1977/article-57"
     },
     "genocide-conv": {
       "kind": {
@@ -2475,7 +2555,11 @@
         "ru": "Статья II: геноцид — любое из перечисленных деяний, совершённое с намерением уничтожить, полностью или частично, национальную, этническую, расовую или религиозную группу как таковую: убийство членов группы; причинение серьёзных телесных или умственных повреждений; предумышленное создание жизненных условий, рассчитанных на физическое уничтожение; меры, рассчитанные на предотвращение деторождения; насильственная передача детей. Счётчик тел не доказывает и не опровергает специальный умысел. Хартию 1988 и условия жизни в Газе этим текстом не склеивают в одну цитату.",
         "en": "Article II: genocide means any of the listed acts committed with intent to destroy, in whole or in part, a national, ethnical, racial or religious group as such: killing members of the group; causing serious bodily or mental harm; deliberately inflicting conditions of life calculated to bring about physical destruction; imposing measures intended to prevent births; forcibly transferring children. A body count neither proves nor disproves that specific intent. This text does not glue the 1988 Charter and the conditions of life in Gaza into one quotation.",
         "da": "Artikel II: folkedrab betyder enhver af de opregnede handlinger, begået med forsæt til at ødelægge, helt eller delvis, en national, etnisk, racemæssig eller religiøs gruppe som sådan: drab på gruppens medlemmer; alvorlig legemlig eller sjælelig skade; forsætligt at skabe levevilkår beregnet på fysisk ødelæggelse; foranstaltninger beregnet på at hindre fødsler; tvangsmæssig overførsel af børn. En ligetæller hverken beviser eller afkræfter det særlige forsæt. Denne tekst limer ikke pagten fra 1988 og livsvilkårene i Gaza sammen til ét citat."
-      }
+      },
+      "quote": "In the present Convention, genocide means any of the following acts committed with intent to destroy, in whole or in part, a national, ethnical, racial or religious group, as such",
+      "quoteLang": "en",
+      "archive": "https://web.archive.org/web/https://www.ohchr.org/en/instruments-mechanisms/instruments/convention-prevention-and-punishment-crime-genocide",
+      "botBlock": true
     },
     "gc33": {
       "kind": {
@@ -2499,7 +2583,10 @@
         "ru": "«Ни одно покровительствуемое лицо не может быть наказано за правонарушение, которого оно не совершало лично. Коллективные наказания, так же как и всякие меры запугивания или террора, запрещены.» Репрессалии против покровительствуемых лиц и их имущества запрещены. Статья не снимает уголовной ответственности с того, кто сам совершил преступление, и не превращает организацию в «народ».",
         "en": "“No protected person may be punished for an offence he or she has not personally committed. Collective penalties and likewise all measures of intimidation or of terrorism are prohibited.” Reprisals against protected persons and their property are prohibited. The article does not lift criminal responsibility from the person who committed a crime, and it does not turn an organisation into “a people”.",
         "da": "«Ingen beskyttet person må straffes for en lovovertrædelse, som vedkommende ikke selv har begået. Kollektive straffe og ligeledes alle intimiderings- eller terrorforanstaltninger er forbudt.» Repressalier mod beskyttede personer og deres ejendom er forbudt. Artiklen ophæver ikke det strafretlige ansvar for den, der selv har begået en forbrydelse, og den gør ikke en organisation til «et folk»."
-      }
+      },
+      "quote": "No protected person may be punished for an offence he or she has not personally committed. Collective penalties and likewise all measures of intimidation or of terrorism are prohibited.",
+      "quoteLang": "en",
+      "archive": "https://web.archive.org/web/https://ihl-databases.icrc.org/en/ihl-treaties/gciv-1949/article-33"
     },
     "gc34": {
       "kind": {
@@ -2523,7 +2610,10 @@
         "ru": "Весь текст статьи: «Взятие заложников запрещается.» Запрет абсолютный. Он дополняет ст. 33 (индивидуальная ответственность, запрет коллективных наказаний). Ст. 147 называет взятие заложников тяжким нарушением. Общая статья 3 четырёх конвенций запрещает взятие заложников и во внутреннем конфликте. Формула «сначала заложники» не создаёт права держать людей. Формула «контекст оккупации» не делает захват гражданских «сопротивлением».",
         "en": "The whole article: “The taking of hostages is prohibited.” The ban is absolute. It supplements art. 33 (individual responsibility, ban on collective penalties). Art. 147 names the taking of hostages a grave breach. Common Article 3 of the four Conventions forbids the taking of hostages in non-international conflict as well. The formula “hostages first” does not create a right to hold people. The formula “context of occupation” does not make the seizure of civilians “resistance”.",
         "da": "Hele artiklen: «Det er forbudt at tage gidsler.» Forbuddet er absolut. Det supplerer art. 33 (individuelt ansvar, forbud mod kollektive straffe). Art. 147 kalder gidseltagning et groft brud. Fælles artikel 3 i de fire konventioner forbyder gidseltagning også i ikke-internationale konflikter. Formlen «først gidslerne» skaber ikke en ret til at holde mennesker. Formlen «besættelsens sammenhæng» gør ikke tilfangetagelse af civile til «modstand»."
-      }
+      },
+      "quote": "The taking of hostages is prohibited.",
+      "quoteLang": "en",
+      "archive": "https://web.archive.org/web/https://ihl-databases.icrc.org/en/ihl-treaties/gciv-1949/article-34"
     },
     "gc49": {
       "kind": {
@@ -2547,7 +2637,10 @@
         "ru": "Статья 49(6): «Оккупирующая держава не сможет депортировать или перемещать часть своего собственного гражданского населения на территорию, которую она оккупирует.» МС ООН в 2004 году читает это не только как запрет насильственного вывоза: запрещены и меры, которыми держава организует или поощряет перевод своего населения. Комиссия Леви (2012) утверждает обратное: классическое право оккупации к «Иудее и Самарии» неприменимо, и 49(6) «никогда не имелось в виду» для израильского строительства. Это два чтения одного предложения. Не склеивать их в «право уже решило / право молчит».",
         "en": "Article 49(6): “The Occupying Power shall not deport or transfer parts of its own civilian population into the territory it occupies.” The ICJ in 2004 reads this as more than a ban on forcible deportation: it also forbids measures by which a Power organises or encourages transfers of its own population. The Levy Commission (2012) asserts the opposite: the classical law of occupation does not apply to “Judea and Samaria”, and 49(6) “was never intended” for Israeli building. These are two readings of one sentence. Do not glue them into “the law has already decided / the law is silent”.",
         "da": "Artikel 49(6): «Besættelsesmagten må ikke deportere eller overføre dele af sin egen civilbefolkning til det område, den besætter.» ICJ læste i 2004 dette som mere end et forbud mod tvangsdeportation: det forbyder også foranstaltninger, hvormed en magt organiserer eller tilskynder overførsel af sin egen befolkning. Levy-kommissionen (2012) hævder det omvendte: den klassiske besættelsesret gælder ikke for «Judæa og Samaria», og 49(6) «var aldrig tænkt» på israelsk byggeri. Det er to læsninger af én sætning. Lim dem ikke sammen til «retten har allerede besluttet / retten tier»."
-      }
+      },
+      "quote": "The Occupying Power shall not deport or transfer parts of its own civilian population into the territory it occupies.",
+      "quoteLang": "en",
+      "archive": "https://web.archive.org/web/https://ihl-databases.icrc.org/en/ihl-treaties/gciv-1949/article-49"
     },
     "api54": {
       "kind": {
@@ -2571,7 +2664,10 @@
         "ru": "Статья 54(1): «Голод среди гражданского населения как метод ведения войны запрещается.» Ст. 54(2) запрещает нападать, уничтожать, вывозить или приводить в негодность объекты, необходимые для выживания гражданских, — продовольствие, посевы, скот, питьевую воду, оросительные сооружения, — чтобы морить голодом гражданских, заставить их уехать или по любой другой причине. Есть узкие исключения военной необходимости; они не могут иметь целью морить гражданских или вынуждать их к перемещению. ICRC Customary Rule 53 повторяет запрет как обычную норму. Классификация IPC — не приговор по ст. 54. Ст. 54 — не разрешение игнорировать, что IPC написала.",
         "en": "Article 54(1): “Starvation of civilians as a method of warfare is prohibited.” Art. 54(2) forbids attacking, destroying, removing or rendering useless objects indispensable to the survival of the civilian population — foodstuffs, crops, livestock, drinking-water supplies, irrigation works — in order to starve civilians, to cause them to move away, or for any other reason. There are narrow exceptions of military necessity; they may not be aimed at starving civilians or forcing them to move. ICRC Customary Rule 53 repeats the ban as a customary rule. An IPC classification is not a verdict under art. 54. Art. 54 is not a licence to ignore what the IPC wrote.",
         "da": "Artikel 54(1): «Det er forbudt at anvende sult blandt civilbefolkningen som krigsmetode.» Art. 54(2) forbyder at angribe, ødelægge, fjerne eller gøre ubrugelige genstande, der er uundværlige for civilbefolkningens overlevelse — fødevarer, afgrøder, husdyr, drikkevandsforsyning, vandingsanlæg — for at sulte civile, få dem til at flytte, eller af enhver anden grund. Der er snævre undtagelser af militær nødvendighed; de må ikke have til formål at sulte civile eller tvinge dem til at flytte. ICRC’s sædvaneretlige regel 53 gentager forbuddet som sædvaneret. En IPC-klassifikation er ikke en dom efter art. 54. Art. 54 er ikke en tilladelse til at ignorere, hvad IPC skrev."
-      }
+      },
+      "quote": "Starvation of civilians as a method of warfare is prohibited.",
+      "quoteLang": "en",
+      "archive": "https://web.archive.org/web/https://ihl-databases.icrc.org/en/ihl-treaties/api-1977/article-54"
     },
     "ihl97": {
       "kind": {
@@ -2595,7 +2691,10 @@
         "ru": "Rule 97: «The use of human shields is prohibited.» Норма обычная, не только договор 1977 года. Ст. 51(7) Доп. протокола I запрещает использовать присутствие гражданских, чтобы сделать пункт невосприимчивым к операциям. Ст. 51(8): нарушение этих запретов не освобождает стороны от обязательств в отношении гражданских, включая меры предосторожности ст. 57. Римский статут, ст. 8(2)(b)(xxiii), делает использование щита военным преступлением в международном конфликте. Формула «щит — значит, мёртвые на нём» ломает как раз 51(8).",
         "en": "Rule 97: “The use of human shields is prohibited.” The rule is customary, not only a treaty of 1977. Art. 51(7) of Additional Protocol I forbids using the presence of civilians to render a point immune from operations. Art. 51(8): a breach of these prohibitions does not release the parties from their obligations toward civilians, including the precautions of art. 57. The Rome Statute, art. 8(2)(b)(xxiii), makes the use of shields a war crime in international conflict. The formula “a shield means the dead are on them” breaks exactly 51(8).",
         "da": "Regel 97: «Brug af menneskelige skjolde er forbudt.» Normen er sædvaneretlig, ikke kun en traktat fra 1977. Art. 51(7) i Tillægsprotokol I forbyder at bruge civile til at gøre et punkt immun over for operationer. Art. 51(8): brud på disse forbud fritager ikke parterne for deres forpligtelser over for civile, herunder forholdsreglerne i art. 57. Romstatutten, art. 8(2)(b)(xxiii), gør brug af skjolde til en krigsforbrydelse i international konflikt. Formlen «et skjold betyder, at de døde er på dem» knækker netop 51(8)."
-      }
+      },
+      "quote": "The use of human shields is prohibited.",
+      "quoteLang": "en",
+      "archive": "https://web.archive.org/web/https://ihl-databases.icrc.org/en/customary-ihl/v1/rule97"
     },
     "unga194": {
       "kind": {
@@ -2619,7 +2718,10 @@
         "ru": "Пункт 11 постановляет: беженцы, «желающие вернуться в свои дома и жить в мире со своими соседями, должны быть допущены к этому в практически ближайший срок», а тем, кто решит не возвращаться, и за утрату или повреждение имущества — компенсация. Комиссии поручено содействовать репатриации, расселению, реабилитации и выплате. Это резолюция Генеральной Ассамблеи, не Совета Безопасности. В тексте нет слова «право» и нет цифры потомков. Арабская мирная инициатива 2002 года просит «справедливое и согласованное» решение в соответствии с 194 — не односторонний указ.",
         "en": "Paragraph 11 resolves that refugees “wishing to return to their homes and live at peace with their neighbours should be permitted to do so at the earliest practicable date”, and that compensation should be paid to those choosing not to return and for loss of or damage to property. The Conciliation Commission is instructed to facilitate repatriation, resettlement, rehabilitation and payment. This is a General Assembly resolution, not a Security Council resolution. The text does not use the word “right” and does not give a figure for descendants. The 2002 Arab Peace Initiative asks for a “just and agreed” solution in accordance with 194 — not a unilateral decree.",
         "da": "Punkt 11 beslutter, at flygtninge, «der ønsker at vende tilbage til deres hjem og leve i fred med deres naboer, bør have lov til det på det tidligst praktisk mulige tidspunkt», og at der skal betales erstatning til dem, der vælger ikke at vende tilbage, og for tab eller skade på ejendom. Forligskommissionen pålægges at fremme hjemsendelse, genbosættelse, rehabilitering og udbetaling. Det er en generalforsamlingsresolution, ikke en Sikkerhedsrådsresolution. Teksten bruger ikke ordet «ret» og giver ikke et tal for efterkommere. Det arabiske fredsinitiativ fra 2002 beder om en «retfærdig og aftalt» løsning i overensstemmelse med 194 — ikke et ensidigt dekret."
-      }
+      },
+      "quote": "refugees wishing to return to their homes and live at peace with their neighbours should be permitted to do so at the earliest practicable date",
+      "quoteLang": "en",
+      "archive": "https://web.archive.org/web/https://docs.un.org/en/A/RES/194(III)"
     },
     "api-beirut": {
       "kind": {
@@ -2643,7 +2745,8 @@
         "ru": "Совет Лиги на уровне саммита призывает Израиль подтвердить: полный вывод с территорий, занятых с 1967 года, включая Голаны, к линиям 4 июня 1967-го; «справедливое решение» проблемы палестинских беженцев, которое должно быть согласовано, в соответствии с резолюцией 194; принятие суверенного палестинского государства на территориях, занятых с 4 июня 1967 года, со столицей в Восточном Иерусалиме. Тогда арабские государства считают конфликт оконченным и устанавливают нормальные отношения. Отдельно — отказ от расселения палестинцев в принимающих странах как замены. Это не хартия ХАМАСа и не Авраамовы соглашения. Три текста не склеивать.",
         "en": "The League Council at summit level calls on Israel to affirm: full withdrawal from the territories occupied since 1967, including the Golan, to the 4 June 1967 lines; a “just solution” to the Palestinian refugee problem to be agreed upon in accordance with resolution 194; acceptance of a sovereign Palestinian state on the territories occupied since 4 June 1967, with East Jerusalem as its capital. The Arab States would then consider the conflict at an end and establish normal relations. Separately — rejection of resettling Palestinians in the host countries as a substitute. This is not the Hamas Charter and not the Abraham Accords. Do not glue the three texts.",
         "da": "Ligaens råd på topmødeniveau opfordrer Israel til at bekræfte: fuld tilbagetrækning fra de områder, der har været besat siden 1967, herunder Golan, til linjerne af 4. juni 1967; en «retfærdig løsning» på det palæstinensiske flygtningeproblem, som skal aftales i overensstemmelse med resolution 194; accept af en suveræn palæstinensisk stat på de områder, der har været besat siden 4. juni 1967, med Østjerusalem som hovedstad. De arabiske stater vil da betragte konflikten som afsluttet og etablere normale forbindelser. Særskilt — afvisning af at genbosætte palæstinensere i værtslandene som erstatning. Det er ikke Hamas’ pagt og ikke Abraham-aftalerne. Lim ikke de tre tekster sammen."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://unsco.unmissions.org/sites/default/files/api.pdf"
     },
     "unsc242": {
       "kind": {
@@ -2667,7 +2770,10 @@
         "ru": "Совет (единогласно) утверждает, что справедливый и прочный мир должен включать оба принципа: вывод израильских вооружённых сил «from territories occupied in the recent conflict»; прекращение всех претензий или состояний войны и уважение суверенитета, территориальной целостности и политической независимости каждого государства в районе и их права жить в мире в обеспеченных и признанных границах. Далее — свобода судоходства, «just settlement of the refugee problem», демилитаризованные зоны. Английский текст говорит territories, не the territories и не all territories. Французский — des territoires. Спорить о артикле можно. Вычёркивать один из двух принципов — уже не 242.",
         "en": "The Council (unanimously) affirms that a just and lasting peace should include both principles: withdrawal of Israeli armed forces “from territories occupied in the recent conflict”; termination of all claims or states of belligerency and respect for the sovereignty, territorial integrity and political independence of every State in the area and their right to live in peace within secure and recognized boundaries. Further — freedom of navigation, a “just settlement of the refugee problem”, demilitarized zones. The English text says territories, not the territories and not all territories. The French text says des territoires. One may argue about the article. Striking out one of the two principles is no longer 242.",
         "da": "Rådet (enstemmigt) fastslår, at en retfærdig og varig fred bør omfatte begge principper: tilbagetrækning af israelske væbnede styrker «from territories occupied in the recent conflict»; ophør af alle krav eller krigstilstande og respekt for suverænitet, territorial integritet og politisk uafhængighed for enhver stat i området og deres ret til at leve i fred inden for sikre og anerkendte grænser. Desuden — sejladsfrihed, en «just settlement of the refugee problem», demilitariserede zoner. Den engelske tekst siger territories, ikke the territories og ikke all territories. Den franske siger des territoires. Man må strides om artiklen. At strege ét af de to principper ud er ikke længere 242."
-      }
+      },
+      "quote": "Withdrawal of Israel armed forces from territories occupied in the recent conflict",
+      "quoteLang": "en",
+      "archive": "https://web.archive.org/web/https://www.un.org/unispal/document/auto-insert-184858/"
     },
     "unsc2334": {
       "kind": {
@@ -2691,7 +2797,10 @@
         "ru": "Пункт 1: создание Израилем поселений на палестинской территории, занятой с 1967 года, включая Восточный Иерусалим, «не имеет юридической силы и представляет собой вопиющее нарушение норм международного права и главное препятствие» для решения о двух государствах. Пункт 2 требует немедленно и полностью прекратить поселенческую деятельность. Пункт 5 призывает государства проводить различие между территорией Государства Израиль и территориями, занятыми с 1967 года. Резолюция также напоминает обязательство палестинских сил безопасности противостоять террору. Это глава VI, не глава VII. Комиссия Леви с этим текстом не согласна. МС ООН в 2024-м текст Совета не отменяет и не заменяет.",
         "en": "Paragraph 1: Israel’s establishment of settlements in the Palestinian territory occupied since 1967, including East Jerusalem, “has no legal validity and constitutes a flagrant violation under international law and a major obstacle” to the two-State solution. Paragraph 2 demands that Israel immediately and completely cease all settlement activities. Paragraph 5 calls on States to distinguish between the territory of the State of Israel and the territories occupied since 1967. The resolution also recalls the obligation of the Palestinian Authority security forces to confront terror. This is Chapter VI, not Chapter VII. The Levy Commission disagrees with this text. The ICJ in 2024 neither repeals nor replaces the Council’s text.",
         "da": "Punkt 1: Israels oprettelse af bosættelser på det palæstinensiske område, der har været besat siden 1967, herunder Østjerusalem, «har ingen retsgyldighed og udgør et groft brud på folkeretten og en væsentlig hindring» for tostatsløsningen. Punkt 2 kræver, at Israel øjeblikkeligt og fuldstændigt indstiller al bosættelsesaktivitet. Punkt 5 opfordrer stater til at skelne mellem Staten Israels territorium og de områder, der har været besat siden 1967. Resolutionen minder også om de palæstinensiske sikkerhedsstyrkers pligt til at bekæmpe terror. Det er kapitel VI, ikke kapitel VII. Levy-kommissionen er uenig i denne tekst. ICJ ophæver eller erstatter i 2024 ikke Rådets tekst."
-      }
+      },
+      "quote": "has no legal validity and constitutes a flagrant violation under international law and a major obstacle to the achievement of the two-State solution",
+      "quoteLang": "en",
+      "archive": "https://web.archive.org/web/https://www.un.org/webcast/pdfs/SRES2334-2016.pdf"
     },
     "oslo": {
       "kind": {
@@ -2715,7 +2824,8 @@
         "ru": "Стороны «признают свои взаимные законные и политические права». Цель переговоров — палестинский временный орган самоуправления в Западном береге и секторе Газа на переходный период, не превышающий пяти лет, ведущий к постоянному урегулированию на основе резолюций 242 и 338. 9 сентября 1993-го отдельными письмами: ООП признаёт право Государства Израиль существовать в мире и безопасности и принимает 242 и 338; Израиль признаёт ООП представителем палестинского народа. Пять лет прошли. Документ не отменён риторикой «нет партнёра» и не исполнен фактом поселений. ХАМАС этого письма не подписывал.",
         "en": "The parties “recognize their mutual legitimate and political rights”. The aim of the negotiations is a Palestinian interim self-government authority in the West Bank and the Gaza Strip for a transitional period not exceeding five years, leading to a permanent settlement based on resolutions 242 and 338. On 9 September 1993, in separate letters: the PLO recognizes the right of the State of Israel to exist in peace and security and accepts 242 and 338; Israel recognizes the PLO as the representative of the Palestinian people. The five years have passed. The document is not repealed by the rhetoric “there is no partner”, and it is not performed by the fact of settlements. Hamas did not sign that letter.",
         "da": "Parterne «anerkender deres gensidige legitime og politiske rettigheder». Formålet med forhandlingerne er en palæstinensisk midlertidig selvstyremyndighed på Vestbredden og i Gazastriben i en overgangsperiode på højst fem år, der fører til en permanent ordning på grundlag af resolution 242 og 338. Den 9. september 1993, i særskilte breve: PLO anerkender Staten Israels ret til at eksistere i fred og sikkerhed og accepterer 242 og 338; Israel anerkender PLO som det palæstinensiske folks repræsentant. De fem år er gået. Dokumentet ophæves ikke af retorikken «der er ingen partner», og det opfyldes ikke af bosættelsernes kendsgerning. Hamas underskrev ikke det brev."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://unsco.unmissions.org/sites/default/files/declaration_of_principles_on_interim_self-government_arrangements.pdf"
     },
     "icj-wall": {
       "kind": {
@@ -2739,7 +2849,8 @@
         "ru": "Суд заключил, что израильские поселения на оккупированной палестинской территории, включая Восточный Иерусалим, созданы в нарушение международного права. Ст. 49(6) запрещает не только насильственный вывоз, но и меры, которыми оккупирующая держава организует или поощряет перевод своего населения. Строительство стены и связанный режим, по мнению Суда, создают fait accompli, который может стать постоянным и тогда был бы равносилен фактической аннексии. Суд не убеждён, что выбранная трасса необходима для заявленных целей безопасности, и не принял ссылку на самооборону по ст. 51 Устава. Это консультативное заключение, не решение по спору сторон. Израиль его не принял.",
         "en": "The Court concluded that the Israeli settlements in the Occupied Palestinian Territory, including East Jerusalem, had been established in breach of international law. Art. 49(6) prohibits not only forcible deportation but also measures by which an occupying Power organises or encourages transfers of its own population. The construction of the wall and its associated régime, in the Court’s view, create a fait accompli that could become permanent and would then be tantamount to de facto annexation. The Court was not convinced that the chosen route was necessary to the stated security aims, and it did not accept a plea of self-defence under Art. 51 of the Charter. This is an advisory opinion, not a judgment in a dispute between parties. Israel did not accept it.",
         "da": "Retten konkluderede, at de israelske bosættelser i det besatte palæstinensiske område, herunder Østjerusalem, var oprettet i strid med folkeretten. Art. 49(6) forbyder ikke kun tvangsdeportation, men også foranstaltninger, hvormed en besættelsesmagt organiserer eller tilskynder overførsel af sin egen befolkning. Opførelsen af muren og det tilknyttede regime skaber efter Rettens opfattelse et fait accompli, som kan blive permanent og da ville svare til de facto-anneksion. Retten var ikke overbevist om, at den valgte linje var nødvendig for de anførte sikkerhedsformål, og den godtog ikke en påberåbelse af selvforsvar efter pagtens art. 51. Det er en rådgivende udtalelse, ikke en dom i en tvist mellem parter. Israel accepterede den ikke."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.icj-cij.org/case/131"
     },
     "icj-2024-ao": {
       "kind": {
@@ -2763,7 +2874,8 @@
         "ru": "Суд считает Западный берег, Восточный Иерусалим и сектор Газа единой территориальной единицей. Присутствие Израиля как оккупирующей державы он называет незаконным; Израиль обязан прекратить его как можно скорее (11 голосов против 4). Немедленно прекратить новую поселенческую деятельность и вывести поселенцев (14 против 1, против — вице-президент Себутинде). Другие государства — не признавать положение законным и не помогать его поддерживать. Ословские соглашения, по Суду, исключения не создают. Незаконность присутствия не снимает с Израиля обязанностей оккупирующей державы. Это консультативное заключение. Оно не есть приговор по делу ЮАР о геноциде.",
         "en": "The Court treats the West Bank, East Jerusalem and the Gaza Strip as a single territorial unit. It calls Israel’s presence as occupying Power unlawful; Israel is under an obligation to bring that presence to an end as rapidly as possible (11 votes to 4). It must immediately cease all new settlement activities and evacuate the settlers (14 to 1, Vice-President Sebutinde against). Other States are not to recognise the situation as legal and not to render aid in maintaining it. The Oslo Accords, the Court says, create no exception. The unlawfulness of the presence does not release Israel from the duties of an occupying Power. This is an advisory opinion. It is not a judgment in South Africa’s genocide case.",
         "da": "Retten behandler Vestbredden, Østjerusalem og Gazastriben som én territorial enhed. Den kalder Israels tilstedeværelse som besættelsesmagt retsstridig; Israel har pligt til at bringe den til ophør så hurtigt som muligt (11 stemmer mod 4). Ny bosættelsesaktivitet skal straks indstilles, og bosætterne evakueres (14 mod 1, næstformand Sebutinde imod). Andre stater må ikke anerkende situationen som lovlig og ikke yde hjælp til at opretholde den. Oslo-aftalerne skaber efter Retten ingen undtagelse. Tilstedeværelsens retsstridighed fritager ikke Israel for besættelsesmagtens pligter. Det er en rådgivende udtalelse. Det er ikke en dom i Sydafrikas folkedrabssag."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.icj-cij.org/case/186"
     },
     "levy-2012": {
       "kind": {
@@ -2787,7 +2899,8 @@
         "ru": "Комиссия под председательством Эдмунда Леви заключает: классические законы «оккупации» «не могут считаться применимыми к уникальным и sui generis историческим и правовым обстоятельствам» присутствия Израиля в Иудее и Самарии. Положения IV Женевской конвенции о переводе населения «не могут считаться применимыми и никогда не имелись в виду» для того типа строительства, которое ведёт Израиль. «Согласно международному праву, у израильтян есть законное право селиться в Иудее и Самарии, и само по себе создание поселений нельзя считать незаконным.» ICRC в том же году ответил: ст. 49(6) запрещает не только насильственный перевод. СБ 2334 и МС ООН 2004/2024 стоят на другой стороне. Комиссию не вычёркивают из стола тем, что «мир уже решил».",
         "en": "The commission chaired by Edmund Levy concludes: the classical laws of “occupation” “cannot be considered applicable to the unique and sui generis historic and legal circumstances” of Israel’s presence in Judea and Samaria. The Fourth Geneva Convention’s provisions on transfer of populations “cannot be considered to be applicable and were never intended to apply” to the type of settlement activity carried out by Israel. “According to International law, Israelis have the legal right to settle in Judea and Samaria and the establishment of settlements cannot, in and of itself, be considered to be illegal.” The ICRC answered the same year: art. 49(6) forbids more than forcible transfer. UNSC 2334 and the ICJ in 2004/2024 stand on the other side. The commission is not struck from the table by the sentence “the world has already decided”.",
         "da": "Kommissionen under Edmund Levy konkluderer: de klassiske love om «besættelse» «kan ikke anses for at gælde de unikke og sui generis historiske og retlige omstændigheder» ved Israels tilstedeværelse i Judæa og Samaria. Fjerde Genèvekonventions bestemmelser om befolkningsoverførsel «kan ikke anses for at gælde og var aldrig tænkt at gælde» den type bosættelsesaktivitet, Israel udfører. «Ifølge folkeretten har israelere den retlige ret til at bosætte sig i Judæa og Samaria, og oprettelsen af bosættelser kan ikke i sig selv anses for at være ulovlig.» ICRC svarede samme år: art. 49(6) forbyder mere end tvangsmæssig overførsel. Sikkerhedsrådets 2334 og ICJ i 2004/2024 står på den anden side. Kommissionen stryges ikke fra bordet med sætningen «verden har allerede besluttet»."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.un.org/unispal/document/auto-insert-206325/"
     },
     "unga302": {
       "kind": {
@@ -2811,7 +2924,11 @@
         "ru": "Резолюция учреждает Ближневосточное агентство ООН для помощи палестинским беженцам и организации работ (UNRWA), ссылаясь в том числе на пункт 11 резолюции 194. Мандат — «direct relief and works programmes», чтобы предотвратить условия голода и бедствия среди палестинских беженцев и способствовать условиям мира и стабильности. Это не УВКБ. Регистрация потомков — практика агентства, не статья 302. Текст не делает сотрудников боевиками и не запрещает проверять нейтральность.",
         "en": "The resolution establishes the United Nations Relief and Works Agency for Palestine Refugees in the Near East (UNRWA), recalling among other things paragraph 11 of resolution 194. The mandate is “direct relief and works programmes”, to prevent conditions of starvation and distress among Palestine refugees and to further conditions of peace and stability. This is not UNHCR. The registration of descendants is Agency practice, not article 302. The text does not make staff into fighters and does not forbid a check on neutrality.",
         "da": "Resolutionen opretter UNRWA, med henvisning blandt andet til punkt 11 i resolution 194. Mandatet er «direct relief and works programmes», for at forebygge sult og nød blandt Palæstina-flygtninge og fremme fred og stabilitet. Det er ikke UNHCR. Registreringen af efterkommere er agenturets praksis, ikke artikel 302. Teksten gør ikke de ansatte til kæmpere og forbyder ikke et eftersyn af neutraliteten."
-      }
+      },
+      "quote": "to prevent conditions of starvation and distress among Palestine refugees and to further conditions of peace and stability",
+      "quoteLang": "en",
+      "archive": "https://web.archive.org/web/https://www.unrwa.org/content/resolution-302",
+      "botBlock": true
     },
     "colonna": {
       "kind": {
@@ -2835,7 +2952,8 @@
         "ru": "Группу вела Катрин Колонна. Вывод: у UNRWA «более развитый подход к нейтральности, чем у других сходных структур ООН или НПО», и при этом есть зоны, которые надо усиливать. Между 2017 и 2022 годами агентство фиксировало от 7 до 55 заявлений о нарушении нейтральности в год, в среднем 21. С января 2022 по февраль 2024 следственный отдел получил 151 такое заявление. Доклад даёт 50 рекомендаций — донорам, руководству, школам, профсоюзам, принимающим странам и Израилю. Генсекретарь рекомендации принял. Это не вердикт «агентство = ХАМАС» и не справка о невиновности каждого сотрудника. Расследование OIOS по 19 людям — отдельный акт.",
         "en": "The group was led by Catherine Colonna. The finding: UNRWA “possesses a more developed approach to neutrality than other similar UN or NGO entities”, and there are still areas that must be strengthened. Between 2017 and 2022 the Agency recorded between 7 and 55 alleged neutrality breaches a year, on average 21. From January 2022 to February 2024 the Investigations Division received 151 such allegations. The report makes 50 recommendations — to donors, management, schools, staff unions, host countries and Israel. The Secretary-General accepted them. This is not a verdict that “the Agency = Hamas”, and not a certificate that every staff member is innocent. The OIOS investigation of 19 people is a separate act.",
         "da": "Gruppen blev ledet af Catherine Colonna. Fundet: UNRWA «besidder en mere udviklet tilgang til neutralitet end andre lignende FN- eller NGO-enheder», og der er stadig områder, der skal styrkes. Mellem 2017 og 2022 registrerede agenturet mellem 7 og 55 påståede brud på neutraliteten om året, i gennemsnit 21. Fra januar 2022 til februar 2024 modtog undersøgelsesafdelingen 151 sådanne anklager. Rapporten rummer 50 anbefalinger — til donorer, ledelse, skoler, fagforeninger, værtslande og Israel. Generalsekretæren accepterede dem. Det er ikke en dom om, at «agenturet = Hamas», og ikke et bevis for, at enhver ansat er uskyldig. OIOS-undersøgelsen af 19 personer er en særskilt akt."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.un.org/sites/un2.un.org/files/2024/04/unrwa_independent_review_on_neutrality.pdf"
     },
     "oios-unrwa": {
       "kind": {
@@ -2859,7 +2977,8 @@
         "ru": "OIOS закончил проверку 19 местных сотрудников, которых Израиль связал с нападением 7 октября (сначала 12, затем ещё семь). В одном деле улик нет — человек вернулся на службу. В девяти дел улик недостаточно, расследование закрыто. В оставшихся девяти улики, «если они подлинны и подтверждены», могут указывать на участие; Лаззарини расторгает договоры. Двое из 19 к тому моменту были мертвы. В заявлении: у агентства почти 30 000 сотрудников в регионе, из них около 13 000 в Газе. Девять из девятнадцати — не «UNRWA = ХАМАС». Ноль улик по всем — тоже не тот текст.",
         "en": "OIOS finished its investigation of 19 area staff whom Israel linked to the 7 October attack (first 12, then seven more). In one case there was no evidence — that person rejoined the Agency. In nine cases the evidence was insufficient and the investigation is closed. In the remaining nine, the evidence, “if authenticated and corroborated”, could indicate involvement; Lazzarini terminates the contracts. Two of the 19 were by then confirmed dead. The statement: the Agency has nearly 30,000 staff in the region, including about 13,000 in the Gaza Strip. Nine of nineteen is not “UNRWA = Hamas”. Zero evidence in every file is not that text either.",
         "da": "OIOS afsluttede undersøgelsen af 19 lokale ansatte, som Israel knyttede til angrebet den 7. oktober (først 12, derefter yderligere syv). I én sag var der ingen beviser — personen vendte tilbage til agenturet. I ni sager var beviserne utilstrækkelige, og undersøgelsen er lukket. I de resterende ni kan beviserne, «hvis de autentificeres og underbygges», pege på medvirken; Lazzarini ophæver kontrakterne. To af de 19 var da bekræftet døde. Erklæringen: agenturet har næsten 30.000 ansatte i regionen, heraf omkring 13.000 i Gaza. Ni ud af nitten er ikke «UNRWA = Hamas». Nul beviser i alle sager er heller ikke den tekst."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.un.org/unispal/document/unrwa-investigation-statement-05aug24/"
     },
     "ipc-2024-03": {
       "kind": {
@@ -2883,7 +3002,9 @@
         "ru": "Комитет (активирован 1 марта 2024) подтверждает проекцию: голод (IPC Phase 5) ожидается в губерниях Северная Газа и Газа с середины марта по май 2024; порог острой продовольственной небезопасности уже далеко превзойдён. Для юга и центра — риск голода к середине июля в разумном худшем сценарии. Это не судебный вывод о умысле по ст. 54. Это не разрешение называть любое сокращение грузовиков «голодомором». Июньский обзор 2024 года той же комиссии скажет: имеющиеся данные не указывают, что голод уже происходит; все районы — Phase 4.",
         "en": "The Committee (activated 1 March 2024) confirms the projection: Famine (IPC Phase 5) is expected in North Gaza and Gaza governorates from mid-March to May 2024; the acute-food-insecurity threshold has already been far exceeded. For the south and middle — a risk of famine by mid-July in a reasonable worst-case scenario. This is not a judicial finding of intent under art. 54. It is not a licence to call any cut in trucks a “famine”. The same committee’s June 2024 review will say: the evidence does not indicate that Famine is occurring; all areas are Phase 4.",
         "da": "Komitéen (aktiveret 1. marts 2024) bekræfter projektionen: hungersnød (IPC Phase 5) forventes i guvernementerne Nordgaza og Gaza fra midten af marts til maj 2024; tærsklen for akut fødevareusikkerhed er allerede langt overskredet. For syd og midte — risiko for hungersnød inden midten af juli i et rimeligt værste scenario. Det er ikke et judicielt fund om forsæt efter art. 54. Det er ikke en tilladelse til at kalde enhver indskrænkning af lastbiler for «hungersnød». Samme komités gennemgang i juni 2024 vil sige: evidensen indikerer ikke, at hungersnød forekommer; alle områder er Phase 4."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.ipcinfo.org/ipcinfo-website/alerts-archive/issue-97/en/",
+      "botBlock": true
     },
     "ipc-2025-08": {
       "kind": {
@@ -2907,7 +3028,9 @@
         "ru": "Комитет пишет: голода в одном и том же кризисе он ещё не рассматривал столько раз. На 15 августа 2025 он находит классификацию команды анализа правдоподобной: Famine (IPC Phase 5) с reasonable evidence в губернии Газа; Phase 4 в Дейр-эль-Балахе и Хан-Юнисе. Тяжесть на севере «сходна или хуже», но из-за недостатка данных Северную Газу не классифицируют. Проекция: пороги Phase 5 могут быть пересечены в Дейр-эль-Балахе и Хан-Юнисе в ближайшие недели. Формула комитета: «this Famine is entirely man-made». Это не приговор по ст. 54 и не цифра смертей от голода — такой цифры здесь нет. Израиль классификацию оспаривает. Март 2024 и август 2025 — два разных акта. Не склеивать «imminent» и «currently occurring».",
         "en": "The Committee writes that it has never had to review the same crisis so many times. As of 15 August 2025 it finds the analysis team’s classification plausible: Famine (IPC Phase 5) with reasonable evidence in Gaza Governorate; Phase 4 in Deir al-Balah and Khan Younis. Severity in the north is “similar or worse”, but North Gaza is not classified for lack of evidence. Projection: Phase 5 thresholds may be crossed in Deir al-Balah and Khan Younis in the coming weeks. The Committee’s formula: “this Famine is entirely man-made”. This is not a verdict under art. 54 and not a figure for famine deaths — no such figure is here. Israel contests the classification. March 2024 and August 2025 are two different acts. Do not glue “imminent” and “currently occurring”.",
         "da": "Komitéen skriver, at den aldrig har måttet vende tilbage til den samme krise så mange gange. Pr. 15. august 2025 finder den analyseteamets klassifikation plausibel: hungersnød (IPC Phase 5) med reasonable evidence i Gaza-guvernementet; Phase 4 i Deir al-Balah og Khan Younis. Alvoren i nord er «similar or worse», men Nordgaza klassificeres ikke på grund af manglende evidens. Projektion: Phase 5-tærskler kan overskrides i Deir al-Balah og Khan Younis i de kommende uger. Komitéens formel: «this Famine is entirely man-made». Det er ikke en dom efter art. 54 og ikke et tal for hungersnødsdødsfald — et sådant tal står ikke her. Israel bestrider klassifikationen. Marts 2024 og august 2025 er to forskellige akter. Lim ikke «imminent» og «currently occurring» sammen."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.ipcinfo.org/ipcinfo-website/frc/",
+      "botBlock": true
     },
     "palmer": {
       "kind": {
@@ -2931,7 +3054,8 @@
         "ru": "Панель под председательством Джеффри Палмера, созданная генсекретарём после захвата флотилии 31 мая 2010 года. Вывод: морская блокада Газы была законной мерой безопасности Израиля; сила, применённая на борту «Мави Мармара», была чрезмерной и неразумной, девять человек погибли. Гуманитарные нужды должны удовлетворяться, иначе законность блокады не удержится. Это не таблица COGAT 2008 года и не IPC 2024/2025. Три жанра не склеивать: калории, морская блокада, классификация голода.",
         "en": "The panel chaired by Geoffrey Palmer, set up by the Secretary-General after the 31 May 2010 seizure of the flotilla. The finding: Israel’s naval blockade of Gaza was a legal security measure; the force used on board the Mavi Marmara was excessive and unreasonable; nine people were killed. Humanitarian needs must be met, or the legality of the blockade will not hold. This is not the 2008 COGAT table and not the 2024/2025 IPC. Do not glue three genres: calories, a naval blockade, a famine classification.",
         "da": "Panelet under Geoffrey Palmer, nedsat af generalsekretæren efter tilfangetagelsen af flotillen den 31. maj 2010. Fundet: Israels maritime blokade af Gaza var en lovlig sikkerhedsforanstaltning; magtanvendelsen om bord på Mavi Marmara var overdreven og urimelig; ni mennesker blev dræbt. De humanitære behov skal dækkes, ellers holder blokadens lovlighed ikke. Det er ikke COGAT-tabellen fra 2008 og ikke IPC 2024/2025. Lim ikke tre genrer sammen: kalorier, en maritim blokade, en hungersnødsklassifikation."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.un.org/unispal/document/auto-insert-205969/"
     },
     "hamas-2017": {
       "kind": {
@@ -2955,7 +3079,8 @@
         "ru": "П. 19: «не будет признания законности сионистского образования». П. 20: ХАМАС «отвергает любую альтернативу полному и полному освобождению Палестины, от реки до моря». В том же пункте: «не поступаясь» отказом от признания и «не отказываясь ни от каких палестинских прав», он считает создание полностью суверенного палестинского государства со столицей в Иерусалиме по линиям 4 июня 1967 года, с возвращением беженцев, «формулой национального консенсуса». П. 12: возвращение в дома 1948 и 1967 годов — «естественное право», индивидуальное и коллективное, неотчуждаемое. Это не хартия 1988 года. Два текста. Не одна цитата. И не Осло: письма о признании Израиля ХАМАС не подписывал.",
         "en": "Para. 19: “There shall be no recognition of the legitimacy of the Zionist entity.” Para. 20: Hamas “rejects any alternative to the full and complete liberation of Palestine, from the river to the sea.” In the same paragraph: “without compromising its rejection of the Zionist entity and without relinquishing any Palestinian rights”, it considers the establishment of a fully sovereign Palestinian state, with Jerusalem as its capital, along the 4 June 1967 lines, with the return of the refugees, to be “a formula of national consensus”. Para. 12: return to the homes of 1948 and 1967 is a “natural right”, individual and collective, inalienable. This is not the 1988 Charter. Two texts. Not one quotation. And not Oslo: Hamas did not sign the letters recognising Israel.",
         "da": "Pkt. 19: «Der skal ikke ske anerkendelse af det zionistiske fænomens legitimitet.» Pkt. 20: Hamas «afviser ethvert alternativ til Palæstinas fulde og fuldstændige befrielse, fra floden til havet». I samme punkt: «uden at slække på afvisningen af det zionistiske fænomen og uden at opgive nogen palæstinensiske rettigheder» anser bevægelsen oprettelsen af en fuldt suveræn palæstinensisk stat, med Jerusalem som hovedstad, langs linjerne af 4. juni 1967, med flygtningenes tilbagevenden, for «en formel for national konsensus». Pkt. 12: tilbagevenden til hjemmene fra 1948 og 1967 er en «naturlig ret», individuel og kollektiv, ufortabelig. Det er ikke pagten fra 1988. To tekster. Ikke ét citat. Og ikke Oslo: Hamas underskrev ikke brevene, der anerkendte Israel."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.palquest.org/en/historictext/24219/islamic-resistance-movement-hamas-document-general-principles-and-policies"
     },
     "abraham-decl": {
       "kind": {
@@ -2979,7 +3104,8 @@
         "ru": "Подписи: Нетаньяху, Абдалла бен Заид, Трамп, Абдуллатиф аз-Заяни. Текст говорит о взаимном понимании, свободе религии, диалоге трёх авраамических религий, «покончить с радикализацией и конфликтом». Он «тепло приветствует» уже достигнутый прогресс в установлении дипотношений Израиля с соседями. Слова «Палестина», «оккупация», «два государства» в декларации нет. Это не значит, что двусторонний договор ОАЭ–Израиль о них молчит. Два текста. Не одна цитата.",
         "en": "The signatures: Netanyahu, Abdallah bin Zayid, Trump, Abdullatif Al Zayani. The text speaks of mutual understanding, religious freedom, dialogue among the three Abrahamic religions, “to end radicalization and conflict”. It “warmly welcome[s]” progress already made in establishing diplomatic relations between Israel and its neighbours. The words “Palestine”, “occupation”, “two States” are not in the Declaration. That does not mean the bilateral UAE–Israel treaty is silent on them. Two texts. Not one quotation.",
         "da": "Underskrifterne: Netanyahu, Abdallah bin Zayid, Trump, Abdullatif Al Zayani. Teksten taler om gensidig forståelse, religionsfrihed, dialog mellem de tre abrahamitiske religioner, «at gøre en ende på radikalisering og konflikt». Den «byder varmt velkommen» den allerede opnåede fremgang i at etablere diplomatiske forbindelser mellem Israel og dets naboer. Ordene «Palæstina», «besættelse», «to stater» står ikke i erklæringen. Det betyder ikke, at den bilaterale traktat UAE–Israel tier om dem. To tekster. Ikke ét citat."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://2017-2021.state.gov/the-abraham-accords/"
     },
     "uae-israel": {
       "kind": {
@@ -3003,7 +3129,8 @@
         "ru": "Статья 1: мир, дипотношения и полная нормализация между ОАЭ и Государством Израиль. В преамбуле стороны вспоминают представление «Видения мира» 28 января 2020 года и обязуются «продолжать усилия» к справедливому, всеобъемлющему, реалистичному и прочному решению израильско-палестинского конфликта; ссылаются на мирные договоры с Египтом и Иорданией и намерены «совместно работать» над согласованным решением, отвечающим законным нуждам обоих народов. Статья 4: не допускать террористической или враждебной деятельности друг против друга. Формула «дело никогда не было в Палестине» ломается уже преамбулой. Формула «нормализация = конец оккупации» договором тоже не подписана.",
         "en": "Article 1: peace, diplomatic relations and full normalisation between the UAE and the State of Israel. In the preamble the parties recall the 28 January 2020 Vision for Peace and commit to “continuing their efforts to achieve a just, comprehensive, realistic and enduring solution to the Israeli-Palestinian conflict”; they recall the peace treaties with Egypt and Jordan and are “committed to working together to realize a negotiated solution” that meets the legitimate needs of both peoples. Article 4: prevent terrorist or hostile activities against each other. The formula “it was never about Palestine” is already broken by the preamble. The formula “normalisation = the end of occupation” is not signed in the treaty either.",
         "da": "Artikel 1: fred, diplomatiske forbindelser og fuld normalisering mellem UAE og Staten Israel. I præamblen minder parterne om Vision for Peace af 28. januar 2020 og forpligter sig til «at fortsætte deres bestræbelser på at opnå en retfærdig, omfattende, realistisk og varig løsning på den israelsk-palæstinensiske konflikt»; de minder om fredstraktaterne med Egypten og Jordan og er «fast besluttet på i fællesskab at virkeliggøre en forhandlet løsning», der opfylder begge folks legitime behov. Artikel 4: forhindre terror eller fjendtlig virksomhed mod hinanden. Formlen «det handlede aldrig om Palæstina» knækkes allerede af præamblen. Formlen «normalisering = enden på besættelsen» er heller ikke underskrevet i traktaten."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://trumpwhitehouse.archives.gov/briefings-statements/abraham-accords-peace-agreement-treaty-of-peace-diplomatic-relations-and-full-normalization-between-the-united-arab-emirates-and-the-state-of-israel/"
     },
     "law-of-return": {
       "kind": {
@@ -3027,7 +3154,9 @@
         "ru": "Статья 1: «Каждый еврей имеет право репатриироваться в эту страну.» Позднейшие поправки расширяют круг на детей, внуков и супругов и оставляют отказ тем, кто действует против еврейского народа или может угрожать здоровью или безопасности общества. Это закон о гражданстве одного государства, не комментарий к пункту 11 резолюции 194. Симметрия «у тех закон — значит, у этих нет права» в статуте не написана. Симметрия «раз 194, значит, Закон о возвращении незаконен» тоже не написана.",
         "en": "Section 1: “Every Jew has the right to come to this country as an oleh.” Later amendments extend the circle to children, grandchildren and spouses, and leave a refusal to those who act against the Jewish people or may endanger public health or security. This is one state’s nationality statute, not a commentary on paragraph 11 of resolution 194. The symmetry “they have a law, therefore the others have no right” is not written in the statute. The symmetry “because of 194, the Law of Return is unlawful” is not written either.",
         "da": "§ 1: «Enhver jøde har ret til at komme til dette land som oleh.» Senere ændringer udvider kredsen til børn, børnebørn og ægtefæller og lader afslag stå åbent over for dem, der handler imod det jødiske folk eller kan true sundhed eller sikkerhed. Det er én stats nationalitetslov, ikke en kommentar til punkt 11 i resolution 194. Symmetrien «de har en lov, derfor har de andre ingen ret» står ikke i statutten. Symmetrien «på grund af 194 er Hjemvendingsloven retsstridig» står der heller ikke."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.refworld.org/legal/legislation/natlegbod/1950/en/20612",
+      "botBlock": true
     },
     "euco-2023-10": {
       "kind": {
@@ -3051,7 +3180,8 @@
         "ru": "П. 15: осуждение нападений ХАМАСа; использование гражданских как щитов — «particularly deplorable atrocity»; право Израиля защищаться «in line with international law and international humanitarian law»; призыв к ХАМАСу «immediately release all hostages without any precondition». П. 18: ЕС готов способствовать политическому процессу «on the basis of the two-state solution». Это не приказ о прекращении огня и не индульгенция на любой удар. Формула «без условий» названа. Как живых вынимают на практике — другой регистр.",
         "en": "Para. 15: condemnation of Hamas’s attacks; the use of civilians as human shields is a “particularly deplorable atrocity”; Israel’s right to defend itself “in line with international law and international humanitarian law”; the call on Hamas to “immediately release all hostages without any precondition”. Para. 18: the EU is ready to help revive a political process “on the basis of the two-state solution”. This is not a ceasefire order and not an indulgence for any strike. The formula “without precondition” is named. How the living are brought out in practice is another register.",
         "da": "Pkt. 15: fordømmelse af Hamas’ angreb; brug af civile som skjolde er en «particularly deplorable atrocity»; Israels ret til at forsvare sig «in line with international law and international humanitarian law»; opfordringen til Hamas om at «immediately release all hostages without any precondition». Pkt. 18: EU er parat til at bidrage til en politisk proces «on the basis of the two-state solution». Det er ikke en våbenhvileordre og ikke aflad for ethvert angreb. Formlen «uden forudsætning» er nævnt. Hvordan de levende hentes ud i praksis, er et andet register."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://data.consilium.europa.eu/doc/document/ST-14-2023-INIT/en/pdf"
     },
     "eeas-icj": {
       "kind": {
@@ -3075,7 +3205,8 @@
         "ru": "Текст: «We take note of today’s order». ЕС подтверждает поддержку МС ООН. «Orders of the International Court of Justice are binding on the Parties and they must comply with them. The European Union expects their full, immediate and effective implementation.» Право сторон представить доводы о юрисдикции, приемлемости и существе «remains unaffected». Это не вывод о геноциде и не датская доктрина глубже ЕС.",
         "en": "The text: “We take note of today’s order”. The EU reaffirms support for the ICJ. “Orders of the International Court of Justice are binding on the Parties and they must comply with them. The European Union expects their full, immediate and effective implementation.” Each party’s right to argue jurisdiction, admissibility or the merits “remains unaffected”. This is not a genocide finding and not a deeper Danish doctrine than the EU’s.",
         "da": "Teksten: «We take note of today’s order». EU bekræfter støtten til ICJ. «Orders of the International Court of Justice are binding on the Parties and they must comply with them. The European Union expects their full, immediate and effective implementation.» Parternes ret til at fremføre argumenter om kompetence, antagelighed eller realitet «remains unaffected». Det er ikke et folkedrabsfund og ikke en dybere dansk doktrin end EU’s."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.eeas.europa.eu/eeas/icj-joint-statement-high-representative-and-european-commission_en"
     },
     "icc-2024-11": {
       "kind": {
@@ -3099,7 +3230,9 @@
         "ru": "Палата предварительного производства I 21 ноября 2024 выдала ордера на Нетаньяху и Галанта: есть разумные основания полагать военное преступление использования голода как метода войны и преступления против человечности (убийство, преследование, иные бесчеловечные акты) с 8 октября 2023 по крайней мере до 20 мая 2024; также — умышленные нападения на гражданских как начальников. Отдельный ордер на Мухаммада Дейфа — убийства, захват заложников, сексуальное насилие. Это не ст. 51(5)(b) и не приговор. Ордер — не таблица смертей от голода.",
         "en": "Pre-Trial Chamber I on 21 November 2024 issued warrants for Netanyahu and Gallant: reasonable grounds to believe the war crime of using starvation as a method of warfare and crimes against humanity (murder, persecution, other inhumane acts) from at least 8 October 2023 until at least 20 May 2024; also — intentionally directing attacks against civilians as superiors. A separate warrant for Mohammed Deif — murder, hostage-taking, sexual violence. This is not art. 51(5)(b) and not a verdict. A warrant is not a famine-death table.",
         "da": "Forundersøgelseskammer I udstedte den 21. november 2024 arrestordrer på Netanyahu og Gallant: rimelig grund til at antage krigsforbrydelsen sult som krigsmetode og forbrydelser mod menneskeheden (drab, forfølgelse, andre umenneskelige handlinger) fra mindst 8. oktober 2023 til mindst 20. maj 2024; også — bevidste angreb på civile som overordnede. En særskilt ordre på Mohammed Deif — drab, gidseltagning, seksuel vold. Det er ikke art. 51(5)(b) og ikke en dom. En arrestordre er ikke en tabel over hungersnødsdødsfald."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.icc-cpi.int/news/situation-state-palestine-icc-pre-trial-chamber-i-rejects-state-israels-challenges",
+      "botBlock": true
     },
     "who-2025-08": {
       "kind": {
@@ -3123,7 +3256,8 @@
         "ru": "22 августа 2025 ФАО, ЮНИСЕФ, ВПП и ВОЗ: более полумиллиона человек в губернии Газа «trapped in famine»; условия проецируются на Дейр-эль-Балах и Хан-Юнис. Это чтение классификации IPC от 15 августа, не отдельная перепись смертей. Тедрос: «man-made famine». Израиль классификацию оспаривает. Вход грузовиков ≠ распределение внутри. Ст. 54 и фаза IPC — разные акты.",
         "en": "22 August 2025 FAO, UNICEF, WFP and WHO: more than half a million people in Gaza Governorate are “trapped in famine”; conditions are projected to spread to Deir al-Balah and Khan Younis. This is a reading of the 15 August IPC classification, not a separate death census. Tedros: “man-made famine”. Israel contests the classification. Trucks at the gate ≠ distribution inside. Art. 54 and an IPC phase are different acts.",
         "da": "22. august 2025 FAO, UNICEF, WFP og WHO: mere end en halv million mennesker i Gaza-guvernementet er «trapped in famine»; tilstandene ventes at sprede sig til Deir al-Balah og Khan Younis. Det er en læsning af IPC-klassifikationen af 15. august, ikke en særskilt dødsfolketælling. Tedros: «man-made famine». Israel bestrider klassifikationen. Lastbiler ved porten ≠ fordeling indeni. Art. 54 og en IPC-fase er forskellige akter."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.who.int/news/item/22-08-2025-famine-confirmed-for-first-time-in-gaza"
     },
     "s-2023-742": {
       "kind": {
@@ -3147,7 +3281,8 @@
         "ru": "Одинаковые письма постпреда Израиля генсекретарю и председателю Совета 7 октября 2023 (S/2023/742): Государство Израиль «will act in any way necessary to protect its citizens and sovereignty from the ongoing terrorist attacks originating from the Gaza Strip and carried out by Hamas». Это уведомление о нападении и о намерении действовать. Явной формулы ст. 51 («if an armed attack occurs», доклад Совету о мерах самообороны) в письме нет. Тонкий Art. 51: нападение названо, статья — нет. Ст. 51 всё равно лежит в Уставе. Письмо её не отменяет и не цитирует.",
         "en": "Identical letters from Israel’s Permanent Representative to the Secretary-General and the President of the Council on 7 October 2023 (S/2023/742): the State of Israel “will act in any way necessary to protect its citizens and sovereignty from the ongoing terrorist attacks originating from the Gaza Strip and carried out by Hamas”. This reports an attack and an intent to act. The letter does not use the Art. 51 formula (“if an armed attack occurs”, report the self-defence measures to the Council). A thin Art. 51: the attack is named, the article is not. Art. 51 still sits in the Charter. The letter neither repeals it nor cites it.",
         "da": "Identiske breve fra Israels faste repræsentant til generalsekretæren og formanden for Rådet den 7. oktober 2023 (S/2023/742): Staten Israel «will act in any way necessary to protect its citizens and sovereignty from the ongoing terrorist attacks originating from the Gaza Strip and carried out by Hamas». Det meddeler et angreb og en hensigt om at handle. Brevet bruger ikke art. 51-formlen («if an armed attack occurs», meddelelse til Rådet om selvforsvarsforanstaltninger). En tynd art. 51: angrebet nævnes, artiklen ikke. Art. 51 ligger stadig i Pagten. Brevet ophæver den ikke og citerer den ikke."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.un.org/unispal/document/attack-against-israel-perpetrated-by-hamas-letter-from-israel/"
     },
     "ft-b84": {
       "kind": {
@@ -3171,7 +3306,8 @@
         "ru": "B 84 (2023-24), borgerforslag: правительство должно добиваться немедленного прекращения огня и коридоров, осудить нарушения Израилем МГП и увеличить помощь Газе. 2-е чтение 19 декабря 2023: forkastet. За — 8 (EL, ALT); против — 89 (S, V, M, DD, LA, KF, DF, NB); воздержались — 14 (SF, RV, UFG). Это не датская доктрина войны. Это голос Фолькетинга: предложение не стало решением.",
         "en": "B 84 (2023-24), a citizens’ motion: the government should work for an immediate ceasefire and corridors, condemn Israel’s breaches of IHL and raise aid to Gaza. Second reading 19 December 2023: rejected. For — 8 (EL, ALT); against — 89 (S, V, M, DD, LA, KF, DF, NB); abstentions — 14 (SF, RV, UFG). This is not a Danish doctrine of war. It is the Folketing’s vote: the motion did not become a decision.",
         "da": "B 84 (2023-24), borgerforslag: regeringen skal arbejde for øjeblikkelig våbenhvile og korridorer, fordømme Israels brud på IHL og øge hjælpen til Gaza. 2. behandling 19. december 2023: forkastet. For — 8 (EL, ALT); imod — 89 (S, V, M, DD, LA, KF, DF, NB); hverken for eller imod — 14 (SF, RV, UFG). Det er ikke en dansk krigsdoktrin. Det er Folketingets stemme: forslaget blev ikke til en beslutning."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.folketingstidende.dk/samling/20231/beslutningsforslag/B84/index.htm"
     },
     "ft-b165": {
       "kind": {
@@ -3195,7 +3331,8 @@
         "ru": "B 165 (2023-24): немедленное и прочное прекращение огня в Газе, расследование нарушений в Газе и в Израиле, помощь, политическое двухгосударственное решение. 2-е чтение 4 июня 2024: forkastet. За — 21 (SF, EL, RV, ALT); против — 85 (S, V, DD, LA, M, KF, DF и один беспартийный). B 200 («Дания обязана предотвратить геноцид») — другой текст, тоже forkastet в тот день. Два предложения. Не одна цитата. Глубже датской доктрины здесь нет.",
         "en": "B 165 (2023-24): an immediate and lasting ceasefire in Gaza, investigation of breaches in Gaza and in Israel, aid, a political two-state solution. Second reading 4 June 2024: rejected. For — 21 (SF, EL, RV, ALT); against — 85 (S, V, DD, LA, M, KF, DF and one independent). B 200 (“Denmark has a duty to prevent genocide”) is another text, also rejected that day. Two motions. Not one quotation. There is no deeper Danish doctrine here.",
         "da": "B 165 (2023-24): en øjeblikkelig og varig våbenhvile i Gaza, undersøgelse af brud i Gaza og i Israel, bistand, en politisk tostatsløsning. 2. behandling 4. juni 2024: forkastet. For — 21 (SF, EL, RV, ALT); imod — 85 (S, V, DD, LA, M, KF, DF og én løsgænger). B 200 («Danmark har pligt til at forhindre folkedrab») er en anden tekst, også forkastet den dag. To forslag. Ikke ét citat. Der er ingen dybere dansk doktrin her."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.folketingstidende.dk/samling/20231/beslutningsforslag/B165/index.htm"
     },
     "lindekilde": {
       "kind": {
@@ -3219,7 +3356,8 @@
         "ru": "Lasse Lindekilde, European Journal on Criminal Policy and Research 18(4), 2012: как измерить воздействие датской политики контррадикализации на целевые группы. Статья ставит проблему оценки, не выдаёт процент «дерадикализованных». Такой цифры в корпусе нет — и мы её не выдумываем. Zeren 2017 и базы START здесь тоже не становятся таблицей успеха. «После» без институтов остаётся паузой, не ставкой.",
         "en": "Lasse Lindekilde, European Journal on Criminal Policy and Research 18(4), 2012: how to measure the impact of Danish counter-radicalisation policy on target groups. The article poses a problem of evaluation; it does not issue a percentage of the “deradicalised”. No such figure is held in the corpus — and we do not invent one. Zeren 2017 and the START databases do not become a success table here either. An “after” without institutions remains a pause, not a rate.",
         "da": "Lasse Lindekilde, European Journal on Criminal Policy and Research 18(4), 2012: hvordan man måler virkningen af dansk kontradikaliseringspolitik på målgrupper. Artiklen stiller et evalueringsproblem; den udsteder ikke en procent af de «deradikaliserede». Et sådant tal holdes ikke i korpus — og vi opfinder ikke ét. Zeren 2017 og START-databaserne bliver heller ikke til en succes-tabel her. Et «bagefter» uden institutioner forbliver en pause, ikke en rate."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://doi.org/10.1007/s10610-012-9178-y"
     },
     "mfa-faq": {
       "kind": {
@@ -3243,7 +3381,9 @@
         "ru": "Обновлено 6 декабря 2023. Текст ставит цели: освобождение заложников и лишение ХАМАСа военных возможностей; говорит, что ЦАХАЛ вынужден действовать шире, чем в прежних раундах, потому что ХАМАС использует гражданских как щит. Гражданские потери «neither the intent nor the wish». Это позиция стороны. Её не склеивают с IPC и не делают индульгенцией на ст. 51(8).",
         "en": "Updated 6 December 2023. The text sets aims: release of hostages and denial of Hamas’s military capacity; it says the IDF must operate more widely than in earlier rounds because Hamas uses civilians as a shield. Civilian casualties are “neither the intent nor the wish”. This is one party’s position. It is not glued to the IPC and is not an indulgence under art. 51(8).",
         "da": "Opdateret 6. december 2023. Teksten sætter mål: befrielse af gidsler og fratagelse af Hamas’ militære evne; den siger, at IDF må operere bredere end i tidligere runder, fordi Hamas bruger civile som skjold. Civile tab er «neither the intent nor the wish». Det er den ene parts position. Den limes ikke sammen med IPC og er ikke en aflad efter art. 51(8)."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.gov.il/en/pages/swords-of-iron-faq-6-dec-2023",
+      "botBlock": true
     },
     "hamas-narrative": {
       "kind": {
@@ -3267,7 +3407,8 @@
         "ru": "16 страниц, 21 января 2024. Операция «целевала израильские военные объекты» и захват солдат для обмена. «Avoiding harm to civilians… is a religious and moral commitment». Если гражданских задевали — «in the course of the confrontation». «Maybe some faults happened» из-за быстрого краха израильской системы и хаоса. HRW 17 июля 2024: утверждение, что силы не стремились вредить гражданским, — ложь; убийства гражданских были центральной целью плана. Два текста. Не одна цитата.",
         "en": "Sixteen pages, 21 January 2024. The operation “targeted the Israeli military sites” and sought to arrest soldiers for an exchange. “Avoiding harm to civilians… is a religious and moral commitment.” If civilians were hit — “in the course of the confrontation.” “Maybe some faults happened” because of the rapid collapse of the Israeli system and the chaos. HRW 17 July 2024: the claim that the forces did not seek to harm civilians is false; the killing of civilians was a central aim of the plan. Two texts. Not one quotation.",
         "da": "Seksten sider, 21. januar 2024. Operationen «targeted the Israeli military sites» og søgte at pågribe soldater til en udveksling. «Avoiding harm to civilians… is a religious and moral commitment.» Hvis civile blev ramt — «in the course of the confrontation.» «Maybe some faults happened» på grund af det israelske systems hurtige sammenbrud og kaos. HRW 17. juli 2024: påstanden om, at styrkerne ikke søgte at skade civile, er falsk; drab på civile var et centralt mål i planen. To tekster. Ikke ét citat."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://www.palestinechronicle.com/wp-content/uploads/2024/01/PDF.pdf"
     },
     "arbejderen-2026-08": {
       "kind": {
@@ -3291,7 +3432,8 @@
         "ru": "Rune Jørgensen, Arbejderen, 24 августа 2026, о пятнице 21 августа у штаб-квартиры Mærsk на Esplanaden. Организаторы: Break the Chain и Mask Off Maersk. Точная формула в тексте: «Men protesten blev gennemført uden vold og med fokus på et klart budskab: Ingen profit på folkemord!» Требование в репортаже: Mærsk прекращает перевозку оружия и частей — «uanset hvilken teknisk betegnelse» — для использования Израилем в оккупации и «folkemordet». Совместное заявление, зачитанное у Trianglen, в статье дано с купюрами: блокада дороги к Mærsk, отказ от status quo, «Mærsks medvirken til folkemord». Это уличный источник лозунга. Слово folkemord здесь не приговор МС ООН от 26 января 2024 и не отмена Конвенции 1948 года.",
         "en": "Rune Jørgensen, Arbejderen, 24 August 2026, on Friday 21 August at Maersk’s headquarters on Esplanaden. Organisers: Break the Chain and Mask Off Maersk. The exact formula in the text: “Men protesten blev gennemført uden vold og med fokus på et klart budskab: Ingen profit på folkemord!” The demand in the report: Maersk stops carrying weapons and parts — “uanset hvilken teknisk betegnelse” — for Israel’s use in the occupation and “folkemordet”. The joint statement read at Trianglen is given with ellipses: a blockade of the road to Maersk, a refusal of the status quo, “Mærsks medvirken til folkemord”. This is the street source of the chant. The word folkemord here is not the ICJ’s 26 January 2024 order and not a repeal of the 1948 Convention.",
         "da": "Rune Jørgensen, Arbejderen, 24. august 2026, om fredag den 21. august ved Mærsks hovedsæde på Esplanaden. Arrangører: Break the Chain og Mask Off Maersk. Den nøjagtige formel i teksten: «Men protesten blev gennemført uden vold og med fokus på et klart budskab: Ingen profit på folkemord!» Kravet i reportagen: Mærsk stopper med at fragte våben og våbendele — «uanset hvilken teknisk betegnelse» — til Israels brug i besættelsen og «folkemordet». Den fælles erklæring, der blev læst op ved Trianglen, gengives med udeladelser: blokade af vejen til Mærsk, afvisning af status quo, «Mærsks medvirken til folkemord». Det er gadekildens slogan. Ordet folkemord her er ikke ICJ’s kendelse af 26. januar 2024 og ikke en ophævelse af konventionen fra 1948."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://arbejderen.dk/indland/blokade-af-vaabentransport-fra-maersk-til-israel-blev-punktum-i-to-ugers-protestlejr/"
     },
     "ritzau-2026-08": {
       "kind": {
@@ -3315,7 +3457,8 @@
         "ru": "Pressemeddelelse, 21.8.2026 13:09 CEST, via Ritzau, издатель — Den Grønne Ungdomsbevægelse. Блокада дорог вокруг штаб-квартиры Mærsk; кампания Bryd Kæden / Mask off Mærsk. Формулы «Ingen profit på folkemord» в релизе нет — её даёт репортаж Arbejderen о том же дне. Эмма Лидди (Mask off Mærsk): Mærsk возит оружие и боеприпасы, в том числе части бомб в 900 кг; бомбардировка Газы «fortsætter på trods af den såkaldte våbenhvile». Вильям Факсхёй: «Mærsk sætter profit over alle andre hensyn» и связывает это с «medskyldige i Israels folkedrab». Релиз ссылается на отчёт Palestinian Youth Movement и Oxfam Danmark (июнь) и на формулировку Комиссии ООН по правам человека — это цитата стороны акции, не приговор МС ООН. Не склеивать с Конвенцией 1948 года и не делать из релиза датскую доктрину.",
         "en": "Press release, 21.8.2026 13:09 CEST, via Ritzau, publisher Den Grønne Ungdomsbevægelse. A blockade of the roads around Maersk’s headquarters; the Bryd Kæden / Mask off Mærsk campaign. The formula “Ingen profit på folkemord” is not in the release — Arbejderen’s report of the same day supplies it. Emma Liddy (Mask off Mærsk): Maersk carries weapons and ammunition, including parts for 900 kg bombs; the bombardment of Gaza “fortsætter på trods af den såkaldte våbenhvile”. William Faxhøj: “Mærsk sætter profit over alle andre hensyn” and ties that to being “medskyldige i Israels folkedrab”. The release cites a June Palestinian Youth Movement / Oxfam Denmark report and a UN Human Rights Commission formulation — that is the action’s citation, not an ICJ judgment. Do not glue it to the 1948 Convention, and do not make a Danish doctrine out of a press release.",
         "da": "Pressemeddelelse, 21.8.2026 13:09 CEST, via Ritzau, udgiver Den Grønne Ungdomsbevægelse. Blokade af vejene omkring Mærsks hovedkontor; kampagnen Bryd Kæden / Mask off Mærsk. Formlen «Ingen profit på folkemord» står ikke i meddelelsen — den leverer Arbejderens reportage om samme dag. Emma Liddy (Mask off Mærsk): Mærsk transporterer våben og ammunition, herunder dele til 900 kg bomber; bombardementet af Gaza «fortsætter på trods af den såkaldte våbenhvile». William Faxhøj: «Mærsk sætter profit over alle andre hensyn» og knytter det til at være «medskyldige i Israels folkedrab». Meddelelsen henviser til en junirapport fra Palestinian Youth Movement og Oxfam Danmark og til en formulering fra FN’s Kommission for Menneskerettigheder — det er aktionens henvisning, ikke en ICJ-dom. Lim det ikke sammen med konventionen fra 1948, og gør ikke en dansk doktrin ud af en pressemeddelelse."
-      }
+      },
+      "archive": "https://web.archive.org/web/https://via.ritzau.dk/pressemeddelelse/15105639/lige-nu-aktivister-blokerer-pa-ny-maersks-hovedkontorer-i-kobenhavn?lang=da&publisherId=13561235"
     },
     "amnesty-2024-12": {
       "kind": {
@@ -3339,7 +3482,272 @@
         "ru": "Отчёт MDE 15/8668/2024, 5 декабря 2024: Amnesty заключает, что Израиль совершил геноцид против палестинцев в Газе. Период исследования — с 7 октября 2023 по начало июля 2024. Это не решение МС ООН от 26 января 2024 и не консультативное заключение 19 июля. Донхью: правдоподобны права, не преступление. Amnesty и Суд — два регистра. Если слово лежит только на одной чаше, весы снова врут.",
         "en": "Report MDE 15/8668/2024, 5 December 2024: Amnesty concludes that Israel has committed genocide against Palestinians in Gaza. The research window is 7 October 2023 to early July 2024. This is not the ICJ’s 26 January 2024 order and not the 19 July advisory opinion. Donoghue: the rights were plausible, not the crime. Amnesty and the Court are two registers. If the word sits on one scale only, the scales lie again.",
         "da": "Rapport MDE 15/8668/2024, 5. december 2024: Amnesty konkluderer, at Israel har begået folkedrab mod palæstinensere i Gaza. Undersøgelsesperioden er 7. oktober 2023 til begyndelsen af juli 2024. Det er ikke ICJ’s kendelse af 26. januar 2024 og ikke den rådgivende udtalelse af 19. juli. Donoghue: rettighederne var plausible, ikke forbrydelsen. Amnesty og Retten er to registre. Ligger ordet kun i den ene vægtskål, lyver vægten igen."
+      },
+      "archive": "https://web.archive.org/web/https://www.amnesty.org/en/documents/mde15/8668/2024/en/"
+    }
+  },
+  "defaults": {
+    "langs": [
+      "da",
+      "en",
+      "ru"
+    ],
+    "langLabel": {
+      "da": "Dansk",
+      "en": "English",
+      "ru": "Русский"
+    },
+    "fallbackFolder": "means",
+    "phraseShow": 7
+  },
+  "issue": {
+    "number": 1,
+    "roman": "I",
+    "title": {
+      "ru": "Газа",
+      "en": "Gaza",
+      "da": "Gaza"
+    },
+    "asOf": "2026-09-20",
+    "corrections": ""
+  },
+  "matchers": [
+    {
+      "re": "никакой прибыли на геноцид|нет прибыли на геноцид|no profit (on|from) genocide|ingen profit på folkemord",
+      "folders": [
+        "blockade",
+        "word"
+      ]
+    },
+    {
+      "re": "немедленно и без условий|immediately and unconditionally|uden betingelser|without any precondition",
+      "folders": [
+        "hostages",
+        "intent"
+      ]
+    },
+    {
+      "re": "дом семьи 1948|family.?s 1948|familiens hus fra 1948",
+      "folders": [
+        "return",
+        "after"
+      ]
+    },
+    {
+      "re": "незаконны и убивают|illegal and they kill|ulovlige og slår",
+      "folders": [
+        "settlements",
+        "after"
+      ]
+    },
+    {
+      "re": "единственная школа|only school and clinic|eneste skole og klinik|нельзя трогать|must not be touched|må ikke røres",
+      "folders": [
+        "unrwa",
+        "blockade",
+        "after"
+      ]
+    },
+    {
+      "re": "прячется за нами|hides behind us|gemmer sig bag os",
+      "folders": [
+        "shields",
+        "means"
+      ]
+    },
+    {
+      "re": "голод как оружие|starvation as a weapon|sult som våben",
+      "folders": [
+        "famine",
+        "blockade"
+      ]
+    },
+    {
+      "re": "другого мира нет|no other peace|ingen anden fred",
+      "folders": [
+        "states",
+        "after"
+      ]
+    },
+    {
+      "re": "палестинского вето|palestinian veto|palæstinensisk veto",
+      "folders": [
+        "accords",
+        "after",
+        "proxy"
+      ]
+    },
+    {
+      "re": "заложн|hostage|gidsel|gidsl",
+      "folders": [
+        "hostages",
+        "intent",
+        "after"
+      ]
+    },
+    {
+      "re": "возвращ|вернут|right (of|to) return|retten til at vende|vende hjem|ret til at vende|репатри",
+      "folders": [
+        "return",
+        "states",
+        "unrwa"
+      ]
+    },
+    {
+      "re": "поселен|settlement|bosætt",
+      "folders": [
+        "settlements",
+        "states",
+        "after"
+      ]
+    },
+    {
+      "re": "unrwa|анрва",
+      "folders": [
+        "unrwa",
+        "after",
+        "proxy"
+      ]
+    },
+    {
+      "re": "щит|пряч|hide[s]? behind|gemmer sig bag|human shield|menneskeligt skjold|skjold",
+      "folders": [
+        "shields",
+        "means",
+        "guilt"
+      ]
+    },
+    {
+      "re": "голод|famine|starv|hungersnød|\\bsult",
+      "folders": [
+        "famine",
+        "blockade",
+        "means"
+      ]
+    },
+    {
+      "re": "два государств|two[- ]state|tostat|to stater",
+      "folders": [
+        "states",
+        "settlements",
+        "after"
+      ]
+    },
+    {
+      "re": "авраам|abraham|нормализ|normalis",
+      "folders": [
+        "accords",
+        "states",
+        "proxy"
+      ]
+    },
+    {
+      "re": "реки до моря|river to the sea|floden til havet",
+      "folders": [
+        "word",
+        "return",
+        "states"
+      ]
+    },
+    {
+      "re": "гибнут дет|children are dying|børn dør|уже не самооборон|no longer self-defen|ikke længere selvforsvar",
+      "folders": [
+        "means",
+        "intent",
+        "blockade"
+      ]
+    },
+    {
+      "re": "самооборон|self-defen|selvforsvar|defend itself|forsvare sig|право на само",
+      "folders": [
+        "violence",
+        "means",
+        "intent"
+      ]
+    },
+    {
+      "re": "октябр|контекст|оккупац|ум[ыи]сел|резн|october|occupation|intent|massacre|oktober|besætt|forsæt|massakre|sammenhæng",
+      "folders": [
+        "intent",
+        "word",
+        "blockade"
+      ]
+    },
+    {
+      "re": "дет|соразмер|жертв|газ[аеуы]|children|gaza|proportional|børn|dør|dying",
+      "folders": [
+        "means",
+        "intent",
+        "blockade"
+      ]
+    },
+    {
+      "re": "хамас|уничтож|переговор|разговарив|марионет|hamas|destroy|talking|udslette|marionet|proxy",
+      "folders": [
+        "proxy",
+        "guilt",
+        "after"
+      ]
+    },
+    {
+      "re": "геноцид|genocide|folkedrab",
+      "folders": [
+        "word",
+        "intent"
+      ]
+    },
+    {
+      "re": "блокад|калор|грузовик|blockade|calorie|truck|blokade|kalor|lastbil",
+      "folders": [
+        "blockade",
+        "means"
+      ]
+    },
+    {
+      "re": "вин[аыу]|народ|мирн|guilt|people|civilian|skyld|folk|uskyld",
+      "folders": [
+        "guilt",
+        "violence"
+      ]
+    },
+    {
+      "re": "учебник|после|воспитан|институт|textbook|after|educat|lærebog|institution|undervis",
+      "folders": [
+        "after",
+        "proxy"
+      ]
+    },
+    {
+      "re": "насил|violen|vold|just war|retfærdig krig",
+      "folders": [
+        "violence",
+        "means"
+      ]
+    }
+  ],
+  "pages": {
+    "method": {
+      "ru": "Карта почвы — издание различений. Выпуск I — Газа.\n\nВы говорите фразу. Мы показываем статью, на которой она стоит, и место, где она трещит.\n\nЭто не фактчек: сайт не ставит «правда» или «ложь». Это не дебаты: нет двух колонок. Это стол читателя. Лозунг кладут на норму и смотрят, что он склеил.\n\nСталь — сильная версия позиций, которые лозунг склеивает. Трещина — место, где лозунг рвётся о норму или о документ. Документ — первичный текст с датой, адресом и одной фразой, зачем он здесь.\n\n«Не приговор» — правило, не оговорка. Голос сайта не говорит, был ли геноцид и кто виновен. Он показывает, что говорит норма, что говорит документ, и где лозунг склеил разное.\n\nКак выбираются документы. Сначала норма или первичный акт. Потом именной доклад, решение, статут. Отчёт НПО кладётся на вторую чашу, не вместо статьи. У каждого документа есть дата, URL и зачем он здесь. Где первоисточник стоит за платой, это помечено.\n\nСайт ничего не отправляет. Нет кук, нет аналитики, нет внешних запросов при чтении. Состояние живёт в sessionStorage этого браузера и исчезает с вкладкой.\n\nПротокол чтения — простой текст того, что вы сказали, какую норму назвали и какие документы открыли. Его можно скопировать. Кнопок «поделиться» нет.\n\nИсправления пишите, когда в колофоне появится адрес. Журнал правок — ниже. Срез источников этого выпуска: 20 сентября 2026.",
+      "en": "A map of the soil is an issue of distinctions. Issue I — Gaza.\n\nYou say a sentence. We show the article it stands on, and the place where it cracks.\n\nThis is not fact-checking: the site does not mark “true” or “false”. It is not a debate: there are no two columns. It is a reader’s desk. A slogan is laid on a norm to see what it glued together.\n\nSteel is the strong form of the positions a slogan glues. The crack is where the slogan breaks on a norm or a document. A document is a primary text with a date, an address, and one sentence on why it is here.\n\n“Not a verdict” is a rule, not a hedge. The site’s voice does not say whether genocide occurred or who is guilty. It shows what the norm says, what the document says, and where the slogan glued different things.\n\nHow documents are chosen. First the norm or the primary act. Then a named report, a judgment, a statute. An NGO report sits on the second pan, not in place of the article. Every document has a date, a URL, and a why. Where the source sits behind a paywall, that is marked.\n\nThe site sends nothing. No cookies, no analytics, no third-party requests while you read. State lives in this browser’s sessionStorage and dies with the tab.\n\nThe reading protocol is plain text of what you said, which norm you named, and which documents you opened. You can copy it. There is no share button.\n\nWrite corrections when an address appears in the colophon. The changelog is below. Source cut-off for this issue: 20 September 2026.",
+      "da": "Et kort over jorden er et hæfte af skelner. Udgave I — Gaza.\n\nDu siger en sætning. Vi viser artiklen, den står på, og stedet, hvor den sprækker.\n\nDet er ikke fact-checking: siden sætter ikke «sandt» eller «falsk». Det er ikke en debat: der er ingen to kolonner. Det er et læsebord. Et slogan lægges på en norm for at se, hvad det har limet sammen.\n\nStål er den stærke form af de positioner, et slogan limer. Sprækken er dér, sloganet brister på en norm eller et dokument. Et dokument er en primær tekst med dato, adresse og én sætning om, hvorfor det er her.\n\n«Ikke en dom» er en regel, ikke en undvigelse. Sidens stemme siger ikke, om der var folkedrab, eller hvem der er skyldig. Den viser, hvad normen siger, hvad dokumentet siger, og hvor sloganet limede forskellige ting.\n\nSådan vælges dokumenter. Først normen eller den primære akt. Derefter en navngiven rapport, en dom, en statut. En NGO-rapport ligger i den anden vægtskål, ikke i stedet for artiklen. Hvert dokument har dato, URL og et hvorfor. Hvor kilden ligger bag betalingsmur, er det markeret.\n\nSiden sender intet. Ingen cookies, ingen analyse, ingen tredjeparts-kald mens du læser. Tilstanden lever i denne browsers sessionStorage og dør med fanen.\n\nLæseprotokollen er almindelig tekst om, hvad du sagde, hvilken norm du nævnte, og hvilke dokumenter du åbnede. Den kan kopieres. Der er ingen knap til at dele.\n\nSkriv rettelser, når en adresse står i kolofonen. Rettelseslisten er nedenfor. Kildernes skæringsdato for denne udgave: 20. september 2026."
+    }
+  },
+  "changelog": [
+    {
+      "date": "2026-09-20",
+      "text": {
+        "ru": "Ворота: вопрос о норме берётся из открытого аргумента; после полосы видны другие аргументы той же фразы.",
+        "en": "Gate: the norm question comes from the opened argument; after the strip, the phrase’s other arguments are listed.",
+        "da": "Port: spørgsmålet om normen kommer fra det åbnede argument; efter striben vises frasens øvrige argumenter."
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "text": {
+        "ru": "Выпуск I назван. Добавлены сталь/трещина/документ как видимые части полосы, протокол чтения, метод, ворота на глубокой ссылке. Корпус вынесен из кода.",
+        "en": "Issue I is named. Steel/crack/document become visible parts of the strip; reading protocol, method, and a gate on deep links. The corpus leaves the code.",
+        "da": "Udgave I er navngivet. Stål/sprække/dokument bliver synlige dele af striben; læseprotokol, metode og en port på dybe links. Korpusset forlader koden."
       }
     }
-  }
+  ]
 }

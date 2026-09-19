@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /desk.json
+Disallow: /tools/
+Sitemap: /sitemap.xml
