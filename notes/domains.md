@@ -14,6 +14,8 @@
 | deskofsoil.org | EN метафора стола | неясно |
 | sixteen.distinctions — слишком остроумно | — | не брать |
 
-Рекомендация: `pochva.org` как канон; `jordbunden.dk` как DA-зеркало на тот же статикой. Пока канона нет, `issue.canonical` пустой, лента и sitemap без хоста.
+Проба «Добрый» (20.09.2026): дом — `Добрый` / `Kind` / `Venlig`; серия — карта почвы. Кандидаты канона: `dobry.org`, `kind.desk` нет, `venlig.dk` как DA-зеркало. `pochva.org` остаётся запасным, если имя дома не удержится.
+
+Пока канона нет, `issue.canonical` пустой, лента и sitemap без хоста.
 
 После выбора: DNS, HTTPS, заполнить `issue.canonical`, пересобрать `feed.xml` и `sitemap.xml`.

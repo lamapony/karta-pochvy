@@ -23,7 +23,8 @@
 | документ | document | dokument | |
 | не приговор | not a verdict | ikke en dom | |
 | почва | soil | jord / jordbunden | см. название |
-| карта почвы | A map of the soil | Et kort over jorden | DA читается как «карта Земли» |
+| карта почвы | A map of the soil | Jordbunden | серия, не дом |
+| Добрый | Kind | Venlig | дом издания |
 
 ## Название DA — вопрос носителю
 

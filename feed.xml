@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Карта почвы · Выпуск I · Газа</title>
+  <title>Добрый · Выпуск I · Газа</title>
   <id>urn:pochva:issue-1</id>
   <updated>2026-09-20T00:00:00Z</updated>
   <link href="/"/>
   <link rel="self" href="/feed.xml"/>
   <entry>
     <id>urn:pochva:2026-09-20:0</id>
+    <title>Kind register: the house is named; the map of the soil remains the method. A host’s voice, no shame for the answer.</title>
+    <updated>2026-09-20T00:00:00Z</updated>
+    <content type="text">Регистр Добрый: дом назван; карта почвы остаётся методом. Голос хозяина, без стыда за ответ.</content>
+  </entry>
+  <entry>
+    <id>urn:pochva:2026-09-20:1</id>
     <title>Gate: the norm question comes from the opened argument; after the strip, the phrase’s other arguments are listed.</title>
     <updated>2026-09-20T00:00:00Z</updated>
     <content type="text">Ворота: вопрос о норме берётся из открытого аргумента; после полосы видны другие аргументы той же фразы.</content>
   </entry>
   <entry>
-    <id>urn:pochva:2026-09-20:1</id>
+    <id>urn:pochva:2026-09-20:2</id>
     <title>Issue I is named. Steel/crack/document become visible parts of the strip; reading protocol, method, and a gate on deep links. The corpus leaves the code.</title>
     <updated>2026-09-20T00:00:00Z</updated>
     <content type="text">Выпуск I назван. Добавлены сталь/трещина/документ как видимые части полосы, протокол чтения, метод, ворота на глубокой ссылке. Корпус вынесен из кода.</content>

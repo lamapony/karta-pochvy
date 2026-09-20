@@ -433,6 +433,21 @@ a:hover { text-decoration-thickness: 2px; }
   padding-bottom: max(var(--pad-block), env(safe-area-inset-bottom));
 }
 .stage.lang { align-items: flex-start; }
+.house {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 6vw, 4rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+.stage.lang .dek.series {
+  margin: 0 0 2.75rem;
+  max-width: 28em;
+  text-align: start;
+  margin-inline: 0;
+}
 
 .kicker {
   margin: 0 0 2rem;

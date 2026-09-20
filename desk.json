@@ -1,18 +1,18 @@
 {
   "ui": {
     "ru": {
-      "title": "Карта почвы",
+      "title": "Добрый",
       "skip": "К тексту",
       "langKicker": "Sprog · Language · Язык",
-      "phraseQ": "Какую фразу вы готовы повторить вслух",
+      "phraseQ": "Какую фразу вы готовы сказать вслух",
       "own": "своя",
       "ownLabel": "Своя фраза",
-      "unknown": "Почва неизвестна. Система не притворяется, что разобрала фразу.",
-      "guessKicker": "Норма ещё не названа",
-      "guessWait": "Статья откроется после ответа.",
-      "guessOk": "Статья уже была в праве. Ответ — увидеть её, а не подобрать лозунг.",
-      "guessBad": "Большинство жмёт на счётчик тел. Дальше — не мнение, а статья.",
-      "again": "После документов — следующая фраза, которую вы скажете вслух",
+      "unknown": "Эту фразу мы не разобрали. Назовите различение сами.",
+      "guessKicker": "Сначала норма — потом текст",
+      "guessWait": "После ответа откроется статья.",
+      "guessOk": "Статья уже была в праве. Теперь её можно прочитать.",
+      "guessBad": "Имя нормы можно поправить чтением. Дальше — статья.",
+      "again": "Когда будете готовы — следующая фраза вслух",
       "more": "Другие аргументы",
       "steelK": "Сталь",
       "crackK": "Трещина",
@@ -22,8 +22,8 @@
       "protocol": "Протокол чтения",
       "method": "Метод",
       "methodTri": "Метод · Method · Metode",
-      "methodLine": "Метод · Выпуск I · Газа",
-      "gateQ": "Эту страницу читают после фразы",
+      "methodLine": "Добрый · Выпуск I · Газа",
+      "gateQ": "Сначала фраза — потом эта страница",
       "issueWord": "Выпуск",
       "protocolPhrase": "Фраза",
       "protocolNamed": "Норма, которую назвали",
@@ -31,21 +31,24 @@
       "protocolDist": "Различение",
       "protocolDocs": "Документы",
       "protocolLang": "Язык",
-      "noscript": "Карта почвы — статическая полоса чтения. Включите JavaScript."
+      "noscript": "Добрый — статическая полоса чтения. Включите JavaScript.",
+      "series": "Карта почвы",
+      "houseTri": "Добрый · Kind · Venlig",
+      "seriesTri": "Карта почвы · A map of the soil · Jordbunden"
     },
     "en": {
-      "title": "A map of the soil",
+      "title": "Kind",
       "skip": "Skip to text",
       "langKicker": "Sprog · Language · Язык",
       "phraseQ": "Which sentence are you willing to say out loud",
       "own": "one’s own",
       "ownLabel": "Your own sentence",
-      "unknown": "The soil is unknown. The system does not pretend it parsed the sentence.",
-      "guessKicker": "The norm is not named yet",
+      "unknown": "We did not parse this sentence. Name the distinction yourself.",
+      "guessKicker": "The norm first — then the text",
       "guessWait": "The article opens after you answer.",
-      "guessOk": "The article was already in the law. The click is to see it, not to pick a slogan.",
-      "guessBad": "Most people reach for the body count. What follows is not an opinion. It is the article.",
-      "again": "After the documents: the next sentence you will say out loud",
+      "guessOk": "The article was already in the law. Now it can be read.",
+      "guessBad": "The name of the norm can be corrected by reading. Next is the article.",
+      "again": "When you are ready — the next sentence out loud",
       "more": "Other arguments",
       "steelK": "Steel",
       "crackK": "Crack",
@@ -55,8 +58,8 @@
       "protocol": "Reading protocol",
       "method": "Method",
       "methodTri": "Метод · Method · Metode",
-      "methodLine": "Method · Issue I · Gaza",
-      "gateQ": "This page is read after a sentence",
+      "methodLine": "Kind · Issue I · Gaza",
+      "gateQ": "A sentence first — then this page",
       "issueWord": "Issue",
       "protocolPhrase": "Sentence",
       "protocolNamed": "The norm you named",
@@ -64,21 +67,24 @@
       "protocolDist": "Distinction",
       "protocolDocs": "Documents",
       "protocolLang": "Language",
-      "noscript": "A map of the soil is a static reading strip. Enable JavaScript."
+      "noscript": "Kind is a static reading strip. Enable JavaScript.",
+      "series": "A map of the soil",
+      "houseTri": "Добрый · Kind · Venlig",
+      "seriesTri": "Карта почвы · A map of the soil · Jordbunden"
     },
     "da": {
-      "title": "Et kort over jorden",
+      "title": "Venlig",
       "skip": "Spring til teksten",
       "langKicker": "Sprog · Language · Язык",
       "phraseQ": "Hvilken sætning er du villig til at sige højt",
       "own": "ens egen",
       "ownLabel": "Din egen sætning",
-      "unknown": "Jorden er ukendt. Systemet lader ikke som om det har afkodet sætningen.",
-      "guessKicker": "Normen er endnu ikke nævnt",
+      "unknown": "Vi kunne ikke læse sætningen. Navngiv skelnen selv.",
+      "guessKicker": "Først normen — så teksten",
       "guessWait": "Artiklen åbner, når du har svaret.",
-      "guessOk": "Artiklen lå allerede i retten. Svaret er at se den, ikke at vælge et slogan.",
-      "guessBad": "De fleste trykker på ligetælleren. Det der følger er ikke en mening. Det er artiklen.",
-      "again": "Efter dokumenterne: den næste sætning, du vil sige højt",
+      "guessOk": "Artiklen lå allerede i retten. Nu kan den læses.",
+      "guessBad": "Normens navn kan rettes ved læsning. Det næste er artiklen.",
+      "again": "Når du er klar — næste sætning højt",
       "more": "Andre argumenter",
       "steelK": "Stål",
       "crackK": "Sprække",
@@ -88,8 +94,8 @@
       "protocol": "Læseprotokol",
       "method": "Metode",
       "methodTri": "Метод · Method · Metode",
-      "methodLine": "Metode · Udgave I · Gaza",
-      "gateQ": "Denne side læses efter en sætning",
+      "methodLine": "Venlig · Udgave I · Gaza",
+      "gateQ": "Først en sætning — så denne side",
       "issueWord": "Udgave",
       "protocolPhrase": "Sætning",
       "protocolNamed": "Normen, du nævnte",
@@ -97,7 +103,10 @@
       "protocolDist": "Skelnen",
       "protocolDocs": "Dokumenter",
       "protocolLang": "Sprog",
-      "noscript": "Et kort over jorden er en statisk læsestribe. Slå JavaScript til."
+      "noscript": "Venlig er en statisk læsestribe. Slå JavaScript til.",
+      "series": "Jordbunden",
+      "houseTri": "Добрый · Kind · Venlig",
+      "seriesTri": "Карта почвы · A map of the soil · Jordbunden"
     }
   },
   "phrases": [
@@ -523,14 +532,14 @@
           }
         ],
         "ok": {
-          "ru": "Статья уже была в праве. Ответ — увидеть её, а не подобрать лозунг.",
-          "en": "The article was already in the law. The click is to see it, not to pick a slogan.",
-          "da": "Artiklen lå allerede i retten. Svaret er at se den, ikke at vælge et slogan."
+          "ru": "Статья уже была в праве. Теперь её можно прочитать.",
+          "en": "The article was already in the law. Now it can be read.",
+          "da": "Artiklen lå allerede i retten. Nu kan den læses."
         },
         "bad": {
-          "ru": "Большинство жмёт на счётчик тел. Дальше — не мнение, а статья.",
-          "en": "Most people reach for the body count. What follows is not an opinion. It is the article.",
-          "da": "De fleste trykker på ligetælleren. Det der følger er ikke en mening. Det er artiklen."
+          "ru": "Соразмерность — не счётчик тел. Дальше — статья.",
+          "en": "Proportionality is not a body count. Next is the article.",
+          "da": "Proportionalitet er ikke ligetælleren. Det næste er artiklen."
         }
       },
       "docs": [
@@ -3727,12 +3736,20 @@
   ],
   "pages": {
     "method": {
-      "ru": "Карта почвы — издание различений. Выпуск I — Газа.\n\nВы говорите фразу. Мы показываем статью, на которой она стоит, и место, где она трещит.\n\nЭто не фактчек: сайт не ставит «правда» или «ложь». Это не дебаты: нет двух колонок. Это стол читателя. Лозунг кладут на норму и смотрят, что он склеил.\n\nСталь — сильная версия позиций, которые лозунг склеивает. Трещина — место, где лозунг рвётся о норму или о документ. Документ — первичный текст с датой, адресом и одной фразой, зачем он здесь.\n\n«Не приговор» — правило, не оговорка. Голос сайта не говорит, был ли геноцид и кто виновен. Он показывает, что говорит норма, что говорит документ, и где лозунг склеил разное.\n\nКак выбираются документы. Сначала норма или первичный акт. Потом именной доклад, решение, статут. Отчёт НПО кладётся на вторую чашу, не вместо статьи. У каждого документа есть дата, URL и зачем он здесь. Где первоисточник стоит за платой, это помечено.\n\nСайт ничего не отправляет. Нет кук, нет аналитики, нет внешних запросов при чтении. Состояние живёт в sessionStorage этого браузера и исчезает с вкладкой.\n\nПротокол чтения — простой текст того, что вы сказали, какую норму назвали и какие документы открыли. Его можно скопировать. Кнопок «поделиться» нет.\n\nИсправления пишите, когда в колофоне появится адрес. Журнал правок — ниже. Срез источников этого выпуска: 20 сентября 2026.",
-      "en": "A map of the soil is an issue of distinctions. Issue I — Gaza.\n\nYou say a sentence. We show the article it stands on, and the place where it cracks.\n\nThis is not fact-checking: the site does not mark “true” or “false”. It is not a debate: there are no two columns. It is a reader’s desk. A slogan is laid on a norm to see what it glued together.\n\nSteel is the strong form of the positions a slogan glues. The crack is where the slogan breaks on a norm or a document. A document is a primary text with a date, an address, and one sentence on why it is here.\n\n“Not a verdict” is a rule, not a hedge. The site’s voice does not say whether genocide occurred or who is guilty. It shows what the norm says, what the document says, and where the slogan glued different things.\n\nHow documents are chosen. First the norm or the primary act. Then a named report, a judgment, a statute. An NGO report sits on the second pan, not in place of the article. Every document has a date, a URL, and a why. Where the source sits behind a paywall, that is marked.\n\nThe site sends nothing. No cookies, no analytics, no third-party requests while you read. State lives in this browser’s sessionStorage and dies with the tab.\n\nThe reading protocol is plain text of what you said, which norm you named, and which documents you opened. You can copy it. There is no share button.\n\nWrite corrections when an address appears in the colophon. The changelog is below. Source cut-off for this issue: 20 September 2026.",
-      "da": "Et kort over jorden er et hæfte af skelner. Udgave I — Gaza.\n\nDu siger en sætning. Vi viser artiklen, den står på, og stedet, hvor den sprækker.\n\nDet er ikke fact-checking: siden sætter ikke «sandt» eller «falsk». Det er ikke en debat: der er ingen to kolonner. Det er et læsebord. Et slogan lægges på en norm for at se, hvad det har limet sammen.\n\nStål er den stærke form af de positioner, et slogan limer. Sprækken er dér, sloganet brister på en norm eller et dokument. Et dokument er en primær tekst med dato, adresse og én sætning om, hvorfor det er her.\n\n«Ikke en dom» er en regel, ikke en undvigelse. Sidens stemme siger ikke, om der var folkedrab, eller hvem der er skyldig. Den viser, hvad normen siger, hvad dokumentet siger, og hvor sloganet limede forskellige ting.\n\nSådan vælges dokumenter. Først normen eller den primære akt. Derefter en navngiven rapport, en dom, en statut. En NGO-rapport ligger i den anden vægtskål, ikke i stedet for artiklen. Hvert dokument har dato, URL og et hvorfor. Hvor kilden ligger bag betalingsmur, er det markeret.\n\nSiden sender intet. Ingen cookies, ingen analyse, ingen tredjeparts-kald mens du læser. Tilstanden lever i denne browsers sessionStorage og dør med fanen.\n\nLæseprotokollen er almindelig tekst om, hvad du sagde, hvilken norm du nævnte, og hvilke dokumenter du åbnede. Den kan kopieres. Der er ingen knap til at dele.\n\nSkriv rettelser, når en adresse står i kolofonen. Rettelseslisten er nedenfor. Kildernes skæringsdato for denne udgave: 20. september 2026."
+      "ru": "Добрый издаёт карту почвы. Выпуск I — Газа.\n\nВас здесь не судят и не считают. Вы говорите фразу. Мы кладём её на статью и показываем, где она трещит.\n\nЭто не фактчек: сайт не ставит «правда» или «ложь». Это не дебаты: нет двух колонок. Это стол. Лозунг можно сказать — и посмотреть, что он склеил.\n\nСталь — сильная версия позиций, которые лозунг держит. Трещина — место, где он рвётся о норму или о документ. Документ — первичный текст с датой, адресом и одной фразой, зачем он здесь.\n\n«Не приговор» — правило гостя и хозяина. Голос издания не говорит, был ли геноцид и кто виновен. Он показывает, что говорит норма, что говорит документ, и где лозунг склеил разное.\n\nКак выбираются документы. Сначала норма или первичный акт. Потом именной доклад, решение, статут. Отчёт НПО кладётся на вторую чашу, не вместо статьи. У каждого документа есть дата, URL и зачем он здесь. Где первоисточник стоит за платой, это помечено.\n\nСайт ничего не отправляет. Нет кук, нет аналитики, нет внешних запросов при чтении. Состояние живёт в sessionStorage этого браузера и исчезает с вкладкой.\n\nПротокол чтения — простой текст того, что вы сказали, какую норму назвали и какие документы открыли. Его можно скопировать. Кнопок «поделиться» нет.\n\nИсправления пишите, когда в колофоне появится адрес. Журнал правок — ниже. Срез источников этого выпуска: 20 сентября 2026.",
+      "en": "Kind publishes a map of the soil. Issue I — Gaza.\n\nYou are not judged or scored here. You say a sentence. We lay it on an article and show where it cracks.\n\nThis is not fact-checking: the site does not mark “true” or “false”. It is not a debate: there are no two columns. It is a desk. A slogan may be said — and then seen for what it glued together.\n\nSteel is the strong form of the positions a slogan holds. The crack is where it breaks on a norm or a document. A document is a primary text with a date, an address, and one sentence on why it is here.\n\n“Not a verdict” is a rule of host and guest. The voice of the house does not say whether genocide occurred or who is guilty. It shows what the norm says, what the document says, and where the slogan glued different things.\n\nHow documents are chosen. First the norm or the primary act. Then a named report, a judgment, a statute. An NGO report sits on the second pan, not in place of the article. Every document has a date, a URL, and a why. Where the source sits behind a paywall, that is marked.\n\nThe site sends nothing. No cookies, no analytics, no third-party requests while you read. State lives in this browser’s sessionStorage and dies with the tab.\n\nThe reading protocol is plain text of what you said, which norm you named, and which documents you opened. You can copy it. There is no share button.\n\nWrite corrections when an address appears in the colophon. The changelog is below. Source cut-off for this issue: 20 September 2026.",
+      "da": "Venlig udgiver et kort over jordbunden. Udgave I — Gaza.\n\nDu bliver ikke dømt eller talt her. Du siger en sætning. Vi lægger den på en artikel og viser, hvor den sprækker.\n\nDet er ikke fact-checking: siden sætter ikke «sandt» eller «falsk». Det er ikke en debat: der er ingen to kolonner. Det er et bord. Et slogan må siges — og så ses, hvad det har limet sammen.\n\nStål er den stærke form af de positioner, et slogan holder. Sprækken er dér, det brister på en norm eller et dokument. Et dokument er en primær tekst med dato, adresse og én sætning om, hvorfor det er her.\n\n«Ikke en dom» er en regel for vært og gæst. Husets stemme siger ikke, om der var folkedrab, eller hvem der er skyldig. Den viser, hvad normen siger, hvad dokumentet siger, og hvor sloganet limede forskellige ting.\n\nSådan vælges dokumenter. Først normen eller den primære akt. Derefter en navngiven rapport, en dom, en statut. En NGO-rapport ligger i den anden vægtskål, ikke i stedet for artiklen. Hvert dokument har dato, URL og et hvorfor. Hvor kilden ligger bag betalingsmur, er det markeret.\n\nSiden sender intet. Ingen cookies, ingen analyse, ingen tredjeparts-kald mens du læser. Tilstanden lever i denne browsers sessionStorage og dør med fanen.\n\nLæseprotokollen er almindelig tekst om, hvad du sagde, hvilken norm du nævnte, og hvilke dokumenter du åbnede. Den kan kopieres. Der er ingen knap til at dele.\n\nSkriv rettelser, når en adresse står i kolofonen. Rettelseslisten er nedenfor. Kildernes skæringsdato for denne udgave: 20. september 2026."
     }
   },
   "changelog": [
+    {
+      "date": "2026-09-20",
+      "text": {
+        "ru": "Регистр Добрый: дом назван; карта почвы остаётся методом. Голос хозяина, без стыда за ответ.",
+        "en": "Kind register: the house is named; the map of the soil remains the method. A host’s voice, no shame for the answer.",
+        "da": "Venlig register: huset er navngivet; jordbunden forbliver metoden. En værts stemme, ingen skam over svaret."
+      }
+    },
     {
       "date": "2026-09-20",
       "text": {

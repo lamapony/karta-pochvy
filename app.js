@@ -284,7 +284,8 @@ function renderLang() {
   setDocTitle();
   app.innerHTML = `
     <div class="stage lang">
-      <h1 class="sr">${escapeHtml(DATA.ui.ru.title)}</h1>
+      <h1 class="house">${escapeHtml(DATA.ui.ru.houseTri)}</h1>
+      <p class="dek series">${escapeHtml(DATA.ui.ru.seriesTri)}</p>
       <p class="kicker">${escapeHtml(DATA.ui.ru.langKicker)}</p>
       <div class="lang-list">
         ${langs().map((l) => `<button type="button" data-lang="${l}">${escapeHtml(langLabel()[l])}</button>`).join("")}
