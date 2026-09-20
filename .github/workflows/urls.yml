@@ -3,6 +3,9 @@ on:
   schedule:
     - cron: "17 4 * * 1"
   workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
 jobs:
   links:
     runs-on: ubuntu-latest
@@ -12,3 +15,15 @@ jobs:
         with:
           node-version: "22"
       - run: node tools/check.mjs --urls
+      - if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          title="URL check failed"
+          body="Weekly URL check failed on \`${GITHUB_SHA}\`. See the workflow log. Do not add documents from this issue; fix the locator or mark \`paywall\` / \`botBlock\`."
+          existing=$(gh issue list --search "$title in:title" --state open --json number --jq '.[0].number')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "$body"
+          else
+            gh issue create --title "$title" --body "$body"
+          fi

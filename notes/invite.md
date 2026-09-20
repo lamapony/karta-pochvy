@@ -2,11 +2,16 @@
 
 Человек рассылает. Агент не пишет адресатам.
 
+Рабочий стол (пока нет имени C5): https://lamapony.github.io/karta-pochvy/
+Исправления: https://github.com/lamapony/karta-pochvy/issues
+
 ## Письмо (RU)
 
 Карта почвы — издание различений, не фактчек и не дебаты. Выпуск I — Газа.
 
 Вы говорите фразу, которую готовы повторить вслух. Сайт показывает статью, на которой она стоит, и место, где она трещит. 16 различений, 53 первичных документа. Ничего не отправляется с устройства.
+
+Адрес: https://lamapony.github.io/karta-pochvy/
 
 Прошу прочитать один путь до конца и ответить на пять вопросов ниже. Это закрытое чтение перед выпуском.
 
@@ -16,6 +21,8 @@ A map of the soil is an issue of distinctions, not a fact-check and not a debate
 
 You say a sentence you are willing to say out loud. The site shows the article it stands on and the place where it cracks. Sixteen distinctions, 53 primary documents. Nothing leaves the device.
 
+Address: https://lamapony.github.io/karta-pochvy/
+
 Please read one path to the end and answer the five questions below. This is a closed reading before release.
 
 ## Brev (DA)
@@ -23,6 +30,8 @@ Please read one path to the end and answer the five questions below. This is a c
 Et kort over jorden er et hæfte af skelner, ikke fact-check og ikke debat. Udgave I — Gaza.
 
 Du siger en sætning, du er villig til at sige højt. Siden viser artiklen, den står på, og stedet, hvor den sprækker. Seksten skelner, 53 primære dokumenter. Intet forlader enheden.
+
+Adresse: https://lamapony.github.io/karta-pochvy/
 
 Læs én vej til ende og svar på de fem spørgsmål nedenfor. Det er en lukket læsning før udgivelse.
 

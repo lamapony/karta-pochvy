@@ -37,4 +37,23 @@ ${entries.join("\n")}
 </feed>
 `;
 writeFileSync(join(root, "feed.xml"), feed);
+
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>${xml(href("/"))}</loc></url>
+  <url><loc>${xml(href("/#/method"))}</loc></url>
+</urlset>
+`;
+writeFileSync(join(root, "sitemap.xml"), sitemap);
+
+const sitemapLine = host ? href("/sitemap.xml") : "/sitemap.xml";
+const robots = `User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /desk.json
+Disallow: /tools/
+Sitemap: ${sitemapLine}
+`;
+writeFileSync(join(root, "robots.txt"), robots);
 console.log("wrote feed.xml", (data.changelog || []).length, "entries");
+console.log("wrote sitemap.xml robots.txt", href("/") || "(no host)");

@@ -3,4 +3,4 @@ Allow: /
 Allow: /index.html
 Allow: /desk.json
 Disallow: /tools/
-Sitemap: /sitemap.xml
+Sitemap: https://lamapony.github.io/karta-pochvy/sitemap.xml

@@ -3,16 +3,22 @@
   <title>Карта почвы · Выпуск I · Газа</title>
   <id>urn:pochva:issue-1</id>
   <updated>2026-09-20T00:00:00Z</updated>
-  <link href="/"/>
-  <link rel="self" href="/feed.xml"/>
+  <link href="https://lamapony.github.io/karta-pochvy/"/>
+  <link rel="self" href="https://lamapony.github.io/karta-pochvy/feed.xml"/>
   <entry>
     <id>urn:pochva:2026-09-20:0</id>
+    <title>A live desk on GitHub Pages. Some documents now carry a confirmed archive.org snapshot instead of a lookup.</title>
+    <updated>2026-09-20T00:00:00Z</updated>
+    <content type="text">Живой стол на GitHub Pages. У части документов — подтверждённый снимок archive.org вместо lookup.</content>
+  </entry>
+  <entry>
+    <id>urn:pochva:2026-09-20:1</id>
     <title>Gate: the norm question comes from the opened argument; after the strip, the phrase’s other arguments are listed.</title>
     <updated>2026-09-20T00:00:00Z</updated>
     <content type="text">Ворота: вопрос о норме берётся из открытого аргумента; после полосы видны другие аргументы той же фразы.</content>
   </entry>
   <entry>
-    <id>urn:pochva:2026-09-20:1</id>
+    <id>urn:pochva:2026-09-20:2</id>
     <title>Issue I is named. Steel/crack/document become visible parts of the strip; reading protocol, method, and a gate on deep links. The corpus leaves the code.</title>
     <updated>2026-09-20T00:00:00Z</updated>
     <content type="text">Выпуск I назван. Добавлены сталь/трещина/документ как видимые части полосы, протокол чтения, метод, ворота на глубокой ссылке. Корпус вынесен из кода.</content>

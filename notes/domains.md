@@ -17,3 +17,5 @@
 Рекомендация: `pochva.org` как канон; `jordbunden.dk` как DA-зеркало на тот же статикой. Пока канона нет, `issue.canonical` пустой, лента и sitemap без хоста.
 
 После выбора: DNS, HTTPS, заполнить `issue.canonical`, пересобрать `feed.xml` и `sitemap.xml`.
+
+Рабочий хост до выбора: `https://lamapony.github.io/karta-pochvy/`. Это GitHub Pages, не канон C5. Имя по-прежнему выбирает человек.
