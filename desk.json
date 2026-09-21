@@ -4,14 +4,14 @@
       "title": "Карта почвы",
       "skip": "К тексту",
       "langKicker": "Sprog · Language · Язык",
-      "phraseQ": "Какую фразу вы готовы повторить вслух",
+      "phraseQ": "Какую фразу вы скажете вслух",
       "own": "своя",
       "ownLabel": "Своя фраза",
-      "unknown": "Почва неизвестна. Система не притворяется, что разобрала фразу.",
+      "unknown": "Этой фразы в выпуске нет. Назовите различение сами.",
       "guessKicker": "Норма ещё не названа",
       "guessWait": "Статья откроется после ответа.",
-      "guessOk": "Статья уже была в праве. Ответ — увидеть её, а не подобрать лозунг.",
-      "guessBad": "Большинство жмёт на счётчик тел. Дальше — не мнение, а статья.",
+      "guessOk": "Норма названа. Текст открыт.",
+      "guessBad": "Статья читается иначе. Текст всё равно открыт.",
       "again": "После документов — следующая фраза, которую вы скажете вслух",
       "more": "Другие аргументы",
       "steelK": "Сталь",
@@ -37,14 +37,14 @@
       "title": "A map of the soil",
       "skip": "Skip to text",
       "langKicker": "Sprog · Language · Язык",
-      "phraseQ": "Which sentence are you willing to say out loud",
-      "own": "one’s own",
+      "phraseQ": "Which sentence will you say aloud",
+      "own": "yours",
       "ownLabel": "Your own sentence",
-      "unknown": "The soil is unknown. The system does not pretend it parsed the sentence.",
+      "unknown": "This sentence is not in the issue. Name the distinction yourself.",
       "guessKicker": "The norm is not named yet",
       "guessWait": "The article opens after you answer.",
-      "guessOk": "The article was already in the law. The click is to see it, not to pick a slogan.",
-      "guessBad": "Most people reach for the body count. What follows is not an opinion. It is the article.",
+      "guessOk": "A norm is named. The text is open.",
+      "guessBad": "The article reads otherwise. The text is open anyway.",
       "again": "After the documents: the next sentence you will say out loud",
       "more": "Other arguments",
       "steelK": "Steel",
@@ -70,14 +70,14 @@
       "title": "Et kort over jorden",
       "skip": "Spring til teksten",
       "langKicker": "Sprog · Language · Язык",
-      "phraseQ": "Hvilken sætning er du villig til at sige højt",
-      "own": "ens egen",
+      "phraseQ": "Hvilken sætning vil du sige højt",
+      "own": "egen",
       "ownLabel": "Din egen sætning",
-      "unknown": "Jorden er ukendt. Systemet lader ikke som om det har afkodet sætningen.",
+      "unknown": "Sætningen står ikke i dette hæfte. Nævn selv skellet.",
       "guessKicker": "Normen er endnu ikke nævnt",
       "guessWait": "Artiklen åbner, når du har svaret.",
-      "guessOk": "Artiklen lå allerede i retten. Svaret er at se den, ikke at vælge et slogan.",
-      "guessBad": "De fleste trykker på ligetælleren. Det der følger er ikke en mening. Det er artiklen.",
+      "guessOk": "En norm er nævnt. Teksten er åben.",
+      "guessBad": "Artiklen læses anderledes. Teksten er åben alligevel.",
       "again": "Efter dokumenterne: den næste sætning, du vil sige højt",
       "more": "Andre argumenter",
       "steelK": "Stål",
@@ -418,14 +418,14 @@
           }
         ],
         "ok": {
-          "ru": "Статья 51 даёт право после нападения. Она не говорит, каким снарядом отвечать.",
-          "en": "Article 51 gives a right after an attack. It does not say with which shell one may answer.",
-          "da": "Artikel 51 giver en ret efter et angreb. Den siger ikke med hvilken granat man må svare."
+          "ru": "Статья 51 даёт право после нападения. Она не называет оружие.",
+          "en": "Article 51 is a right after an attack. It does not name the weapon.",
+          "da": "Artikel 51 er en ret efter et angreb. Den nævner ikke våbnet."
         },
         "bad": {
-          "ru": "Самооборона — не индульгенция. Дальше — условия начала, не лозунг.",
-          "en": "Self-defence is not an indulgence. What follows is the conditions for beginning, not a slogan.",
-          "da": "Selvforsvar er ikke en aflad. Det der følger er betingelserne for at begynde, ikke et slogan."
+          "ru": "Самооборона после нападения не выбирает средство.",
+          "en": "Self-defence after an attack does not choose the weapon.",
+          "da": "Selvforsvar efter et angreb vælger ikke våbnet."
         }
       },
       "docs": [
@@ -457,9 +457,9 @@
         "da": "Næsten enhver part finder sig en «retfærdig grund». Teorien bliver let sproget hos den, der allerede fører krig."
       },
       "steel": {
-        "ru": "Одна позиция: насилие бывает справедливым — власть, причина, намерение, затем пределы средства. Другая: сила в Уставе — исключение; ст. 51 даёт самооборону после нападения, не чистый лист.",
-        "en": "One position: violence can be just — authority, cause, intention, then limits on means. The other: force in the Charter is the exception; Art. 51 gives self-defence after an attack, not a blank sheet.",
-        "da": "Én position: vold kan være retfærdig — myndighed, grund, hensigt, dernæst grænser for midlet. Den anden: magt i Pagten er undtagelsen; art. 51 giver selvforsvar efter et angreb, ikke et blankt ark."
+        "ru": "У Аквината война может быть справедливой: законная власть, причина, верное намерение, затем предел средства. Устав говорит о силе иначе. Статья 51 — самооборона после вооружённого нападения, не выбор снаряда.",
+        "en": "Aquinas allows a just war: lawful authority, a cause, a right intention, then a limit on means. The Charter treats force as the exception. Article 51 is self-defence after an armed attack. It does not choose the weapon.",
+        "da": "Hos Aquinas kan en krig være retfærdig: lovlig myndighed, en grund, en ret hensigt, derefter en grænse for midlet. Pagten behandler magt som undtagelsen. Artikel 51 er selvforsvar efter et væbnet angreb. Den vælger ikke våbnet."
       },
       "cite": {
         "ru": "Аквинат, Summa Theologiae, II–II, q.40",
@@ -474,17 +474,17 @@
       "body": {
         "ru": "Теория справедливой войны делит вопрос надвое: jus ad bellum — можно ли начинать, jus in bello — как воевать. У Аквината для начала нужны законная власть, справедливая причина и правильное намерение. Уолцер добавляет: гражданских нельзя делать целью; побочный вред допустим, только если он ненамеренный, необходимый и соразмерный цели именно этого удара. Устав ООН, ст. 51: неотъемлемое право на самооборону, «если произойдёт вооружённое нападение», до мер Совета Безопасности; меры надо сообщить Совету. Статья не отменяет гуманитарное право.",
         "en": "Just-war theory splits the question in two: jus ad bellum — whether one may begin; jus in bello — how one may fight. For Aquinas a war may begin only with legitimate authority, a just cause, and a right intention. Walzer adds: civilians may not be made the target; collateral harm is allowed only if it is unintended, necessary, and proportionate to the aim of that specific strike. UN Charter, Art. 51: the inherent right of self-defence “if an armed attack occurs”, until the Security Council acts; the measures must be reported to the Council. The article does not set humanitarian law aside.",
-        "da": "Teorien om retfærdig krig deler spørgsmålet i to: jus ad bellum — om man må begynde; jus in bello — hvordan man må kæmpe. Hos Aquinas kræver begyndelsen lovlig myndighed, retfærdig grund og ret hensigt. Walzer tilføjer: civile må ikke gøres til mål; sideordnede skader er kun tilladt, hvis de er utilsigtede, nødvendige og proportionale med formålet med netop dette angreb. FN-pagten, art. 51: den naturlige ret til selvforsvar «hvis et væbnet angreb finder sted», indtil Sikkerhedsrådet handler; foranstaltningerne skal meddeles Rådet. Artiklen sætter ikke den humanitære ret til side."
+        "da": "Teorien om retfærdig krig deler spørgsmålet i to: jus ad bellum — om man må begynde; jus in bello — hvordan man må kæmpe. Hos Aquinas kræver begyndelsen lovlig myndighed, retfærdig grund og ret hensigt. Walzer tilføjer: civile må ikke gøres til mål; følgeskader er kun tilladt, hvis de er utilsigtede, nødvendige og proportionale med formålet med netop dette angreb. FN-pagten, art. 51: den naturlige ret til selvforsvar «hvis et væbnet angreb finder sted», indtil Sikkerhedsrådet handler; foranstaltningerne skal meddeles Rådet. Artiklen sætter ikke den humanitære ret til side."
       },
       "crack": {
-        "ru": "Почти любая сторона находит себе «справедливую причину» и «вооружённое нападение». Письмо S/2023/742 называет нападение и обещает действовать «in any way necessary» — явной ст. 51 в письме нет. Это тонкий Art. 51: статья в Уставе есть, цитаты нет. МС ООН 19 июля 2024 назвал присутствие незаконным; МУС 21 ноября выдал параллельные ордера. Ст. 51 не спрашивает, справедлива ли война в целом, и не говорит, каким снарядом отвечать.",
-        "en": "Almost any party can furnish itself with a “just cause” and an “armed attack”. Letter S/2023/742 names the attack and promises to act “in any way necessary” — no express Art. 51 in the letter. A thin Art. 51: the article sits in the Charter, the citation does not. The ICJ on 19 July 2024 called the presence unlawful; the ICC on 21 November issued parallel warrants. Art. 51 does not ask whether the war as a whole is just, and does not say with which shell one may answer.",
-        "da": "Næsten enhver part kan skaffe sig en «retfærdig grund» og et «væbnet angreb». Brevet S/2023/742 nævner angrebet og lover at handle «in any way necessary» — ingen udtrykkelig art. 51 i brevet. En tynd art. 51: artiklen ligger i Pagten, citatet ikke. ICJ kaldte den 19. juli 2024 tilstedeværelsen retsstridig; ICC udstedte den 21. november parallelle ordrer. Art. 51 spørger ikke, om krigen som helhed er retfærdig, og siger ikke med hvilken granat man må svare."
+        "ru": "Письмо S/2023/742 называет нападение и обещает действовать «in any way necessary». Статьи 51 в письме нет: норма в Уставе есть, цитаты нет. 19 июля 2024 года МС ООН назвал присутствие Израиля незаконным. 21 ноября МУС выдал ордера. Статья 51 не спрашивает, справедлива ли война целиком.",
+        "en": "Letter S/2023/742 names the attack and says Israel will act “in any way necessary”. Article 51 is not cited. The norm is in the Charter; the letter does not quote it. On 19 July 2024 the ICJ called Israel’s presence unlawful. On 21 November the ICC issued warrants. Article 51 does not ask whether the war as a whole is just.",
+        "da": "Brevet S/2023/742 nævner angrebet og skriver, at Israel vil handle «in any way necessary». Artikel 51 er ikke citeret. Normen står i Pagten; brevet citerer den ikke. Den 19. juli 2024 kaldte ICJ Israels tilstedeværelse retsstridig. Den 21. november udstedte ICC arrestordrer. Artikel 51 spørger ikke, om krigen som helhed er retfærdig."
       },
       "note": {
-        "ru": "Граница здесь — справедливое и несправедливое насилие, не насилие и пацифизм.",
-        "en": "The line here is just and unjust violence, not violence and pacifism.",
-        "da": "Grænsen her er retfærdig og uretfærdig vold, ikke vold og pacifisme."
+        "ru": "Здесь спорят о виде насилия, не о пацифизме.",
+        "en": "The argument here is about what kind of violence, not about pacifism.",
+        "da": "Her drejer det sig om, hvilken slags vold, ikke om pacifisme."
       }
     },
     {
@@ -523,14 +523,14 @@
           }
         ],
         "ok": {
-          "ru": "Статья уже была в праве. Ответ — увидеть её, а не подобрать лозунг.",
-          "en": "The article was already in the law. The click is to see it, not to pick a slogan.",
-          "da": "Artiklen lå allerede i retten. Svaret er at se den, ikke at vælge et slogan."
+          "ru": "Смотрят ожидаемый вред этого удара, не итог за год.",
+          "en": "The test is the harm expected from this strike, not the year’s total.",
+          "da": "Man ser på den skade, dette angreb ventes at give, ikke på årets samlede tal."
         },
         "bad": {
-          "ru": "Большинство жмёт на счётчик тел. Дальше — не мнение, а статья.",
-          "en": "Most people reach for the body count. What follows is not an opinion. It is the article.",
-          "da": "De fleste trykker på ligetælleren. Det der følger er ikke en mening. Det er artiklen."
+          "ru": "Число убитых с двух сторон в статье не стоит.",
+          "en": "The article does not count the dead on both sides.",
+          "da": "Artiklen tæller ikke de døde på begge sider."
         }
       },
       "docs": [
@@ -551,19 +551,19 @@
         "da": "Kroppe eller middel"
       },
       "headline": {
-        "ru": "В праве соразмерность — не «око за око» и не итоговый счётчик трупов.",
-        "en": "In the law, proportionality is not an eye for an eye, and not a running total of corpses.",
-        "da": "I retten er proportionalitet ikke øje for øje og ikke en løbende ligetæller."
+        "ru": "В праве соразмерность — не «око за око» и не итог по числу убитых.",
+        "en": "In the law, proportionality is not an eye for an eye, and not a total of the dead.",
+        "da": "I retten er proportionalitet ikke øje for øje og ikke en sum af de døde."
       },
       "dek": {
-        "ru": "Если считать только телами — любая война в городе уже «несоразмерна». Если только средствами — системный вред прячется. Оба счётчика врут по-своему.",
-        "en": "Count only bodies, and any war in a city is already “disproportionate”. Count only means, and systemic harm hides. Both counters lie in their own way.",
-        "da": "Tæller man kun kroppe, er enhver krig i en by allerede «upropotional». Tæller man kun midler, gemmer den systemiske skade sig. Begge tællere lyver på deres vis."
+        "ru": "Считать только убитых — и любая война в городе уже чрезмерна. Считать только средство — и вред, который копится, выпадает из формулы.",
+        "en": "Count only the dead, and every war in a city is already excessive. Count only the weapon, and harm that builds up drops out of the formula.",
+        "da": "Tæller man kun de døde, er enhver krig i en by allerede overdreven. Tæller man kun våbnet, falder den skade, der hober sig op, ud af formlen."
       },
       "steel": {
-        "ru": "Одна позиция: смотрят, что знал командир в момент этого удара. Другая: ст. 57 требует постоянной заботы и отмены, когда вред становится чрезмерным, — город копят не «позже».",
-        "en": "One position: the test is what the commander knew at that strike. The other: art. 57 requires constant care and cancellation when the harm becomes excessive — a city is not accumulated “later”.",
-        "da": "Én position: man ser på, hvad kommandanten vidste ved netop dette angreb. Den anden: art. 57 kræver stadig omsorg og aflysning, når skaden bliver overdreven — en by samles ikke «senere»."
+        "ru": "Соразмерность смотрят в момент удара: что командир мог ожидать, не сколько насчитают через год. Статья 57 требует другого. Забота постоянная. Удар отменяют, когда вред уже чрезмерен. Город не откладывают на потом.",
+        "en": "Proportionality is judged at the strike: what the commander could expect, not a toll added up a year later. Article 57 asks for something else. Care does not stop. The strike is called off when the harm is already excessive. A city is not postponed.",
+        "da": "Proportionalitet bedømmes ved angrebet: hvad chefen kunne forvente, ikke et tal man lægger sammen et år senere. Artikel 57 kræver noget andet. Omsorgen holder ikke pause. Angrebet aflyses, når skaden allerede er overdreven. En by udskydes ikke."
       },
       "cite": {
         "ru": "Доп. протокол I, ст. 51(5)(b)",
@@ -581,14 +581,14 @@
         "da": "Tillægsprotokol I, art. 51(5)(b): et angreb er forbudt, hvis man kan forvente, at det vil medføre civil skade, der er overdreven i forhold til den konkrete og direkte militære fordel ved netop dette angreb. Man ser på, hvad kommandanten vidste i beslutningsøjeblikket, ikke på dødstallet et år senere. Art. 51(7): et menneskeligt skjold er forbudt. Art. 51(8): modstanderens brud på denne norm fritager ikke angriberen for pligter over for civile. Art. 57 tilføjer: stadig omsorg; alt, hvad der er muligt, for at efterprøve målet; vælge midlet; aflyse angrebet, når billedet skifter; advare, hvis omstændighederne tillader det. ICRC-regel 14 gentager proportionalitet som sædvane."
       },
       "crack": {
-        "ru": "Ст. 51(5)(b) смотрит этот удар заранее: что командир мог ожидать, не годовой счётчик. Её не склеивают с треком МУС о голоде как методе войны. Если считать только «средствами», системный вред прячется за формулой «цель была легитимной». Если только телами — любая война в городе уже «несоразмерна», даже когда щит создан сознательно.",
-        "en": "Art. 51(5)(b) looks at that strike in advance: what the commander could expect, not a yearly body count. Do not glue it to the ICC track on starvation as a method of warfare. If one counts only “means”, systemic harm hides behind “the target was legitimate”. If one counts only bodies, any war in a city is already “disproportionate”, even when the shield was built on purpose.",
-        "da": "Art. 51(5)(b) ser på netop dette angreb på forhånd: hvad kommandanten kunne forvente, ikke et årligt ligetal. Lim den ikke sammen med ICC-sporet om sult som krigsmetode. Tæller man kun «midler», gemmer den systemiske skade sig bag «målet var legitimt». Tæller man kun kroppe, er enhver krig i en by allerede «upropotional», også når skjoldet er skabt med vilje."
+        "ru": "Статья 51(5)(b) смотрит этот удар заранее. Её не кладут в одно дело с ордерами МУС о голоде как методе войны. Формула «цель была законной» прячет вред, который копится. Счёт убитых, когда щит сделан нарочно, тоже не есть эта статья.",
+        "en": "Article 51(5)(b) looks at this strike beforehand. It is not the same case as the ICC warrants on starvation as a method of warfare. “The target was lawful” hides harm that builds up. A death toll, when the shield was deliberate, is not this article either.",
+        "da": "Artikel 51(5)(b) ser på dette angreb på forhånd. Den er ikke samme sag som ICC-ordrerne om sult som krigsmetode. «Målet var lovligt» skjuler skade, der hober sig op. Et dødstal, når skjoldet er lavet med vilje, er heller ikke denne artikel."
       },
       "note": {
-        "ru": "Сначала угадайте норму. Статья ляжет после ответа.",
-        "en": "Guess the norm first. The article is laid down after the answer.",
-        "da": "Gæt først normen. Artiklen lægges frem efter svaret."
+        "ru": "Соразмерность здесь — про этот удар.",
+        "en": "Proportionality here is about this strike.",
+        "da": "Proportionalitet her handler om dette angreb."
       }
     },
     {
@@ -632,9 +632,9 @@
           "da": "At forklare med historien og at fjerne forsættet er forskellige træk."
         },
         "bad": {
-          "ru": "Контекст не оправдывает резню. Резня не обнуляет блокаду. Дальше — различение, не лозунг.",
-          "en": "Context does not excuse a massacre. A massacre does not cancel a blockade. What follows is a distinction, not a slogan.",
-          "da": "Kontekst retfærdiggør ikke en massakre. En massakre ophæver ikke en blokade. Det der følger er en skelnen, ikke et slogan."
+          "ru": "Этот ответ снимает либо умысел, либо блокаду. Доклад не делает ни того ни другого.",
+          "en": "That answer cancels either intent or the blockade. The report does neither.",
+          "da": "Det svar ophæver enten forsættet eller blokaden. Rapporten gør ingen af delene."
         }
       },
       "docs": [
@@ -663,9 +663,9 @@
         "da": "Kontekst retfærdiggør ikke en massakre. En massakre ophæver ikke en blokade."
       },
       "steel": {
-        "ru": "Одна позиция: оккупацию можно признать — резня гражданских всё равно не сопротивление. Другая: «абсолютное событие» легко запрещает разговор о блокаде и о том, что делали с гражданскими после.",
-        "en": "One position: occupation can be acknowledged — the massacre of civilians is still not resistance. The other: an “absolute event” easily forbids talk of the blockade and of what was done to civilians afterwards.",
-        "da": "Én position: besættelse kan anerkendes — en massakre på civile er alligevel ikke modstand. Den anden: en «absolut begivenhed» forbyder let samtalen om blokaden og om det, der blev gjort ved civile bagefter."
+        "ru": "Оккупацию можно назвать по имени. Резня гражданских от этого не становится сопротивлением. Есть и обратный срез: если после 7 октября нельзя говорить, блокада и то, что потом делали с гражданскими, выпадают из разговора.",
+        "en": "The occupation can be named. Killing civilians does not turn into resistance because it is named. There is a reverse cut. If speech has to stop after 7 October, the blockade, and what was later done to civilians, fall out of the conversation.",
+        "da": "Besættelsen kan nævnes ved navn. Drab på civile bliver ikke til modstand, fordi den nævnes. Der er også et modsat snit. Hvis man ikke må tale efter 7. oktober, falder både blokaden og det, der siden skete med civile, ud af samtalen."
       },
       "cite": {
         "ru": "Паттен, март 2024",
@@ -683,14 +683,14 @@
         "da": "Omkring 1.200 er Israels reviderede officielle TOTAL (udenrigsministeriet, Lior Haiat, 10. november 2023), ikke et tal kun for civile. Det første skøn på ~1.400 blev sænket: nogle uidentificerede lig blev senere regnet som angribere. En civil andel holdes ikke her som officiel tabel. AFP via HRW (17. juli 2024): af 1.195 omkring 815 civile — en journalistisk krydstjek, ikke den israelske liste. Omkring 250–253 blev taget. Patten (4. marts 2024): reasonable grounds for voldtægt, herunder gruppevoldtægt, på flere steder; om nogle gidsler — clear and convincing; intet prævalenstal og ingen tilskrivning af hele styrken. Hamas benægter og skriver: planen var militær, udenforstående skabte kaos. HRW: drab på civile og gidseltagning var centrale mål i et planlagt angreb, ikke en plan der gik skævt — forbrydelser mod menneskeheden. Besættelse og blokade kan nævnes, og en massakre på civile er alligevel ikke «modstand»."
       },
       "crack": {
-        "ru": "HRW (17 июля 2024): убийства гражданских были частью плана, не срывом. Это сталкивается с формулой, которая растворяет 7 октября в «контексте оккупации». «Абсолютное событие» легко запрещает разговор о блокаде и о том, что делали с гражданскими после. Контекст не оправдывает резню. Резня не обнуляет блокаду.",
-        "en": "HRW (17 July 2024): the killing of civilians was part of the plan, not a plan gone awry. That collides with a formula that dissolves 7 October into “the context of occupation”. An “absolute event” easily forbids talk of the blockade and of what was done to civilians afterwards. Context does not excuse a massacre. A massacre does not cancel a blockade.",
-        "da": "HRW (17. juli 2024): drab på civile var en del af planen, ikke en plan der gik skævt. Det støder sammen med en formel, der opløser 7. oktober i «besættelsens sammenhæng». En «absolut begivenhed» forbyder let samtalen om blokaden og om det, der blev gjort ved civile bagefter. Kontekst retfærdiggør ikke en massakre. En massakre ophæver ikke en blokade."
+        "ru": "HRW, 17 июля 2024: убийство гражданских было частью плана, не срывом. Фраза, которая растворяет 7 октября в «контексте оккупации», с этим докладом не сходится.",
+        "en": "HRW, 17 July 2024: killing civilians was part of the plan, not a plan that failed. A sentence that dissolves 7 October into “the context of occupation” does not match that report.",
+        "da": "HRW, 17. juli 2024: drab på civile var en del af planen, ikke en plan der slog fejl. En sætning, der opløser 7. oktober i «besættelsens sammenhæng», passer ikke med den rapport."
       },
       "note": {
-        "ru": "Назвать атаку геноцидальной и не растворять её в «контексте» — один ход мысли. Не приговор.",
-        "en": "To call the attack genocidal and refuse to dissolve it in “context” is one move. Not a verdict.",
-        "da": "At kalde angrebet folkedrabsk og nægte at opløse det i «kontekst» er ét træk. Ikke en dom."
+        "ru": "Историю можно рассказать. Умысел от этого не исчезает.",
+        "en": "The history can be told. Intent does not vanish with it.",
+        "da": "Historien kan fortælles. Forsættet forsvinder ikke med den."
       }
     },
     {
@@ -734,9 +734,9 @@
           "da": "En ligetæller hverken beviser eller afkræfter det forsæt."
         },
         "bad": {
-          "ru": "«Очень много жертв» — ложное чтение. Дальше — статья II, не лозунг.",
-          "en": "“A great many dead” is the false reading. What follows is Article II, not a slogan.",
-          "da": "«Rigtig mange døde» er den falske læsning. Det der følger er artikel II, ikke et slogan."
+          "ru": "«Очень много жертв» в статье II не написано.",
+          "en": "“A great many dead” is not what Article II says.",
+          "da": "«Rigtig mange døde» står ikke i artikel II."
         }
       },
       "docs": [
@@ -782,14 +782,14 @@
         "da": "Handlinger plus et særligt forsæt om at ødelægge en gruppe som sådan."
       },
       "dek": {
-        "ru": "Слово стало оружием в обе стороны. Если оно лежит только на одной чаше, весы снова врут.",
-        "en": "The word is a weapon in both directions. If it sits on one scale only, the scales lie again.",
-        "da": "Ordet er et våben i begge retninger. Ligger det kun i den ene vægtskål, lyver vægten igen."
+        "ru": "В лозунге «геноцид» часто значит «очень много убитых». В конвенции этого значения нет.",
+        "en": "In a slogan, “genocide” often means “a great many dead”. The Convention does not use the word that way.",
+        "da": "I et slogan betyder «folkedrab» ofte «rigtig mange døde». Konventionen bruger ikke ordet sådan."
       },
       "steel": {
-        "ru": "Одна позиция: Конвенция 1948 года требует специальный умысел уничтожить группу как таковую; МС ООН в январе 2024 геноцид не установил, Донхью потом сказала: правдоподобны права, не преступление. Другая: ждать приговора по существу — уже политика, если деяния и речи похожи на статью II.",
-        "en": "One position: the 1948 Convention requires specific intent to destroy a group as such; the ICJ in January 2024 did not find genocide, and Donoghue later said the plausible thing was the rights, not the crime. The other: waiting for a merits judgment is already politics if the acts and the words look like Article II.",
-        "da": "Én position: konventionen fra 1948 kræver et særligt forsæt om at ødelægge en gruppe som sådan; ICJ fastslog i januar 2024 ikke folkedrab, og Donoghue sagde siden, at det plausible var rettighederne, ikke forbrydelsen. Den anden: at vente på en realitetsdom er allerede politik, hvis handlingerne og talen ligner artikel II."
+        "ru": "Конвенция 1948 года требует деяния и отдельный умысел: уничтожить группу как таковую. В январе 2024 года МС ООН геноцид не установил. Донхью позже сказала, что правдоподобны права на защиту, не само преступление. Время считают и иначе. Если деяния и речи уже похожи на статью II, ожидание приговора по существу само становится решением.",
+        "en": "The 1948 Convention requires acts and a separate intent: to destroy a group as such. In January 2024 the ICJ did not find genocide. Donoghue later said the plausible finding was a right to protection, not the crime itself. Time can be counted another way. If the acts and the speeches already resemble Article II, waiting for a judgment on the merits is itself a decision.",
+        "da": "Konventionen fra 1948 kræver handlinger og et særskilt forsæt: at ødelægge en gruppe som sådan. I januar 2024 fastslog ICJ ikke folkedrab. Donoghue sagde senere, at det plausible var en ret til beskyttelse, ikke selve forbrydelsen. Tiden kan tælles på en anden måde. Hvis handlingerne og talerne allerede ligner artikel II, er ventetiden på en realitetsdom selv en beslutning."
       },
       "cite": {
         "ru": "Конвенция о геноциде, 1948",
@@ -807,14 +807,14 @@
         "da": "Artikel II i konventionen: handlinger plus forsæt om at ødelægge en gruppe som sådan — drab, alvorlig skade, levevilkår beregnet på fysisk ødelæggelse, foranstaltninger mod fødsler, tvangsmæssig overførsel af børn. En ligetæller hverken beviser eller afkræfter det forsæt. Pagten 1988: «Israel vil eksistere, indtil islam udsletter det»; jihad som eneste løsning; en antisemitisk hadith i art. 7. Dokumentet fra 2017 fjerner noget antijødisk retorik, men bevarer manglende anerkendelse og «fra floden til havet». 2017 ophæver ikke 1988: to tekster. ICJ fastslog den 26. januar 2024 ikke folkedrab og beordrede ikke operationerne stoppet. Donoghue (BBC, april 2024): rettighederne til beskyttelse var plausible, ikke et fund om at folkedrab var plausibelt. Midlertidige forholdsregler er ikke en dom."
       },
       "crack": {
-        "ru": "Слово стало оружием в обе стороны: им закрывают разговор и про 7 октября, и про условия жизни в Газе. Если оно лежит только на одной чаше, весы снова врут.",
-        "en": "The word has become a weapon in both directions: it is used to shut down talk of 7 October, and talk of the conditions of life in Gaza. If it sits on one scale only, the scales lie again.",
-        "da": "Ordet er blevet et våben i begge retninger: det lukker samtalen både om 7. oktober og om livsvilkårene i Gaza. Ligger det kun i den ene vægtskål, lyver vægten igen."
+        "ru": "Этим словом прекращают разговор о 7 октября. Тем же словом прекращают разговор о том, как устроен быт в Газе. Если оно работает только в одну сторону, вторая часть спора исчезает.",
+        "en": "The word is used to stop talk of 7 October. The same word is used to stop talk of how daily life in Gaza is arranged. If it works in one direction only, the rest of the argument disappears.",
+        "da": "Ordet bruges til at standse samtalen om 7. oktober. Det samme ord bruges til at standse samtalen om, hvordan hverdagen i Gaza er indrettet. Virker det kun den ene vej, forsvinder resten af argumentet."
       },
       "note": {
-        "ru": "Конвенция требует умысла уничтожить группу как таковую. Счётчик тел этого умысла не доказывает и не опровергает.",
-        "en": "The Convention requires intent to destroy a group as such. A body count neither proves nor disproves that intent.",
-        "da": "Konventionen kræver forsæt om at ødelægge en gruppe som sådan. En ligetæller hverken beviser eller afkræfter det forsæt."
+        "ru": "Статья II не считается по числу убитых.",
+        "en": "Article II is not settled by a death toll.",
+        "da": "Artikel II afgøres ikke af et dødstal."
       }
     },
     {
@@ -858,9 +858,9 @@
           "da": "Proxy og subjekt ophæver ikke hinanden."
         },
         "bad": {
-          "ru": "Свести всё к Ирану — снять субъектность. Свести к «сопротивлению» — убрать хартию.",
-          "en": "Reduce it all to Iran, and agency is stripped. Reduce it to “resistance”, and the Charter disappears.",
-          "da": "Reducer det hele til Iran, og subjektiviteten forsvinder. Reducer det til «modstand», og pagten forsvinder."
+          "ru": "Оба коротких ответа стирают половину дела: либо сеть, либо хартию.",
+          "en": "Both short answers erase half the file: either the network or the Charter.",
+          "da": "Begge korte svar sletter halvdelen af sagen: enten netværket eller pagten."
         }
       },
       "docs": [
@@ -886,14 +886,14 @@
         "da": "Man kan være en organisation med egen ideologi og samtidig en del af et fremmed net."
       },
       "dek": {
-        "ru": "Свести всё к Ирану — снять с ХАМАСа субъектность. Свести всё к «народному сопротивлению» — убрать хартию.",
-        "en": "Reduce it all to Iran, and Hamas loses agency. Reduce it all to “popular resistance”, and the Charter disappears.",
-        "da": "Reducer det hele til Iran, og Hamas mister subjektivitet. Reducer det hele til «folkelig modstand», og pagten forsvinder."
+        "ru": "Иранская сеть не отменяет хартию. Хартия не отменяет сеть.",
+        "en": "An Iranian network does not erase the Charter. The Charter does not erase the network.",
+        "da": "Et iransk netværk sletter ikke pagten. Pagten sletter ikke netværket."
       },
       "steel": {
-        "ru": "Одна позиция: сеть КСИР и учения делают ХАМАС прокси. Другая: документ 2017 года — своя идеология, своё «от реки до моря», своё непризнание; Вашингтон операционной связи учений с датой 7 октября не подтвердил.",
-        "en": "One position: the IRGC network and the drills make Hamas a proxy. The other: the 2017 document is its own ideology, its own “river to the sea”, its own non-recognition; Washington did not confirm an operational link between the drills and the date of 7 October.",
-        "da": "Én position: IRGC-nettet og øvelserne gør Hamas til en proxy. Den anden: dokumentet fra 2017 er egen ideologi, eget «fra floden til havet», egen manglende anerkendelse; Washington bekræftede ikke en operationel forbindelse mellem øvelserne og datoen 7. oktober."
+        "ru": "Сеть КСИР и совместные учения позволяют читать ХАМАС как чужую руку. Документ 2017 года этому чтению мешает: там своя идеология, своё «от реки до моря», своё непризнание Израиля. Вашингтон не подтвердил, что учения были операционно связаны с датой 7 октября.",
+        "en": "The IRGC network and joint drills let Hamas be read as someone else’s hand. The 2017 document gets in the way: its own ideology, its own “from the river to the sea”, its own refusal to recognise Israel. Washington did not confirm that the drills were tied, operationally, to the date of 7 October.",
+        "da": "IRGC-netværket og de fælles øvelser gør det muligt at læse Hamas som en andens hånd. Dokumentet fra 2017 står i vejen: dets egen ideologi, dets eget «fra floden til havet», dets eget nej til at anerkende Israel. Washington bekræftede ikke, at øvelserne operationelt hang sammen med datoen 7. oktober."
       },
       "cite": {
         "ru": "WSJ, 25 октября 2023",
@@ -911,9 +911,9 @@
         "da": "WSJ, 25. oktober 2023: omkring 500 Hamas- og Islamisk Jihad-kæmpere — specialtræning hos IRGC/Quds, blandt andet i september 2023; Esmail Qaani var til stede. Det er træning, ikke et fund om at Teheran beordrede 7. oktober. NBC, 11. oktober 2023: amerikansk efterretning — iranske ledere blev overrasket; Washington bekræftede ikke, at Iran beordrede angrebet. Sullivan: «medskyldig», fordi man i årtier har bevæbnet, finansieret og trænet. Dokumentet fra 2017 er egen ideologi og egen manglende anerkendelse: et subjekt, ikke kun en proxy. Formlen «23. september» holdes ikke."
       },
       "crack": {
-        "ru": "Свести всё к Ирану — снять с ХАМАСа субъектность и стереть палестинскую политику. Свести всё к «народному сопротивлению» — убрать деньги, оружие, хартию и решение атаковать гражданских.",
-        "en": "Reduce it all to Iran, and Hamas is stripped of agency and Palestinian politics is erased. Reduce it all to “popular resistance”, and the money, the weapons, the Charter, and the decision to attack civilians disappear.",
-        "da": "Reducer det hele til Iran, og Hamas fratages subjektivitet, og palæstinensisk politik slettes. Reducer det hele til «folkelig modstand», og pengene, våbnene, pagten og beslutningen om at angribe civile forsvinder."
+        "ru": "Если всё объяснять Ираном, у ХАМАСа не остаётся собственной политики. Если всё называть народным сопротивлением, из кадра пропадают деньги, оружие, хартия и решение атаковать гражданских.",
+        "en": "Explain it all by Iran, and Hamas has no politics of its own left. Call it all popular resistance, and the money, the weapons, the Charter, and the decision to attack civilians leave the picture.",
+        "da": "Forklar det hele med Iran, og Hamas har ingen politik tilbage, der er dens egen. Kald det hele folkelig modstand, og pengene, våbnene, pagten og beslutningen om at angribe civile ryger ud af billedet."
       },
       "note": {
         "ru": "Цицерон: с пиратом нет клятвы, он communis hostis omnium. Перенос рамки на организацию не переносит её на новорождённого.",
@@ -962,9 +962,9 @@
           "da": "At tælle kalorier er allerede politik, også når tabellen kaldes et udkast."
         },
         "bad": {
-          "ru": "Цифра минимума не есть индульгенция на периметр. Дальше — жанр таблицы, не лозунг.",
-          "en": "A minimum figure is not an indulgence for a perimeter. What follows is the genre of the table, not a slogan.",
-          "da": "Et minimumstal er ikke en aflad for en perimeter. Det der følger er tabellens genre, ikke et slogan."
+          "ru": "Цифра минимума не говорит, зачем таблицу вообще считали.",
+          "en": "A minimum figure does not say why the table was drawn up.",
+          "da": "Et minimumstal siger ikke, hvorfor tabellen overhovedet blev lavet."
         }
       },
       "docs": [
@@ -1004,9 +1004,9 @@
         "da": "Selv om udkastet «ikke blev anvendt», er genren et regnskab over et livsminimum under pres."
       },
       "steel": {
-        "ru": "Одна позиция: морская блокада враждебной территории может быть законной, если гуманитарный минимум держат — так читает доклад Палмера. Другая: жанр таблицы калорий уже делает гражданских инструментом, а Рафах закрывает не только Израиль.",
-        "en": "One position: a naval blockade of hostile territory can be lawful if a humanitarian minimum is held — that is the Palmer reading. The other: the genre of a calorie table already makes civilians an instrument, and Rafah is not closed by Israel alone.",
-        "da": "Én position: en maritim blokade af fjendtligt territorium kan være lovlig, hvis et humanitært minimum holdes — det er Palmer-læsningen. Den anden: genren med kalorietabellen gør allerede civile til et instrument, og Rafah lukkes ikke kun af Israel."
+        "ru": "Доклад Палмера читает морскую блокаду враждебной территории как законную, если гуманитарный минимум держат. Таблица калорий — другой документ: сам жанр считает гражданских единицей давления. Рафах при этом закрывают не только израильские ворота.",
+        "en": "The Palmer report reads a naval blockade of hostile territory as lawful if a humanitarian minimum is kept. A calorie table is a different document: the genre itself counts civilians as a unit of pressure. Rafah, in any case, is not closed by the Israeli gates alone.",
+        "da": "Palmer-rapporten læser en søblokade af fjendtligt territorium som lovlig, hvis et humanitært minimum holdes. En kalorietabel er et andet dokument: selve genren tæller civile som en enhed for pres. Rafah lukkes i øvrigt ikke kun ved de israelske porte."
       },
       "cite": {
         "ru": "Gisha / COGAT, январь 2008",
@@ -1024,14 +1024,14 @@
         "da": "Efter en retssag fik Gisha offentliggjort COGAT-præsentationen «Food Consumption in the Gaza Strip — Red Lines» (januar 2008). Gennemsnittet: 2.279 kcal pr. person pr. dag. I versionerne — 106 / 131 / 170 lastbiler. Gisha: før stramningen i 2007 kom omkring 400 lastbiler ind om dagen; under begrænsningerne i praksis omkring 67. Israels forsvarsministerium: et udkast; politikken blev ikke ført efter det; målet var at undgå et humanitært sammenbrud. Efter 2007 kaldte Israel Gaza «fjendtligt territorium». Udgangene holdes af Israel og Egypten. Palmer-rapporten (2011): den maritime blokade som sådan var en lovlig sikkerhedsforanstaltning; magten på Mavi Marmara var overdreven; ni døde. De humanitære behov skal dækkes, ellers holder lovligheden ikke."
       },
       "crack": {
-        "ru": "Три спора не склеивать: (1) черновик 2008 / государство говорит «не применяли» / Gisha спорит совпадением квот; (2) грузовики на входе ≠ распределение внутри; (3) Рафах держат Израиль и Египет. Даже если таблицу «не применяли», жанр — расчёт минимума жизни под давлением.",
-        "en": "Do not glue three disputes: (1) the 2008 draft / the State says it was never used / Gisha contests via quota match; (2) trucks at the gate ≠ distribution inside; (3) Rafah is held by Israel and Egypt. Even if the table “was not applied”, the genre is a calculation of a minimum of life under pressure.",
-        "da": "Lim ikke tre stridigheder sammen: (1) udkastet fra 2008 / staten siger, det aldrig blev brugt / Gisha bestrider via kvotematch; (2) lastbiler ved porten ≠ fordeling indeni; (3) Rafah holdes af Israel og Egypten. Selv om tabellen «ikke blev anvendt», er genren et regnskab over et livsminimum under pres."
+        "ru": "Здесь три разных спора. Черновик 2008 года: государство говорит, что его не применяли, Gisha отвечает совпадением квот. Грузовики на входе не равны раздаче внутри. Рафах держат Израиль и Египет.",
+        "en": "Three disputes sit here, and they are not one. The 2008 draft: the state says it was never applied; Gisha answers that the quotas match. Trucks at the gate are not distribution inside. Rafah is held by Israel and by Egypt.",
+        "da": "Her ligger tre stridigheder, og de er ikke én. Udkastet fra 2008: staten siger, det aldrig blev brugt; Gisha svarer, at kvoterne passer sammen. Lastbiler ved porten er ikke uddeling indenfor. Rafah holdes af Israel og af Egypten."
       },
       "note": {
-        "ru": "Считать калории — уже политика, даже когда таблицу называют черновиком.",
-        "en": "To count calories is already politics, even when the table is called a draft.",
-        "da": "At tælle kalorier er allerede politik, også når tabellen kaldes et udkast."
+        "ru": "Минимум в таблице не оправдывает периметр.",
+        "en": "A minimum in a table does not justify the perimeter.",
+        "da": "Et minimum i en tabel retfærdiggør ikke perimeteren."
       }
     },
     {
@@ -1070,14 +1070,14 @@
           }
         ],
         "ok": {
-          "ru": "Различение, не приговор. Ст. 33 запрещает коллективные наказания.",
-          "en": "A distinction, not a verdict. Art. 33 forbids collective penalties.",
-          "da": "En skelnen, ikke en dom. Art. 33 forbyder kollektive straffe."
+          "ru": "Статья 33 запрещает наказывать людей вместе, за чужой поступок.",
+          "en": "Article 33 forbids punishing people together for someone else’s act.",
+          "da": "Artikel 33 forbyder at straffe mennesker samlet for en andens handling."
         },
         "bad": {
-          "ru": "Формула «нет мирных» ломает различение. Обратная ловушка — снять ответственность с организации.",
-          "en": "The formula “there are no civilians” breaks the distinction. The reverse trap is to lift responsibility from the organisation.",
-          "da": "Formlen «der er ingen civile» knækker skelnen. Den omvendte fælde er at løfte ansvaret fra organisationen."
+          "ru": "«Нет мирных» и «организация ни при чём» оба мимо статьи 33.",
+          "en": "“There are no civilians” and “the organisation had nothing to do with it” both miss Article 33.",
+          "da": "«Der er ingen civile» og «organisationen har intet med det at gøre» rammer begge ved siden af artikel 33."
         }
       },
       "docs": [
@@ -1105,9 +1105,9 @@
         "da": "Formlen «der er ingen civile» knækker netop denne skelnen. Den omvendte fælde: «folket er ikke skyldigt» bliver undertiden til «organisationen er ikke ansvarlig»."
       },
       "steel": {
-        "ru": "Одна позиция: Ясперс — бессмысленно обвинять в преступлении целый народ; ст. 33 запрещает коллективные наказания. Другая: «народ не виноват» иногда становится «организация не ответственна».",
-        "en": "One position: Jaspers — it is meaningless to accuse an entire people of a crime; art. 33 forbids collective penalties. The other: “the people are not guilty” sometimes becomes “the organisation is not responsible”.",
-        "da": "Én position: Jaspers — det er meningsløst at anklage et helt folk for en forbrydelse; art. 33 forbyder kollektive straffe. Den anden: «folket er ikke skyldigt» bliver undertiden til «organisationen er ikke ansvarlig»."
+        "ru": "Ясперс отделяет преступление от народа: винить всех сразу не в чем. Статья 33 говорит то же языком запрета. Коллективное наказание нельзя.",
+        "en": "Jaspers separates the crime from the people: there is no charge against everyone at once. Article 33 says the same thing as a prohibition. Collective punishment is not allowed.",
+        "da": "Jaspers skiller forbrydelsen fra folket: der er ingen sag mod alle på én gang. Artikel 33 siger det samme som et forbud. Kollektiv straf er ikke tilladt."
       },
       "cite": {
         "ru": "Ясперс, Вопрос о виновности",
@@ -1125,14 +1125,14 @@
         "da": "Efter 1945 skelnede Jaspers mellem strafferetlig, politisk, moralsk og metafysisk skyld og skrev særskilt, at det er meningsløst at anklage et helt folk for en forbrydelse. Fjerde Genèvekonvention, art. 33: «Ingen beskyttet person må straffes for en lovovertrædelse, som vedkommende ikke selv har begået. Kollektive straffe… er forbudt.» Formlen «der er ingen uskyldige palæstinensere» knækker netop den skelnen: skyld kan ikke hænges på et folk; en organisations ansvar er ikke af definition et nyfødt barns skyld."
       },
       "crack": {
-        "ru": "Различение умирает на практике: бомбардировка города не спрашивает, голосовал ли человек за ХАМАС. Обратная ловушка: «народ не виноват» иногда превращается в «организация не ответственна». Если таблицу Ясперса вешают на этническую группу целиком — это уже не вина, а криминализация народа.",
-        "en": "The distinction dies in practice: a bombardment of a city does not ask whether a person voted for Hamas. The reverse trap: “the people are not guilty” sometimes turns into “the organisation is not responsible”. If Jaspers’s table is hung on an ethnic group as a whole — that is no longer guilt. It is the criminalisation of a people.",
-        "da": "Skelnen dør i praksis: et bombardement af en by spørger ikke, om personen stemte på Hamas. Den omvendte fælde: «folket er ikke skyldigt» bliver undertiden til «organisationen er ikke ansvarlig». Hvis Jaspers’ tabel hænges på en etnisk gruppe som helhed — er det ikke længere skyld. Det er kriminalisering af et folk."
+        "ru": "Бомбардировка города не спрашивает, голосовал ли человек за ХАМАС. Если таблицу Ясперса повесить на этническую группу целиком, это уже не вина одного человека. Это обвинение народу.",
+        "en": "Bombing a city does not ask whether a person voted for Hamas. Hang Jaspers’s table on an ethnic group as a whole, and it is no longer one person’s guilt. It is a charge against a people.",
+        "da": "Et bombardement af en by spørger ikke, om et menneske stemte på Hamas. Hæng Jaspers’ tabel op på en hel etnisk gruppe, og det er ikke længere én persons skyld. Det er en anklage mod et folk."
       },
       "note": {
-        "ru": "Различение, не приговор.",
-        "en": "A distinction, not a verdict.",
-        "da": "En skelnen, ikke en dom."
+        "ru": "Вина человека и ответственность организации лежат в разных полях.",
+        "en": "A person’s guilt and an organisation’s responsibility are different fields.",
+        "da": "Et menneskes skyld og en organisations ansvar ligger i forskellige felter."
       }
     },
     {
@@ -1176,9 +1176,9 @@
           "da": "Taktikken med at ødelægge et net besvarer ikke spørgsmålet om opdragelse. Det er et argument for, at det ikke slår til."
         },
         "bad": {
-          "ru": "«День после» без ответа «кто учит детей» — не стратегия, а пауза.",
-          "en": "A “day after” with no answer to “who teaches the children” is not a strategy. It is a pause.",
-          "da": "En «dag efter» uden svar på «hvem underviser børnene» er ikke en strategi. Det er en pause."
+          "ru": "Этот ответ принимает паузу за план.",
+          "en": "That answer takes a pause for a plan.",
+          "da": "Det svar tager en pause for en plan."
         }
       },
       "docs": [
@@ -1209,9 +1209,9 @@
         "da": "En «dag efter» uden svar på «hvem underviser børnene» er ikke en strategi. Det er en pause."
       },
       "steel": {
-        "ru": "Одна позиция: дерадикализация после поражения требовала институтов, не ожидания, что люди «навоюются». Другая: Осло уже подписало взаимные права и пятилетний переход — и пять лет прошли.",
-        "en": "One position: deradicalisation after defeat required institutions, not the hope that people would “tire of war”. The other: Oslo already signed mutual rights and a five-year transition — and the five years have passed.",
-        "da": "Én position: deradikalisering efter nederlag krævede institutioner, ikke et håb om, at folk ville «kriges trætte». Den anden: Oslo havde allerede underskrevet gensidige rettigheder og en femårig overgang — og de fem år er gået."
+        "ru": "После поражения дерадикализация шла через школы, суды и переписанные учебники, не через надежду, что люди устанут воевать. Осло уже записывало взаимные права и переход на пять лет. Пять лет прошли.",
+        "en": "After defeat, deradicalisation went through schools, courts, and rewritten textbooks, not through a hope that people would tire of fighting. Oslo had already written down mutual rights and a five-year transition. The five years passed.",
+        "da": "Efter et nederlag gik deradikalisering gennem skoler, domstole og omskrevne lærebøger, ikke gennem et håb om, at folk blev trætte af at kæmpe. Oslo havde allerede skrevet gensidige rettigheder og en overgang på fem år. De fem år gik."
       },
       "cite": {
         "ru": "Помета на полях",
@@ -1229,9 +1229,9 @@
         "da": "Deradikalisering efter totalt nederlag (Tyskland, Japan) krævede besættelse, domstole, nye institutioner — ikke et håb om, at folk ville «kriges trætte». Ingen succesrate lægges her: korpuset holder ikke det tal. At ødelægge et net er taktisk sammenhængende, men de næste generationer forsvinder ikke, medmindre nogen svarer på, hvem der underviser børnene. Dokumentet fra 2017 er Hamas’ politiske spor, ikke en ophævelse af 1988. Erklæringen om principper, 13. september 1993: «gensidige legitime og politiske rettigheder»; en overgang «på højst fem år» frem mod status efter 242 og 338. Brevene af 9. september: PLO anerkender Israels ret til at eksistere i fred; Israel anerkender PLO. Hamas underskrev ikke. De fem år er gået."
       },
       "crack": {
-        "ru": "У Газы нет очевидного внешнего администратора, которого регион готов терпеть двадцать лет. «День после» без ответа «кто учит детей» — не стратегия, а пауза.",
-        "en": "Gaza has no obvious external administrator the region is prepared to tolerate for twenty years. A “day after” with no answer to “who teaches the children” is not a strategy. It is a pause.",
-        "da": "Gaza har ingen indlysende ydre administrator, som regionen vil tåle i tyve år. En «dag efter» uden svar på «hvem underviser børnene» er ikke en strategi. Det er en pause."
+        "ru": "У Газы нет внешнего администратора, которого соседи согласны терпеть двадцать лет.",
+        "en": "Gaza has no outside administrator the neighbours will tolerate for twenty years.",
+        "da": "Gaza har ingen administrator udefra, som naboerne vil finde sig i i tyve år."
       },
       "note": {
         "ru": "Тактика уничтожения сети не отвечает на вопрос воспитания. Это не довод «нельзя уничтожать». Это довод «этого мало».",
@@ -1280,9 +1280,9 @@
           "da": "Artikel 34 er kort i sin helhed: det er forbudt at tage gidsler."
         },
         "bad": {
-          "ru": "«Сначала заложники» не создаёт права держать людей. Дальше — запрет, не пакет.",
-          "en": "“Hostages first” does not create a right to hold people. What follows is the ban, not a package.",
-          "da": "«Først gidslerne» skaber ikke en ret til at holde mennesker. Det der følger er forbuddet, ikke en pakke."
+          "ru": "Очерёдность в лозунге запрета не снимает.",
+          "en": "The order of demands in the slogan does not lift the ban.",
+          "da": "Rækkefølgen i sloganet ophæver ikke forbuddet."
         }
       },
       "docs": [
@@ -1311,9 +1311,9 @@
         "da": "«Først gidslerne» skaber ikke en ret til at holde mennesker. «Kontekst» gør ikke civile til bytteobjekt."
       },
       "steel": {
-        "ru": "Одна позиция: ст. 34 и EUCO 26 октября 2023 — вернуть всех «immediately… without any precondition»; Паттен — clear and convincing по части заложников, без распространённости. Другая: на практике живых вынимают пакетом с паузой в огне; без пакета дверь закрыта.",
-        "en": "One position: art. 34 and EUCO 26 October 2023 — return all “immediately… without any precondition”; Patten — clear and convincing on some hostages, no prevalence. The other: in practice the living come out in a packaged pause; without the package the door is shut.",
-        "da": "Én position: art. 34 og EUCO 26. oktober 2023 — alle tilbage «immediately… without any precondition»; Patten — clear and convincing om nogle gidsler, ingen prævalens. Den anden: i praksis kommer de levende ud i en pakket pause; uden pakken er døren lukket."
+        "ru": "Статья 34 запрещает взятие заложников целиком. Европейский совет 26 октября 2023 года требовал вернуть всех immediately and without any precondition. Паттен нашёл clear and convincing information по части заложников и не оценивал, насколько это было распространено. На практике живых чаще выводят пакетом, вместе с паузой в огне. Без обмена дверь не открывается.",
+        "en": "Article 34 bans hostage-taking outright. On 26 October 2023 the European Council demanded that everyone be returned immediately and without any precondition. Patten found clear and convincing information about some hostages and did not estimate how widespread it was. In practice the living are usually brought out in a package, with a pause in the fighting. Without an exchange the door stays shut.",
+        "da": "Artikel 34 forbyder gidseltagning uden undtagelse. Den 26. oktober 2023 krævede Det Europæiske Råd, at alle blev bragt tilbage med det samme og uden forhåndsbetingelser. Patten fandt clear and convincing information om nogle gidsler og vurderede ikke, hvor udbredt det var. I praksis bliver de levende som regel hentet ud i en pakke, sammen med en pause i kampene. Uden en udveksling bliver døren lukket."
       },
       "cite": {
         "ru": "IV Женевская конвенция, ст. 34",
@@ -1382,9 +1382,9 @@
           "da": "Ønske, enighed, statut — tre registre. Et slogan holder som regel ét."
         },
         "bad": {
-          "ru": "«Право» в лозунге жёстче текста 194-й. Дальше — пункт, не паспорт.",
-          "en": "The “right” in the slogan is harder than the text of 194. What follows is the paragraph, not a passport.",
-          "da": "«Retten» i sloganet er hårdere end teksten i 194. Det der følger er punktet, ikke et pas."
+          "ru": "В пункте 11 нет слова «право» и нет паспорта потомку.",
+          "en": "Paragraph 11 has neither the word “right” nor a passport for a descendant.",
+          "da": "Punkt 11 har hverken ordet «ret» eller et pas til en efterkommer."
         }
       },
       "docs": [
@@ -1413,9 +1413,9 @@
         "da": "«Retten» i sloganet er hårdere end teksten i 194. «Aldrig» er hårdere end Beirut, som beder om en aftalt løsning."
       },
       "steel": {
-        "ru": "Одна позиция: 194 и Бейрут 2002 — возвращение и компенсация как часть мира. Другая: Закон о возвращении 1950 года — другой народ, другая война; массовое возвращение в Израиль 1948 года снимает еврейское большинство.",
-        "en": "One position: 194 and Beirut 2002 — return and compensation as part of a peace. The other: the 1950 Law of Return is another people, another war; a mass return into 1948 Israel removes a Jewish majority.",
-        "da": "Én position: 194 og Beirut 2002 — tilbagevenden og erstatning som del af en fred. Den anden: Hjemvendingsloven fra 1950 er et andet folk, en anden krig; en massehjemvenden til Israel 1948 fjerner et jødisk flertal."
+        "ru": "Резолюция 194 и Бейрут 2002 года говорят о возвращении и компенсации как о части мира, не как о паспорте. Закон о возвращении 1950 года написан про другой народ и другую войну. Массовый въезд потомков 1948 года в Израиль меняет еврейское большинство. Это другой текст, не пункт 11.",
+        "en": "Resolution 194 and Beirut 2002 speak of return and compensation as part of a peace, not as a passport. The 1950 Law of Return was written for another people and another war. A mass entry of the descendants of 1948 into Israel would change the Jewish majority. That is a different text from paragraph 11.",
+        "da": "Resolution 194 og Beirut 2002 taler om tilbagevenden og erstatning som del af en fred, ikke som et pas. Hjemvendingsloven fra 1950 er skrevet til et andet folk og en anden krig. En masseindrejse af efterkommere fra 1948 til Israel ville ændre det jødiske flertal. Det er en anden tekst end punkt 11."
       },
       "cite": {
         "ru": "ГА ООН, резолюция 194 (III), п. 11",
@@ -1438,9 +1438,9 @@
         "da": "Hvis punkt 11 læses som en ordre om, at enhver efterkommer skal ind i Israel 1948 — er Beirut, som kræver enighed, allerede ikke den tekst. Hvis det læses som «aldrig» — er 194 heller ikke den tekst. Hjemvendingsloven ophæver ikke et andet menneskes hjem. Et andet menneskes hjem ophæver ikke en nationalitetsstatut."
       },
       "note": {
-        "ru": "Желание, согласие, статут — три регистра. Лозунг держит обычно один.",
-        "en": "Wish, agreement, statute — three registers. A slogan usually holds one.",
-        "da": "Ønske, enighed, statut — tre registre. Et slogan holder som regel ét."
+        "ru": "Три бумаги: желание в 194-й, согласие в Бейруте, статут о гражданстве.",
+        "en": "Three papers: a wish in 194, agreement in Beirut, a nationality statute.",
+        "da": "Tre papirer: et ønske i 194, enighed i Beirut, en statut om statsborgerskab."
       }
     },
     {
@@ -1479,14 +1479,14 @@
           }
         ],
         "ok": {
-          "ru": "Совет и Гаага читают запрет шире насилия. Леви стоит на другой стороне предложения.",
-          "en": "The Council and The Hague read the ban as wider than force. Levy stands on the other side of the sentence.",
-          "da": "Rådet og Haag læser forbuddet som bredere end tvang. Levy står på den anden side af sætningen."
+          "ru": "В чтении Совета и Гааги запрет 49(6) шире, чем одно только выселение силой.",
+          "en": "In the Council’s reading and The Hague’s, the 49(6) ban is wider than forcible transfer alone.",
+          "da": "I Rådets og Haags læsning er forbuddet i 49(6) bredere end tvangsflytning alene."
         },
         "bad": {
-          "ru": "Норма и факт спорят. Лозунг обычно хоронит одну сторону спора.",
-          "en": "Norm and fact are in dispute. A slogan usually buries one side of the dispute.",
-          "da": "Norm og kendsgerning strides. Et slogan begravede som regel den ene side af striden."
+          "ru": "Леви не снимает со стола Совет и два заключения Суда.",
+          "en": "Levy does not take the Council, or the two Court opinions, off the table.",
+          "da": "Levy tager ikke Rådet eller Domstolens to udtalelser af bordet."
         }
       },
       "docs": [
@@ -1517,9 +1517,9 @@
         "da": "Rådet og Haag står på den ene side af sætningen. Jerusalem-kommissionen står på den anden. Det er en strid om en norm, ikke om smag."
       },
       "steel": {
-        "ru": "Одна позиция: 49(6), стена 2004-го, 2334 и заключение 2024-го — поселения без юридической силы, присутствие незаконно. Другая: Леви — классическая оккупация к «Иудее и Самарии» неприменима, селиться можно.",
-        "en": "One position: 49(6), the 2004 Wall, 2334 and the 2024 opinion — settlements without legal validity, the presence unlawful. The other: Levy — classical occupation does not apply to “Judea and Samaria”; Israelis may settle.",
-        "da": "Én position: 49(6), muren 2004, 2334 og udtalelsen 2024 — bosættelser uden retsgyldighed, tilstedeværelsen retsstridig. Den anden: Levy — klassisk besættelse gælder ikke «Judæa og Samaria»; israelere må bosætte sig."
+        "ru": "Статья 49(6), заключение о стене 2004 года, резолюция 2334 и заключение 2024 года читают поселения как лишённые юридической силы, а присутствие Израиля как незаконное. Комиссия Леви читает тот же холм иначе: классическая оккупация к «Иудее и Самарии» не применяется, селиться можно.",
+        "en": "Article 49(6), the 2004 Wall opinion, resolution 2334 and the 2024 opinion read the settlements as legally void and Israel’s presence as unlawful. The Levy Commission reads the same hill differently: classical occupation does not apply to “Judea and Samaria”, and Israelis may settle.",
+        "da": "Artikel 49(6), udtalelsen om muren fra 2004, resolution 2334 og udtalelsen fra 2024 læser bosættelserne som retsligt ugyldige og Israels tilstedeværelse som retsstridig. Levy-kommissionen læser den samme høj anderledes: klassisk besættelse gælder ikke for «Judæa og Samaria», og israelere må bosætte sig."
       },
       "cite": {
         "ru": "IV Женевская конвенция, ст. 49(6)",
@@ -1542,9 +1542,9 @@
         "da": "Hvis «så længe bosættelserne står, bliver der ingen to stater» — siger 2334 det næsten. Hvis «bosættelserne er lovlige, fordi Levy» — bliver Rådet og to retlige udtalelser på bordet. En rådgivende udtalelse er ikke en ordre til tropper. En kapitel VI-resolution er ikke kapitel VII. En kendsgerning på en høj ophæver ikke en artikel. En artikel river ikke selv et hus ned."
       },
       "note": {
-        "ru": "Норма и факт спорят. Лозунг обычно хоронит одну сторону спора.",
-        "en": "Norm and fact are in dispute. A slogan usually buries one side of the dispute.",
-        "da": "Norm og kendsgerning strides. Et slogan begravede som regel den ene side af striden."
+        "ru": "Норма и факт спорят. Лозунг обычно оставляет один из них.",
+        "en": "The norm and the fact on the ground are in dispute. A slogan usually keeps only one.",
+        "da": "Normen og forholdet på jorden strides. Et slogan beholder som regel kun det ene."
       }
     },
     {
@@ -1583,14 +1583,14 @@
           }
         ],
         "ok": {
-          "ru": "Мандат, рамка, девять дел — три регистра. Лозунг держит обычно один.",
-          "en": "Mandate, frame, nine files — three registers. A slogan usually holds one.",
-          "da": "Mandat, ramme, ni sager — tre registre. Et slogan holder som regel ét."
+          "ru": "Девять дел не переписывают мандат 1949 года. Мандат не стирает девять дел.",
+          "en": "Nine cases do not rewrite the 1949 mandate. The mandate does not erase the nine cases.",
+          "da": "Ni sager skriver ikke mandatet fra 1949 om. Mandatet sletter ikke de ni sager."
         },
         "bad": {
-          "ru": "Формула «UNRWA = ХАМАС» не переносит девять договоров на тринадцать тысяч.",
-          "en": "The formula “UNRWA = Hamas” does not move nine contracts onto thirteen thousand.",
-          "da": "Formlen «UNRWA = Hamas» flytter ikke ni kontrakter over på tretten tusind."
+          "ru": "Девять договоров не равны тринадцати тысячам сотрудников.",
+          "en": "Nine contracts are not thirteen thousand staff.",
+          "da": "Ni kontrakter er ikke tretten tusind ansatte."
         }
       },
       "docs": [
@@ -1619,9 +1619,9 @@
         "da": "Reducer UNRWA til Hamas, og mandatet fra 1949 stryges. Reducer det til mandatet, og ni kontrakter og neutralitetshullerne stryges."
       },
       "steel": {
-        "ru": "Одна позиция: 302 — единственная гражданская инфраструктура Газы; Колонна находит рамку нейтральности развитее сходных структур. Другая: девять сотрудников «могли участвовать» 7 октября; уникальная регистрация потомков держит статус беженца открытым.",
-        "en": "One position: 302 is Gaza’s only civilian infrastructure; Colonna finds the neutrality frame more developed than in similar bodies. The other: nine staff “may have been involved” on 7 October; descendant registration keeps refugee status open.",
-        "da": "Én position: 302 er Gazas eneste civile infrastruktur; Colonna finder neutralitetsrammen mere udviklet end hos lignende organer. Den anden: ni ansatte «kan have været involveret» den 7. oktober; registrering af efterkommere holder flygtningestatus åben."
+        "ru": "Резолюция 302 создала агентство, которое в Газе осталось почти единственной гражданской инфраструктурой. Колонна находит правила нейтральности подробнее, чем у похожих организаций. Рядом лежат девять дел: сотрудники «могли участвовать» 7 октября. Регистрация потомков держит статус беженца открытым дольше одного поколения.",
+        "en": "Resolution 302 created an agency that in Gaza became almost the only civilian infrastructure. Colonna finds its neutrality rules more detailed than those of similar organisations. Beside that sit nine cases: staff who “may have been involved” on 7 October. Registering descendants keeps refugee status open past a single generation.",
+        "da": "Resolution 302 oprettede et agentur, som i Gaza blev næsten den eneste civile infrastruktur. Colonna finder neutralitetsreglerne mere udførlige end hos lignende organisationer. Ved siden af ligger ni sager: ansatte, der «kan have været involveret» den 7. oktober. Registrering af efterkommere holder flygtningestatus åben længere end én generation."
       },
       "cite": {
         "ru": "ГА ООН, резолюция 302 (IV)",
@@ -1644,9 +1644,9 @@
         "da": "Formlen «UNRWA = Hamas» flytter ikke ni kontrakter over på tretten tusind. Formlen «agenturet er urørligt» lukker ikke de huller, Colonna opregnede, og ophæver ikke de ni. Lærebøger og fagforeninger nævnes i rapporten som risikozoner. Hvem der underviser børnene, er mappen «Bagefter». Hvem der kørte kalorierne, er blokaden. De limes ikke fast på ét flag."
       },
       "note": {
-        "ru": "Мандат, рамка, девять дел — три регистра. Лозунг держит обычно один.",
-        "en": "Mandate, frame, nine files — three registers. A slogan usually holds one.",
-        "da": "Mandat, ramme, ni sager — tre registre. Et slogan holder som regel ét."
+        "ru": "Учебники и калории лежат в соседних папках.",
+        "en": "Textbooks and calories sit in the neighbouring folders.",
+        "da": "Lærebøger og kalorier ligger i mapperne ved siden af."
       }
     },
     {
@@ -1690,9 +1690,9 @@
           "da": "To forbud på én gang. Det ene ophæver ikke det andet."
         },
         "bad": {
-          "ru": "Формула «мёртвые на нём» ломает статью 51(8). Дальше — оба запрета, не лицензия.",
-          "en": "The formula “the dead are on them” breaks article 51(8). What follows is both bans, not a licence.",
-          "da": "Formlen «de døde er på dem» knækker artikel 51(8). Det der følger er begge forbud, ikke en licens."
+          "ru": "Чужой щит не выдаёт атакующему разрешения.",
+          "en": "Someone else’s shield does not permit the attacker.",
+          "da": "En andens skjold giver ikke angriberen lov."
         }
       },
       "docs": [
@@ -1721,9 +1721,9 @@
         "da": "Formlen «de døde er på dem» knækker artikel 51(8). Formlen «der var intet skjold» ophæver ikke 51(7), hvis der var et skjold."
       },
       "steel": {
-        "ru": "Одна позиция: кто прячет бойцов среди детей, сам создаёт мёртвых — 51(7) и Rule 97. Другая: 51(8) оставляет атакующему соразмерность и ст. 57 даже когда щит создан нарочно.",
-        "en": "One position: whoever hides fighters among children makes the dead — 51(7) and Rule 97. The other: 51(8) leaves the attacker proportionality and art. 57 even when the shield was built on purpose.",
-        "da": "Én position: den der gemmer kæmpere blandt børn, skaber de døde — 51(7) og regel 97. Den anden: 51(8) lader angriberen beholde proportionalitet og art. 57, også når skjoldet er skabt med vilje."
+        "ru": "Кто прячет бойцов среди детей, нарушает статью 51(7) и обычное правило 97. Мёртвые от этого не переходят на него целиком. Статья 51(8) оставляет атакующему соразмерность и обязанности статьи 57, даже если щит сделан нарочно.",
+        "en": "Hiding fighters among children breaches Article 51(7) and customary Rule 97. The dead do not, for that reason, all belong to the one who hid them. Article 51(8) still binds the attacker to proportionality and to Article 57, even when the shield was deliberate.",
+        "da": "Den, der gemmer kombattanter blandt børn, bryder artikel 51(7) og sædvaneretlig regel 97. De døde tilhører ikke af den grund alle den, der gemte dem. Artikel 51(8) binder stadig angriberen til proportionalitet og til artikel 57, også når skjoldet er lavet med vilje."
       },
       "cite": {
         "ru": "ICRC, Customary IHL, Rule 97",
@@ -1741,14 +1741,14 @@
         "da": "Regel 97 forbyder det menneskelige skjold som sædvane. Art. 51(7) i Tillægsprotokol I forbyder at bruge civile til at gøre et punkt immun over for operationer. Art. 51(8): brud på disse forbud fritager ikke parterne for deres forpligtelser over for civile, herunder forholdsreglerne i art. 57. Romstatutten, art. 8(2)(b)(xxiii), gør brug af skjolde til en krigsforbrydelse i international konflikt. Korpus holder ikke et særskilt tal for «tunneler under hospitaler»: der er ingen sådan folketælling ved dette bord. Skjoldforbuddet kræver ikke det tal. Det gør proportionaliteten af et angreb heller ikke."
       },
       "crack": {
-        "ru": "Если щит доказан, 51(7) уже сработала — и 51(8) всё ещё здесь. Если щит только сказали, лицензия убивать «всех, кто рядом» не появляется. Городская война кормит обе формулы. Оба счётчика врут по-своему: «цель была легитимной» прячет системный вред; «дети умерли — значит, щит» прячет выбор средства.",
-        "en": "If the shield is proved, 51(7) has already fired — and 51(8) is still here. If the shield was only said, a licence to kill “everyone nearby” does not appear. Urban war feeds both formulas. Both counters lie in their own way: “the target was legitimate” hides systemic harm; “children died, therefore a shield” hides the choice of means.",
-        "da": "Hvis skjoldet er bevist, har 51(7) allerede virket — og 51(8) er her stadig. Hvis skjoldet kun blev sagt, opstår der ikke en licens til at slå «alle i nærheden» ihjel. Bykrig føder begge formler. Begge tællere lyver på deres vis: «målet var legitimt» gemmer den systemiske skade; «børn døde, altså et skjold» gemmer valget af middel."
+        "ru": "Если щит доказан, 51(7) уже нарушена, а 51(8) всё ещё действует. Если щит только произнесли, разрешения бить всех рядом не появляется. «Цель была законной» не называет выбор средства. «Дети умерли, значит, щит» щит не доказывает.",
+        "en": "If the shield is proved, 51(7) is already breached and 51(8) still applies. If the shield was only asserted, there is no permission to strike everyone nearby. “The target was lawful” does not name the choice of weapon. “Children died, so there was a shield” does not prove a shield.",
+        "da": "Hvis skjoldet er bevist, er 51(7) allerede brudt, og 51(8) gælder stadig. Hvis skjoldet kun blev påstået, er der ingen tilladelse til at ramme alle i nærheden. «Målet var lovligt» nævner ikke valget af våben. «Børn døde, altså var der et skjold» beviser ikke et skjold."
       },
       "note": {
-        "ru": "Два запрета одновременно. Один не отменяет другой.",
-        "en": "Two bans at once. One does not repeal the other.",
-        "da": "To forbud på én gang. Det ene ophæver ikke det andet."
+        "ru": "Статьи 51(7) и 51(8) читают вместе.",
+        "en": "Articles 51(7) and 51(8) are read together.",
+        "da": "Artikel 51(7) og 51(8) læses sammen."
       }
     },
     {
@@ -1792,9 +1792,9 @@
           "da": "Metode, fase, slogan. Nævn først, hvilken af de tre der blev sagt højt."
         },
         "bad": {
-          "ru": "Фаза IPC не есть умысел командира по ст. 54. Три слова не склеивать.",
-          "en": "An IPC phase is not a commander’s intent under art. 54. Do not glue the three words.",
-          "da": "En IPC-fase er ikke en kommandants forsæt efter art. 54. Lim ikke de tre ord sammen."
+          "ru": "Фаза на карте IPC не есть умысел командира по статье 54.",
+          "en": "A phase on the IPC map is not a commander’s intent under Article 54.",
+          "da": "En fase på IPC-kortet er ikke en chefs forsæt efter artikel 54."
         }
       },
       "docs": [
@@ -1824,9 +1824,9 @@
         "da": "«De sulter Gaza» kan være en metode — eller en fase, eller et slogan. Lim ikke de tre ord sammen."
       },
       "steel": {
-        "ru": "Одна позиция: ст. 54 и формула IPC «entirely man-made» — голод делают. Другая: март 2024 был «imminent», июнь 2024 — «не происходит»; Израиль оспаривает август 2025 и указывает на хищения и проверки.",
-        "en": "One position: art. 54 and the IPC formula “entirely man-made” — famine is made. The other: March 2024 was “imminent”, June 2024 “not occurring”; Israel contests August 2025 and points to diversion and inspections.",
-        "da": "Én position: art. 54 og IPC-formlen «entirely man-made» — hungersnød bliver skabt. Den anden: marts 2024 var «imminent», juni 2024 «forekommer ikke»; Israel bestrider august 2025 og peger på underslæb og kontrol."
+        "ru": "Статья 54 запрещает морить гражданских голодом как способом вести войну. Формула IPC «entirely man-made» говорит другое: голод описан как сделанный людьми, но это фаза, не статья. В марте 2024 года фаза была imminent, в июне 2024-го вывод был, что голода нет. Израиль оспаривает август 2025 года и указывает на хищения помощи и на проверки.",
+        "en": "Article 54 forbids starving civilians as a way of fighting. The IPC line “entirely man-made” says something else: the hunger is described as man-made, but that is a phase, not the article. In March 2024 the phase was imminent; in June 2024 the finding was that famine was not occurring. Israel disputes August 2025 and points to theft of aid and to inspections.",
+        "da": "Artikel 54 forbyder at udsulte civile som en måde at føre krig på. IPC-sætningen «entirely man-made» siger noget andet: sulten beskrives som menneskeskabt, men det er en fase, ikke artiklen. I marts 2024 var fasen imminent; i juni 2024 lød fundet, at hungersnød ikke forekom. Israel bestrider august 2025 og peger på tyveri af hjælp og på kontrol."
       },
       "cite": {
         "ru": "Доп. протокол I, ст. 54",
@@ -1844,14 +1844,14 @@
         "da": "Artikel 54(1) forbyder sult blandt civile som krigsmetode. Art. 54(2) forbyder at ødelægge fødevarer, afgrøder, husdyr, drikkevand, vanding for at sulte civile, flytte dem eller af enhver anden grund. ICRC-regel 53 gentager forbuddet som sædvane. IPC, marts 2024: hungersnød projiceret og «imminent» i nord; tærsklen for fødevareusikkerhed allerede overskredet. Juni 2024: evidensen indikerer ikke, at hungersnød forekommer; alle områder Phase 4. 15. august 2025: komitéen for femte gang; Famine with reasonable evidence i Gaza-guvernementet; Nord ikke klassificeret på grund af manglende data; formlen — «entirely man-made». Komitéen giver ikke et tal for hungersnødsdødsfald her — og vi opfinder ikke ét."
       },
       "crack": {
-        "ru": "Фаза IPC не есть умысел командира по ст. 54. Отсутствие фазы в июне 2024-го не есть индульгенция на таблицу калорий. Блокада, щит, хищение помощи и отказ в доступе могут стоять в одной комнате. Лозунг обычно оставляет в комнате одного.",
-        "en": "An IPC phase is not a commander’s intent under art. 54. The absence of a phase in June 2024 is not an indulgence for a calorie table. Blockade, shield, diversion of aid and denial of access can stand in one room. A slogan usually leaves one person in the room.",
-        "da": "En IPC-fase er ikke en kommandants forsæt efter art. 54. Fraværet af en fase i juni 2024 er ikke en aflad for en kalorietabel. Blokade, skjold, underslæb med hjælp og nægtet adgang kan stå i ét rum. Et slogan lader som regel én person blive i rummet."
+        "ru": "То, что в июне 2024 года фазу не нашли, не оправдывает таблицу калорий. Блокада, щит, хищение помощи и отказ впустить помощь могут быть правдой в один и тот же месяц.",
+        "en": "That no phase was found in June 2024 does not justify a calorie table. A blockade, a shield, theft of aid, and a refusal to let aid in can all be true in the same month.",
+        "da": "At man i juni 2024 ikke fandt en fase, retfærdiggør ikke en kalorietabel. En blokade, et skjold, tyveri af hjælp og et afslag på at lukke hjælp ind kan være sande i samme måned."
       },
       "note": {
-        "ru": "Метод, фаза, лозунг. Сначала назвать, какой из трёх сказан вслух.",
-        "en": "Method, phase, slogan. Name first which of the three was said out loud.",
-        "da": "Metode, fase, slogan. Nævn først, hvilken af de tre der blev sagt højt."
+        "ru": "Статья 54 и карта IPC лежат рядом и друг друга не подменяют.",
+        "en": "Article 54 and the IPC map sit side by side. Neither stands in for the other.",
+        "da": "Artikel 54 og IPC-kortet ligger ved siden af hinanden. Ingen af dem træder i stedet for den anden."
       }
     },
     {
@@ -1895,9 +1895,9 @@
           "da": "Formel, underskrift, afslag. 242 holder to principper i én tekst."
         },
         "bad": {
-          "ru": "«Единственный выход» прячет, что вывод и признание стоят рядом. Дальше — оба, не лозунг.",
-          "en": "“The only way out” hides that withdrawal and recognition stand together. What follows is both, not a slogan.",
-          "da": "«Den eneste udvej» skjuler, at tilbagetrækning og anerkendelse står sammen. Det der følger er begge, ikke et slogan."
+          "ru": "Вывод и признание в 242 стоят в одном тексте. Одно без другого — уже не эта резолюция.",
+          "en": "Withdrawal and recognition sit in the same text of 242. One without the other is no longer that resolution.",
+          "da": "Tilbagetrækning og anerkendelse står i samme tekst, 242. Det ene uden det andet er ikke længere den resolution."
         }
       },
       "docs": [
@@ -1928,9 +1928,9 @@
         "da": "«Den eneste retfærdige udvej» er ikke underskrevet af dem, der skulle gå den. Underskriften fra 1993 stoppede med at tælle ved fem år."
       },
       "steel": {
-        "ru": "Одна позиция: 242, Осло и Бейрут — два государства, вывод, признание, согласованные беженцы. Другая: ХАМАС принимает 1967 как «консенсус» без признания; поселения и «нет партнёра» хоронят формулу с другой стороны.",
-        "en": "One position: 242, Oslo and Beirut — two states, withdrawal, recognition, agreed refugees. The other: Hamas accepts 1967 as “consensus” without recognition; settlements and “no partner” bury the formula from the other side.",
-        "da": "Én position: 242, Oslo og Beirut — to stater, tilbagetrækning, anerkendelse, aftalte flygtninge. Den anden: Hamas accepterer 1967 som «konsensus» uden anerkendelse; bosættelser og «ingen partner» begraver formlen fra den anden side."
+        "ru": "Резолюция 242, Осло и Бейрут держат два государства, вывод войск, признание и беженцев по соглашению. Документ ХАМАС 2017 года называет линии 1967 года «консенсусом» и Израиль не признаёт. Поселения и слова «нет партнёра» ту же формулу закрывают.",
+        "en": "Resolution 242, Oslo and Beirut hold two states, withdrawal, recognition, and refugees settled by agreement. The 2017 Hamas document calls the 1967 lines a “consensus” and does not recognise Israel. Settlements, and the words “no partner”, close that same formula.",
+        "da": "Resolution 242, Oslo og Beirut holder to stater, tilbagetrækning, anerkendelse og flygtninge efter aftale. Hamas-dokumentet fra 2017 kalder 1967-linjerne en «konsensus» og anerkender ikke Israel. Bosættelser og ordene «ingen partner» lukker den samme formel."
       },
       "cite": {
         "ru": "СБ ООН, резолюция 242",
@@ -1999,9 +1999,9 @@
           "da": "Erklæring, traktat, Beirut. Et slogan læser som regel én."
         },
         "bad": {
-          "ru": "«Никогда не было о Палестине» ломается преамбулой. Три текста. Не одна цитата.",
-          "en": "“It was never about Palestine” is broken by the preamble. Three texts. Not one quotation.",
-          "da": "«Det handlede aldrig om Palæstina» knækkes af præamblen. Tre tekster. Ikke ét citat."
+          "ru": "В преамбуле договора Палестина названа. В декларации — нет. Это два текста.",
+          "en": "The treaty’s preamble names Palestine. The Declaration does not. They are two texts.",
+          "da": "Traktatens præambel nævner Palæstina. Erklæringen gør ikke. Det er to tekster."
         }
       },
       "docs": [
@@ -2030,9 +2030,9 @@
         "da": "«Det handlede aldrig om Palæstina» knækkes af præamblen. «Normalisering = enden på besættelsen» er heller ikke underskrevet i traktaten."
       },
       "steel": {
-        "ru": "Одна позиция: мир с Эмиратами и Бахрейном без окончания оккупации доказывает, что корень — не Палестина, а отказ арабских столиц. Другая: Бейрут 2002 как раз ставил нормализацию после вывода; декларация просто обошла очередь.",
-        "en": "One position: peace with the Emirates and Bahrain without ending the occupation proves the root was not Palestine but the refusal of Arab capitals. The other: Beirut 2002 put normalisation after withdrawal; the Declaration simply jumped the queue.",
-        "da": "Én position: fred med Emiraterne og Bahrain uden at afslutte besættelsen beviser, at roden ikke var Palæstina, men de arabiske hovedstæders afslag. Den anden: Beirut 2002 satte netop normalisering efter tilbagetrækning; erklæringen sprang ganske enkelt over i køen."
+        "ru": "Мир с Эмиратами и Бахрейном заключили, не закончив оккупацию. Отсюда читают, что дело было в отказе арабских столиц, не в Палестине. Бейрут 2002 года ставил нормализацию после вывода. Декларация эту очередь обошла.",
+        "en": "Peace with the Emirates and Bahrain was signed without ending the occupation. From that, some read the dispute as Arab capitals refusing, not as Palestine. Beirut 2002 put normalisation after withdrawal. The Declaration stepped past that order.",
+        "da": "Freden med Emiraterne og Bahrain blev underskrevet, uden at besættelsen sluttede. Derfra læser nogen striden som arabiske hovedstæders nej, ikke som Palæstina. Beirut 2002 lagde normalisering efter tilbagetrækning. Erklæringen gik uden om den rækkefølge."
       },
       "cite": {
         "ru": "Договор о мире ОАЭ–Израиль, 15 сентября 2020",
@@ -2050,14 +2050,14 @@
         "da": "Erklæringen af 15. september 2020 taler om sameksistens, religionsfrihed og at «gøre en ende på radikalisering»; Palæstina står ikke i den. UAE–Israel-traktaten samme dag indstifter fred og fuld normalisering og forpligter sig i præamblen til at fortsætte arbejdet for en retfærdig, omfattende, realistisk og varig løsning på den israelsk-palæstinensiske konflikt, med henvisning til traktaterne med Egypten og Jordan. Beirut 2002 satte normalisering efter tilbagetrækning og en aftalt flygtningeløsning. Tre tekster. Ikke ét citat. Den saudiarabiske kø efter 7. oktober er ikke beskrevet her: der findes ingen særskilt underskrevet akt — og vi opfinder ikke én."
       },
       "crack": {
-        "ru": "Обход очереди может быть дверью — и может быть способом больше не спрашивать, кто учит детей и кто держит заложников. Нормализация не отменяет ст. 49(6). Оккупация не отменяет ст. 1 договора. «Ось сопротивления» читает оба текста как предательство. Предательство в договоре не написано. Написано — продолжать искать решение.",
-        "en": "Jumping the queue may be a door — and may be a way of no longer asking who teaches the children and who holds the hostages. Normalisation does not repeal art. 49(6). Occupation does not repeal article 1 of the treaty. The “axis of resistance” reads both texts as betrayal. Betrayal is not written in the treaty. What is written is to keep seeking a solution.",
-        "da": "At springe over i køen kan være en dør — og kan være en måde ikke længere at spørge, hvem der underviser børnene, og hvem der holder gidslerne. Normalisering ophæver ikke art. 49(6). Besættelse ophæver ikke traktatens artikel 1. «Modstandsaksen» læser begge tekster som forræderi. Forræderi står ikke i traktaten. Der står, at man skal blive ved med at søge en løsning."
+        "ru": "Обойти очередь можно как дверь и как способ больше не спрашивать, кто учит детей и кто держит заложников. Нормализация не отменяет статью 49(6). Оккупация не отменяет статью 1 договора. «Ось сопротивления» читает оба текста как предательство. Слова «предательство» в договоре нет. Написано другое: продолжать искать решение.",
+        "en": "Stepping past the order can be a door, and it can be a way of no longer asking who teaches the children and who holds the hostages. Normalisation does not repeal Article 49(6). Occupation does not repeal article 1 of the treaty. The “axis of resistance” reads both texts as betrayal. The treaty does not say betrayal. It says to keep seeking a solution.",
+        "da": "At gå uden om rækkefølgen kan være en dør, og det kan være en måde ikke længere at spørge, hvem der underviser børnene, og hvem der holder gidslerne. Normalisering ophæver ikke artikel 49(6). Besættelse ophæver ikke traktatens artikel 1. «Modstandsaksen» læser begge tekster som forræderi. Ordet forræderi står ikke i traktaten. Der står, at man skal blive ved med at søge en løsning."
       },
       "note": {
-        "ru": "Декларация, договор, Бейрут. Лозунг читает обычно один.",
-        "en": "Declaration, treaty, Beirut. A slogan usually reads one.",
-        "da": "Erklæring, traktat, Beirut. Et slogan læser som regel én."
+        "ru": "Бейрут ставил очередь. Декларация её не повторяет.",
+        "en": "Beirut set an order. The Declaration does not repeat it.",
+        "da": "Beirut satte en rækkefølge. Erklæringen gentager den ikke."
       }
     }
   ],
@@ -3222,14 +3222,14 @@
       "date": "2024-11-21",
       "url": "https://www.icc-cpi.int/news/situation-state-palestine-icc-pre-trial-chamber-i-rejects-state-israels-challenges",
       "why": {
-        "ru": "Параллельные ордера: голод как метод — не ст. 51(5)(b); Дейф — заложники и убийства. Это не приговор.",
-        "en": "Parallel warrants: starvation as a method is not art. 51(5)(b); Deif — hostages and killings. This is not a verdict.",
-        "da": "Parallelle ordrer: sult som metode er ikke art. 51(5)(b); Deif — gidsler og drab. Det er ikke en dom."
+        "ru": "Ордера 21 ноября 2024 года: голод как метод войны — не статья 51(5)(b). Производство против Дейфа прекращено 26 февраля 2025 года.",
+        "en": "The 21 November 2024 warrants: starvation as a method of warfare is not Article 51(5)(b). Proceedings against Deif were terminated on 26 February 2025.",
+        "da": "Arrestordrerne af 21. november 2024: sult som krigsmetode er ikke artikel 51(5)(b). Sagen mod Deif blev afsluttet den 26. februar 2025."
       },
       "body": {
-        "ru": "Палата предварительного производства I 21 ноября 2024 выдала ордера на Нетаньяху и Галанта: есть разумные основания полагать военное преступление использования голода как метода войны и преступления против человечности (убийство, преследование, иные бесчеловечные акты) с 8 октября 2023 по крайней мере до 20 мая 2024; также — умышленные нападения на гражданских как начальников. Отдельный ордер на Мухаммада Дейфа — убийства, захват заложников, сексуальное насилие. Это не ст. 51(5)(b) и не приговор. Ордер — не таблица смертей от голода.",
-        "en": "Pre-Trial Chamber I on 21 November 2024 issued warrants for Netanyahu and Gallant: reasonable grounds to believe the war crime of using starvation as a method of warfare and crimes against humanity (murder, persecution, other inhumane acts) from at least 8 October 2023 until at least 20 May 2024; also — intentionally directing attacks against civilians as superiors. A separate warrant for Mohammed Deif — murder, hostage-taking, sexual violence. This is not art. 51(5)(b) and not a verdict. A warrant is not a famine-death table.",
-        "da": "Forundersøgelseskammer I udstedte den 21. november 2024 arrestordrer på Netanyahu og Gallant: rimelig grund til at antage krigsforbrydelsen sult som krigsmetode og forbrydelser mod menneskeheden (drab, forfølgelse, andre umenneskelige handlinger) fra mindst 8. oktober 2023 til mindst 20. maj 2024; også — bevidste angreb på civile som overordnede. En særskilt ordre på Mohammed Deif — drab, gidseltagning, seksuel vold. Det er ikke art. 51(5)(b) og ikke en dom. En arrestordre er ikke en tabel over hungersnødsdødsfald."
+        "ru": "Палата предварительного производства I 21 ноября 2024 года выдала ордера на Нетаньяху и Галанта: разумные основания полагать военное преступление — голод как метод войны — и преступления против человечности (убийство, преследование, иные бесчеловечные акты) с 8 октября 2023 года по крайней мере до 20 мая 2024 года, а также умышленные нападения на гражданских в качестве начальников. Отдельный ордер на Мухаммада Дейфа касался убийств, захвата заложников и сексуального насилия. 26 февраля 2025 года палата прекратила производство против Дейфа и сделала ордер недействующим, без ущерба возобновлению, если окажется, что он жив. Ордера на Нетаньяху и Галанта этим решением не сняты. Ордер не есть статья 51(5)(b) и не есть таблица смертей от голода.",
+        "en": "On 21 November 2024 Pre-Trial Chamber I issued warrants for Netanyahu and Gallant: reasonable grounds to believe the war crime of starvation as a method of warfare, and crimes against humanity (murder, persecution, other inhumane acts), from at least 8 October 2023 until at least 20 May 2024, and also the intentional directing of attacks against civilians as superiors. A separate warrant for Mohammed Deif concerned murder, hostage-taking, and sexual violence. On 26 February 2025 the Chamber terminated the proceedings against Deif and rendered that warrant without effect, without prejudice to resuming them if he were found alive. The warrants for Netanyahu and Gallant were not withdrawn by that decision. A warrant is not Article 51(5)(b), and it is not a table of deaths from hunger.",
+        "da": "Den 21. november 2024 udstedte Forundersøgelseskammer I arrestordrer på Netanyahu og Gallant: rimelig grund til at antage krigsforbrydelsen sult som krigsmetode og forbrydelser mod menneskeheden (drab, forfølgelse, andre umenneskelige handlinger) fra mindst 8. oktober 2023 til mindst 20. maj 2024, og desuden bevidste angreb på civile som overordnede. En særskilt ordre på Mohammed Deif gjaldt drab, gidseltagning og seksuel vold. Den 26. februar 2025 afsluttede kammeret sagen mod Deif og satte den ordre ud af kraft, uden præjudice for at genoptage den, hvis han viser sig at være i live. Ordrerne på Netanyahu og Gallant blev ikke trukket tilbage med den afgørelse. En arrestordre er ikke artikel 51(5)(b), og den er ikke en tabel over dødsfald af sult."
       },
       "archive": "https://web.archive.org/web/20241121114739/https://www.icc-cpi.int/news/situation-state-palestine-icc-pre-trial-chamber-i-rejects-state-israels-challenges",
       "botBlock": true
@@ -3728,12 +3728,20 @@
   ],
   "pages": {
     "method": {
-      "ru": "Карта почвы — издание различений. Выпуск I — Газа.\n\nВы говорите фразу. Мы показываем статью, на которой она стоит, и место, где она трещит.\n\nЭто не фактчек: сайт не ставит «правда» или «ложь». Это не дебаты: нет двух колонок. Это стол читателя. Лозунг кладут на норму и смотрят, что он склеил.\n\nСталь — сильная версия позиций, которые лозунг склеивает. Трещина — место, где лозунг рвётся о норму или о документ. Документ — первичный текст с датой, адресом и одной фразой, зачем он здесь.\n\n«Не приговор» — правило, не оговорка. Голос сайта не говорит, был ли геноцид и кто виновен. Он показывает, что говорит норма, что говорит документ, и где лозунг склеил разное.\n\nКак выбираются документы. Сначала норма или первичный акт. Потом именной доклад, решение, статут. Отчёт НПО кладётся на вторую чашу, не вместо статьи. У каждого документа есть дата, URL и зачем он здесь. Где первоисточник стоит за платой, это помечено.\n\nСайт ничего не отправляет. Нет кук, нет аналитики, нет внешних запросов при чтении. Состояние живёт в sessionStorage этого браузера и исчезает с вкладкой.\n\nПротокол чтения — простой текст того, что вы сказали, какую норму назвали и какие документы открыли. Его можно скопировать. Кнопок «поделиться» нет.\n\nИсправления: https://github.com/lamapony/karta-pochvy/issues Журнал правок — ниже. Срез источников этого выпуска: 20 сентября 2026.",
-      "en": "A map of the soil is an issue of distinctions. Issue I — Gaza.\n\nYou say a sentence. We show the article it stands on, and the place where it cracks.\n\nThis is not fact-checking: the site does not mark “true” or “false”. It is not a debate: there are no two columns. It is a reader’s desk. A slogan is laid on a norm to see what it glued together.\n\nSteel is the strong form of the positions a slogan glues. The crack is where the slogan breaks on a norm or a document. A document is a primary text with a date, an address, and one sentence on why it is here.\n\n“Not a verdict” is a rule, not a hedge. The site’s voice does not say whether genocide occurred or who is guilty. It shows what the norm says, what the document says, and where the slogan glued different things.\n\nHow documents are chosen. First the norm or the primary act. Then a named report, a judgment, a statute. An NGO report sits on the second pan, not in place of the article. Every document has a date, a URL, and a why. Where the source sits behind a paywall, that is marked.\n\nThe site sends nothing. No cookies, no analytics, no third-party requests while you read. State lives in this browser’s sessionStorage and dies with the tab.\n\nThe reading protocol is plain text of what you said, which norm you named, and which documents you opened. You can copy it. There is no share button.\n\nCorrections: https://github.com/lamapony/karta-pochvy/issues The changelog is below. Source cut-off for this issue: 20 September 2026.",
-      "da": "Et kort over jorden er et hæfte af skelner. Udgave I — Gaza.\n\nDu siger en sætning. Vi viser artiklen, den står på, og stedet, hvor den sprækker.\n\nDet er ikke fact-checking: siden sætter ikke «sandt» eller «falsk». Det er ikke en debat: der er ingen to kolonner. Det er et læsebord. Et slogan lægges på en norm for at se, hvad det har limet sammen.\n\nStål er den stærke form af de positioner, et slogan limer. Sprækken er dér, sloganet brister på en norm eller et dokument. Et dokument er en primær tekst med dato, adresse og én sætning om, hvorfor det er her.\n\n«Ikke en dom» er en regel, ikke en undvigelse. Sidens stemme siger ikke, om der var folkedrab, eller hvem der er skyldig. Den viser, hvad normen siger, hvad dokumentet siger, og hvor sloganet limede forskellige ting.\n\nSådan vælges dokumenter. Først normen eller den primære akt. Derefter en navngiven rapport, en dom, en statut. En NGO-rapport ligger i den anden vægtskål, ikke i stedet for artiklen. Hvert dokument har dato, URL og et hvorfor. Hvor kilden ligger bag betalingsmur, er det markeret.\n\nSiden sender intet. Ingen cookies, ingen analyse, ingen tredjeparts-kald mens du læser. Tilstanden lever i denne browsers sessionStorage og dør med fanen.\n\nLæseprotokollen er almindelig tekst om, hvad du sagde, hvilken norm du nævnte, og hvilke dokumenter du åbnede. Den kan kopieres. Der er ingen knap til at dele.\n\nRettelser: https://github.com/lamapony/karta-pochvy/issues Rettelseslisten er nedenfor. Kildernes skæringsdato for denne udgave: 20. september 2026."
+      "ru": "Выпуск I — Газа. На столе фразы, которые говорят вслух. Рядом статья, на которой фраза стоит, и место, где она с текстом не сходится.\n\nСталь — сильное чтение того, что фраза склеила. Трещина — где склейка рвётся. Документ — первичный текст: дата, адрес и одна фраза, зачем он здесь. Отчёт правозащитной организации лежит рядом со статьёй, не вместо неё. Если источник за платой, это написано.\n\nСайт не говорит, был ли геноцид и кто виновен. Он показывает норму, документ и склейку.\n\nКук нет. Счётчиков нет. При чтении запросы к чужим серверам не уходят. Что вы сказали и какие документы открыли, остаётся в этой вкладке. Протокол чтения можно скопировать. Кнопки «поделиться» нет.\n\nИсправления: https://github.com/lamapony/karta-pochvy/issues\nСрез источников: 20 сентября 2026.",
+      "en": "Issue I is Gaza. The desk holds sentences people will say aloud, the article a sentence stands on, and the place where the sentence and the text do not meet.\n\nSteel is a strong reading of what the sentence glued together. The crack is where the glue fails. A document is a primary text: a date, an address, and one sentence on why it is here. A human-rights report sits beside the article, not in its place. If a source is behind a paywall, that is marked.\n\nThe site does not say whether genocide occurred, or who is guilty. It shows the norm, the document, and the glue.\n\nNo cookies. No counters. Reading does not call out to other servers. What you said, and which documents you opened, stays in this tab. The reading protocol can be copied. There is no share button.\n\nCorrections: https://github.com/lamapony/karta-pochvy/issues\nSources cut off on 20 September 2026.",
+      "da": "Udgave I er Gaza. På bordet ligger sætninger, man vil sige højt, den artikel en sætning står på, og stedet hvor sætningen og teksten ikke mødes.\n\nStål er en stærk læsning af det, sætningen har limet sammen. Sprækken er dér, limen slipper. Et dokument er en primær tekst: en dato, en adresse og én sætning om, hvorfor det er her. En menneskerettighedsrapport ligger ved siden af artiklen, ikke i stedet for den. Ligger kilden bag en betalingsmur, står det på siden.\n\nSiden siger ikke, om der var folkedrab, eller hvem der er skyldig. Den viser normen, dokumentet og limen.\n\nIngen cookies. Ingen tællere. Læsning kalder ikke ud til andre servere. Det, du sagde, og hvilke dokumenter du åbnede, bliver i denne fane. Læseprotokollen kan kopieres. Der er ingen knap til at dele.\n\nRettelser: https://github.com/lamapony/karta-pochvy/issues\nKilderne er skåret af den 20. september 2026."
     }
   },
   "changelog": [
+    {
+      "date": "2026-09-21",
+      "text": {
+        "ru": "Голос полосы: сталь больше не начинается с «одна позиция / другая». Повторённые сентенции сняты. В ордере МУС отмечено, что производство против Дейфа прекращено 26 февраля 2025 года.",
+        "en": "The strip’s voice: steel no longer opens with “one position / the other”. Repeated sentences are out. The ICC warrant now notes that proceedings against Deif ended on 26 February 2025.",
+        "da": "Stribens stemme: stål begynder ikke længere med «én position / den anden». Gentagne sætninger er ude. ICC-ordren nævner nu, at sagen mod Deif sluttede den 26. februar 2025."
+      }
+    },
     {
       "date": "2026-09-20",
       "text": {
